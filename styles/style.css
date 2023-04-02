@@ -4,6 +4,93 @@
   box-sizing: border-box;
 }
 
+/* Шапка */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+
+.logo-text {
+  font-family: 'Plaid Mono', monospace;
+  display: block;
+  max-width: 400px;
+  font-weight: 400;
+}
+
+.menu-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header-menu {
+  position: fixed;
+  inset: 0;
+  background-color: #2B2129;
+  padding: 35px 30px;
+  color: #E5D1B8;
+  display: flex;
+  flex-direction: column;
+  z-index: 4;
+  transform: translateY(-100%);
+  transition: transform 1s;
+}
+
+.header-menu.opened {
+  transform: translateY(0);
+  
+}
+
+.header-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-menu {
+  list-style: none;
+  font-family: 'Plaid Mono', monospace;
+  font-weight: 700;
+  font-size: 72px;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Автор */
+.author-card {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  font-family: 'Plaid Mono', monospace;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.author-name {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.date {
+  border: 1px solid #2B2129;
+  padding: 10px 20px;
+  border-radius: 100px;
+}
+
+/* Меню */
+
 .menu {
   list-style: none;
   display: flex;
@@ -18,6 +105,8 @@
   border-radius: 8px;
  }
 
+ /* END Меню */
+
 .page {
   display: flex;
   flex-direction: column;
@@ -27,8 +116,10 @@
 body {
   margin: 0;
   background-color: #E5B181;
-  font-family: Inter, sans-serif;
-  padding: 64px 28px;
+  font-family: Plaid, sans-serif;
+  padding: 35px 30px;
+  color: #2B2129;
+  font-weight: 400;
 }
 
 h1,
@@ -57,6 +148,9 @@ img {
   font-size: 14px;
   opacity: .8;
   min-width: 50%;
+  font-weight: 400;
+  margin-top: 14px;
+  font-family: 'Plaid Mono';
 }
 
 /* Секция заголовка */
@@ -68,8 +162,9 @@ img {
 }
 
 .title {
-  font-weight: 400;
-  font-size: 84px;
+  font-family: 'Plaid Mono', monospace;
+  font-weight: 700;
+  font-size: 80px;
   line-height: 1;
 }
 
@@ -210,6 +305,64 @@ img {
 
  /* END Если одна фотка коризонтальная, а вторая вертикальная */
 
+ /* Слайдер */
+
+ .swiper {
+  width: 100%;
+}
+
+.navigation-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 28px;
+  position: relative;
+  top: -10px;
+  z-index: 3;
+
+}
+
+.swiper-button-prev, .swiper-button-next {
+  position: relative;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  content: '';
+}
+
+ /* END Слайдер */
+
+ /* Ютуб видео */
+
+ .yt-container iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+ }
+
+ .yt-container-part {
+  padding: 0 10%;
+ }
+
+ /* END Ютуб с видео */
+
+ /* Видео-кружок */
+
+ .video-circle {
+  width: fit-content;
+  border-radius: 50%;
+ }
+
+ .video-circle video {
+  width: 300px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+ }
+
+ .video-circle.video-circle--avatar video {
+  width: 100px;
+ }
+
 
  /* Блок с параграфами */
  .paragraph-block {
@@ -228,8 +381,9 @@ img {
 /* Заголовок текста */
 
  .text-title {
-  font-weight: 400;
-  font-size: 54px;
+  font-family: 'Plaid Mono', monospace;
+  font-weight: 700;
+  font-size: 66px;
   line-height: 1;
   width: 70%;
   margin: auto;
@@ -239,18 +393,24 @@ img {
 
 /* Большая фраза */
  .large-text {
-  font-weight: 400;
-  font-size: 72px;
+  font-weight: 700;
+  font-family: 'Plaid Mono', monospace;
+  font-size: 66px;
   line-height: 1;
-  width: 90%;
+  width: 70%;
   margin: auto;
  }
  /* END Большая фраза */
 
  .footer {
+  font-family: 'Plaid Mono', monospace;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1;
+  line-height: 1.2;
+ }
+
+ .footer a {
+  text-decoration: underline;
  }
 
 
@@ -305,10 +465,10 @@ img {
  }
 
  .mb-128 {
-  margin-bottom: 72px;
+  margin-bottom: 128px;
  }
 
  .mt-128 {
-  margin-top: 72px;
+  margin-top: 128px;
  }
 
