@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Components</title>
+  <link rel="stylesheet" href="./fonts/fonts.css">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body class="page">
+  <!-- Секция заголовка -->
+  <section class="title-section ">
+    <p class="subtitle">Первое воспоминание про Израиль</p>
+    <h1 class="title">Большой заголовок вашей статьи, желательно описывающий её</h1>
+  </section>
+
+  <!-- Список тегов -->
+  <ul class="tags-list">
+    <li class="tag"><a href="#">Прогулки</a></li>
+    <li class="tag"><a href="#">Шекели</a></li>
+    <li class="tag"><a href="#">Море</a></li>
+  </ul>
+
+  <!-- Картинка во всю ширину -->
+  <img src="./images/large-horisontal.png" alt="" class="full-page-image">
+
+  <!-- Картинка во всю ширину с подписью -->
+  <figure class="full-page-image-with-caption">
+    <img src="./images/large-horisontal.png" alt="">
+    <figcaption class="caption">Какая-то подпись под картинку</figcaption>
+  </figure>
+
+  <!-- Одинокая вертикальная картинка с подписью -->
+  <figure class="single-vertical-image-with-caption">
+    <div>
+      <img src="./images/vertical.png" alt="">
+      <figcaption class="caption">Какая-то подпись под картинку</figcaption>
+    </div>
+  </figure>
+
+  <!-- Две горизонтальные картинки с подписями делят пространство пополам -->
+  <div class="image-grid-50_50">
+    <figure class="grid-image">
+      <img src="./images/large-horisontal.png" alt="">
+      <figcaption class="caption">Какая-то подпись под картинку</figcaption>
+    </figure>
+    <figure class="grid-image">
+      <img src="./images/large-horisontal.png" alt="">
+      <figcaption class="caption">Какая-то подпись под картинку</figcaption>
+    </figure>
+  </div>
+
+  <!-- Две вертикальные картинки в ряд с подписями -->
+  <div class="image-grid-50_50-vertical">
+    <figure>
+      <img src="./images/vertical.png" alt="">
+      <figcaption class="caption">Какая-то подпись под картинку</figcaption>
+    </figure>
+    <figure>
+      <img src="./images/vertical.png" alt="">
+      <figcaption class="caption">Какая-то подпись под картинку</figcaption>
+    </figure>
+  </div>
+
+
+  <!-- Если одна фотка коризонтальная, а вторая вертикальная-->
+  <div class="vertical-and-horizontal-image">
+    <figure class="horizontal">
+      <img src="./images/large-horisontal.png" alt="">
+    </figure>
+    <figure class="vertical">
+      <img src="./images/vertical.png" alt="">
+    </figure>
+    <figcaption class="caption horizontal">Какая-то подпись под картинку</figcaption>
+    <figcaption class="caption vertical">Какая-то подпись под картинку</figcaption>
+  </div>
+
+  <!-- Блок с параграфами -->
+
+  <div class="paragraph-block">
+    <p>На регулярной основе мы собираем заявки: от тех, кто хочет инициировать учебную программу и от тех, кто желает стать принимающей стороной. Мы не предлагаем проводить занятия там, где нас не ждут: выбор происходит на основе приглашений от местных жителей.</p>
+    <p>В регионы едут те, кто уже нашли себя в чём-то и хотят безвозмездно делиться опытом. Всё, что нам нужно на месте: заинтересованные взрослые и группа подростков на 15-20 человек.</p>
+    <p>Общение построено вокруг темы, в которой разбираются преподаватели. За несколько дней подростки пробуют себя в новом и создают какой-то проект.</p>
+  </div>
+
+  <!-- Заголовок для текста -->
+  <h2 class="text-title">Заголовок в тексте</h2>
+
+  <!-- Большая фраза -->
+  <div class="large-text">
+    <p>Если нужен крупный текст-цитата, к которому хочется привлечь внимание</p>
+  </div>
+
+  <!-- Подвал сайта -->
+  <footer class="footer">
+    <p>Тель-Авив, Рамат-Ган, март 2023</p>
+  </footer>
+</body>
+</html>
