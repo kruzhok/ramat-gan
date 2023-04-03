@@ -1,0 +1,87 @@
+.lead-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.lead-section p {
+  font-family: 'Plaid Mono', monospase;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.timeline-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.timeline-card {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.timeline-card-image {
+  width: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.timeline-card-50_50 {
+  grid-column: span 2;
+}
+
+.timeline-card-100 {
+  grid-column: span 4;
+  aspect-ratio: 1358/300;
+}
+
+.timeline-card-25 {
+  grid-column: span 1;
+  aspect-ratio: 1/1;
+}
+
+.timeline-card-75 {
+  grid-column: span 3;
+  aspect-ratio: 1005/300;
+}
+
+.timeline-card-100 .timeline-card-image {
+  aspect-ratio: initial;
+}
+
+.timeline-card-75 .timeline-card-image {
+  width: 66%;
+}
+
+.timeline-card-75 .timeline-card--description {
+  width: 34%;
+}
+
+.timeline-card--description {
+  padding: 28px;
+  width: 50%;
+}
+
+.timeline-card-name {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1;
+}
+
+.timeline-card-age {
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 1;
+}
+
+.timeline-card-date {
+  font-weight: 700;
+  font-size: 23px;
+  transform: rotate(-90deg) translate(50%, 16px);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
