@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./fonts/fonts.css">
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/popup.css">
 </head>
 <body class="index theme-darkgreen">
   <div class="index-wrapper theme-purple">
@@ -173,9 +174,9 @@
      </div>
      <p class="section-description mb-50">Здесь текст, который в нескольких<br>словах описывает проект</p>
      <div class="covers">
-       <img src="./images/covers/cover-1.png" alt="" class="cover-image">
-       <img src="./images/covers/cover-2.png" alt="" class="cover-image">
-       <img src="./images/covers/cover-3.png" alt="" class="cover-image">
+       <img src="./images/covers/cover-1.png" alt="" id="support" class="cover-image clickable-card">
+       <img src="./images/covers/cover-2.png" alt="" id="friends" class="cover-image clickable-card">
+       <img src="./images/covers/cover-3.png" alt="" id="help" class="cover-image clickable-card">
      </div>
    </section>
  
@@ -202,10 +203,46 @@
       Здесь текст, который в нескольких словах описывает проект Здесь текст, который в нескольких словах описывает проект Здесь текст, который в нескольких словах описывает проект. Здесь текст, который в нескольких словах описывает проект Здесь текст, который в нескольких словах описывает проект Здесь текст, который в нескольких словах описывает проект
     </p>
   </section>
+
+  <div class="cards-popup">
+    <div class="swiper-pagination"></div>
+    <div class="cards-popup-slider swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide card-slide-cover">
+          <img src="" alt="" class="card-slide-illustration">
+          <p class="card-slide-cover-text"></p>
+        </div>
+        <template class="card-slide-tmp">
+          <div class="swiper-slide">
+            <p class="card-slide-content"></p>
+          </div>
+        </template>
+      </div>
+      <div class="swiper-button-prev">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g opacity="0.7">
+          <circle cx="20" cy="20" r="20" transform="rotate(-180 20 20)" fill="#2B2129"/>
+          <path d="M4 20L14 25.7735L14 14.2265L4 20ZM34 19L13 19L13 21L34 21L34 19Z" fill="white"/>
+          </g>
+          </svg>          
+      </div>
+      <div class="swiper-button-next">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g opacity="0.7">
+          <circle cx="20" cy="20" r="20" fill="#2B2129"/>
+          <path d="M36 20L26 14.2265L26 25.7735L36 20ZM6 21L27 21L27 19L6 19L6 21Z" fill="white"/>
+          </g>
+          </svg>          
+      </div>
+    </div>
+  </div>
   
 
   <script src="./scripts/menu.js"></script>
   <script src="./scripts/index-tooltip.js"></script>
   <script src="./scripts/video-circles.js"></script>
+  <script src="./scripts/swiper.js"></script>
+  <script src="./scripts/swiper-init.js"></script>
+  <script src="./scripts/popups.js"></script>
 </body>
 </html>
