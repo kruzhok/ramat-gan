@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
 /* Цветовые темы */
 
 .theme-yellow {
@@ -51,7 +55,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .logo-container {
@@ -71,12 +75,15 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  position: relative;
+  bottom: 23px;
+  left: 18px;
 }
 
 .header-menu {
   position: fixed;
   inset: 0;
-  padding: 35px 30px;
+  padding: 60px 40px;
   display: flex;
   flex-direction: column;
   z-index: 4;
@@ -92,7 +99,7 @@
 .header-menu-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .main-menu {
@@ -156,8 +163,9 @@
 body {
   margin: 0;
   font-family: Plaid, sans-serif;
-  padding: 35px 30px;
+  padding: 60px 40px;
   font-weight: 400;
+  min-width: 1456px;
 }
 
 h1,
