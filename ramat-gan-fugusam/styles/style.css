@@ -1,0 +1,540 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Цветовые темы */
+
+.theme-yellow {
+  background-color: #E5B181;
+  color: #2B2129;
+}
+
+.theme-lightyellow {
+  background-color: #E2D2BB;
+  color: #DE8E59;
+}
+
+.theme-purple {
+  background-color: #2B2129;
+  color: #E5D1B8;
+}
+
+.theme-lightpurple {
+  background-color: #7D6779;
+  color: #F2F4F3;
+}
+
+.theme-orange {
+  background-color: #DE8E59;
+  color: #2B2129;
+}
+
+.theme-white {
+  background-color: #F2F4F3;
+  color: #2B2129;
+}
+
+.theme-darkorange {
+  background-color: #AF7A4C;
+  color: #F2F4F3;
+}
+
+.theme-darkgreen {
+  background-color: #3C4C48;
+  color: #F2F4F3;
+}
+
+/* Шапка */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+
+.logo-text {
+  font-family: 'Plaid Mono', monospace;
+  display: block;
+  max-width: 400px;
+  font-weight: 400;
+}
+
+.menu-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header-menu {
+  position: fixed;
+  inset: 0;
+  padding: 35px 30px;
+  display: flex;
+  flex-direction: column;
+  z-index: 4;
+  transform: translateY(-100%);
+  transition: transform 1s;
+}
+
+.header-menu.opened {
+  transform: translateY(0);
+  
+}
+
+.header-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-menu {
+  list-style: none;
+  font-family: 'Plaid Mono', monospace;
+  font-weight: 700;
+  font-size: 72px;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Автор */
+.author-card {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  font-family: 'Plaid Mono', monospace;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.author-name {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.date {
+  border: 1px solid #2B2129;
+  padding: 10px 20px;
+  border-radius: 100px;
+}
+
+/* Меню */
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+ }
+
+ .menu li {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+ }
+
+ /* END Меню */
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+body {
+  margin: 0;
+  font-family: Plaid, sans-serif;
+  padding: 35px 30px;
+  font-weight: 400;
+}
+
+h1,
+p,
+ul,
+li,
+ol,
+blockquote,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+/* Подпись */
+
+.caption  {
+  font-size: 14px;
+  opacity: .8;
+  min-width: 50%;
+  font-weight: 400;
+  margin-top: 14px;
+  font-family: 'Plaid Mono';
+}
+
+/* Секция заголовка */
+
+.subtitle {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.title {
+  font-family: 'Plaid Mono', monospace;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 1;
+}
+
+/* END Секция заголовка */
+
+
+/* Список тегов */
+
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tag {
+  border: 1px solid #000;
+  padding: 17px 12px;
+  border-radius: 100px;
+  list-style: none;
+}
+
+.tag:hover {
+  cursor: pointer;
+  color: #E5B181;
+  background-color: #000;
+}
+
+.tag a {
+  display: block;
+  min-width: 190px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+/* END Список тегов */
+
+/* Карточки */
+
+.cards-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 455px);
+  gap: 16px;
+  place-content: center;
+}
+
+.card {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 42px;
+  padding: 54px 25px;
+  width: 455px;
+  aspect-ratio: 1/1;
+  border-radius: 30px;
+}
+
+.card-description {
+  font-family: 'Plaid Mono', monospace;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+
+
+/* Картика во всю ширину */
+.full-page-image {
+  width: 100%;
+}
+/* END Картика во всю ширину */
+
+
+
+/* Картика во всю ширину c подписью */
+
+.full-page-image-with-caption img {
+  width: 100%;
+}
+
+
+/* END Картика во всю ширину c подписью */
+
+/* Одинокая вертикальная картинка */
+
+.single-vertical-image-with-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.single-vertical-image-with-caption div {
+  width: 40%;
+}
+
+.single-vertical-image-with-caption img {
+  min-width: 100%;
+  aspect-ratio: 520 / 693px;
+  object-fit: cover;
+}
+
+/*END Одинокая вертикальная картинка */
+
+/* Две горизонтальные картинки с подписями делят пространство пополам */
+
+.image-grid-50_50 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.image-grid-50_50 img {
+  width: 100%;
+  aspect-ratio: 1456/835;
+  object-fit: cover;
+}
+
+/*END Две горизонтальные картинки с подписями делят пространство пополам */
+
+
+/* Две вертикальные картинки в ряд с подписями */
+.image-grid-50_50-vertical {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 0 10%;
+}
+
+.image-grid-50_50-vertical img {
+  width: 100%;
+  aspect-ratio: 520 / 693px;
+  object-fit: cover;
+}
+/*END Две вертикальные картинки в ряд с подписями */
+
+/* Если одна фотка коризонтальная, а вторая вертикальная */
+.vertical-and-horizontal-image {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px 16px;
+}
+
+.vertical-and-horizontal-image .vertical {
+ grid-column: span 1;
+}
+
+.vertical-and-horizontal-image .vertical img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vertical-and-horizontal-image .horizontal {
+  grid-column: span 2;
+ }
+
+ .vertical-and-horizontal-image .horizontal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+ }
+
+ /* END Если одна фотка коризонтальная, а вторая вертикальная */
+
+ /* Слайдер */
+
+ .swiper {
+  width: 100%;
+}
+
+.navigation-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 28px;
+  position: relative;
+  top: -10px;
+  z-index: 3;
+
+}
+
+.swiper-button-prev, .swiper-button-next {
+  position: relative;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  content: '';
+}
+
+ /* END Слайдер */
+
+ /* Ютуб видео */
+
+ .yt-container iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+ }
+
+ .yt-container-part {
+  padding: 0 10%;
+ }
+
+ /* END Ютуб с видео */
+
+ /* Видео-кружок */
+
+ .video-circle {
+  width: fit-content;
+  border-radius: 50%;
+ }
+
+ .video-circle video {
+  width: 300px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+ }
+
+ .video-circle.video-circle--avatar video {
+  width: 100px;
+ }
+
+
+ /* Блок с параграфами */
+ .paragraph-block {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.4;
+  width: 70%;
+  margin: auto;
+ }
+
+ .paragraph-block p:not(:last-of-type) {
+  margin-bottom: 1em;
+ }
+ /* END Блок с параграфами */
+
+/* Заголовок текста */
+
+ .text-title {
+  font-family: 'Plaid Mono', monospace;
+  font-weight: 700;
+  font-size: 66px;
+  line-height: 1;
+  width: 70%;
+  margin: auto;
+ }
+
+ /* END Заголовок текста */
+
+/* Большая фраза */
+ .large-text {
+  font-weight: 700;
+  font-family: 'Plaid Mono', monospace;
+  font-size: 66px;
+  line-height: 1;
+  width: 70%;
+  margin: auto;
+ }
+ /* END Большая фраза */
+
+ .footer {
+  font-family: 'Plaid Mono', monospace;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+ }
+
+ .footer a {
+  text-decoration: underline;
+ }
+
+
+ /* Отступы */
+
+ .mb-25 {
+  margin-bottom: 25px;
+ }
+
+ .mt-25 {
+  margin-top: 25px;
+ }
+
+ .mb-55 {
+  margin-bottom: 55px;
+ }
+
+ .mt-55 {
+  margin-top: 55px;
+ }
+
+ .mb-50 {
+  margin-bottom: 50px;
+ }
+
+ .mt-50 {
+  margin-top: 50px;
+ }
+
+ .mb-45 {
+  margin-bottom: 45px;
+ }
+
+ .mt-45 {
+  margin-top: 45px;
+ }
+
+ .mb-86 {
+  margin-bottom: 86px;
+ }
+
+ .mt-86 {
+  margin-top: 86px;
+ }
+
+ .mb-72 {
+  margin-bottom: 72px;
+ }
+
+ .mt-72 {
+  margin-top: 72px;
+ }
+
+ .mb-128 {
+  margin-bottom: 128px;
+ }
+
+ .mt-128 {
+  margin-top: 128px;
+ }
+
