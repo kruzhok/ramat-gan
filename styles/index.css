@@ -1,0 +1,177 @@
+.index-cover {
+  position: relative;
+}
+
+.index-header .logo-container {
+  position: relative;
+}
+
+.index-star {
+  position: absolute;
+  bottom: 72px;
+  right: 170px;
+  cursor: pointer;
+}
+
+.index-cover-descriptor {
+  font-family: 'Plaid Mono', monospace;
+  margin-top: 283px;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 100%;
+  max-width: 1115px;
+}
+
+.index-logo-tooltip {
+  font-family: 'Plaid Mono', monospace;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  position: absolute;
+  bottom: 87px;
+  right: -80px;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.index-circle video {
+  width: 150px;
+}
+
+.index-circle {
+  position: absolute;
+}
+
+.index-circle:first-of-type {
+  bottom: 266px;
+  left: 15px;
+  position: relative;
+  z-index: -1;
+}
+
+.index-circle:nth-of-type(2) {
+  top: 218px;
+  left: 366px;
+}
+
+.index-circle:nth-of-type(3) {
+  top: 305px;
+  left: 530px;
+}
+
+.index-circle:nth-of-type(4) {
+  top: -13px;
+  right: 385px;
+}
+
+.index-circle:nth-of-type(5) {
+  top: 250px;
+  right: 100px;
+}
+
+.index-circle:nth-of-type(6) {
+  bottom: 93px;
+  right: 120px;
+}
+
+.section-title-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 100%;
+}
+
+.section-title-link {
+  font-family: 'Plaid Mono', monospace;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  padding: 16px 40px;
+  border: 1px solid currentColor;
+  border-radius: 100px;
+  position: relative;
+  top: 10px;
+}
+
+.section-title-link:hover {
+  background-color: #E5D1B8;
+  color: #2B2129;
+}
+
+.stories-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.section-description {
+  font-family: 'Plaid Mono', monospace;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+}
+
+.story-card {
+  display: flex;
+}
+
+.story-card--large {
+  grid-column: span 2;
+}
+
+.story-card--small img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.story-card:hover {
+  opacity: .8;
+}
+
+.story-card-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 1;
+  margin: 0;
+}
+
+.story-card--small .story-card-title {
+  font-size: 24px;
+}
+
+.story-card-description {
+  padding: 25px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.story-card-description.theme-yellow {
+  color: #3C4C48;
+}
+
+
+.story-description {
+  font-family: 'Plaid Mono', monospace;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+}
+
+.story-image {
+  width: 50%;
+}
+
+.covers {
+  display: grid;
+  grid-template-columns: repeat(3, 455px);
+  gap: 16px;
+}

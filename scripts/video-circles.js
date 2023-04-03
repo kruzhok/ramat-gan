@@ -4,6 +4,7 @@ allVideoCircles.forEach(item => {
   const playMode = item.getAttribute('data-playmode')
   item.oncanplay = () => {
     if(playMode==='autoplay') {
+      item.setAttribute('autoplay', true)
       item.play()
     }
     if(playMode==='onhover') {
