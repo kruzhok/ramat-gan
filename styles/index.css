@@ -50,6 +50,7 @@
 
 .index-circle video {
   width: 150px;
+  filter: brightness(1.4) contrast(120%) saturate(200%);
 }
 
 .index-circle {
