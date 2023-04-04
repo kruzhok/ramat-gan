@@ -220,6 +220,14 @@ img {
   line-height: 1;
 }
 
+.tips-subtitle {
+  font-family: 'Plaid Mono', monospace;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 120%;
+
+}
+
 /* END Секция заголовка */
 
 
@@ -273,8 +281,8 @@ img {
   align-items: center;
   gap: 42px;
   padding: 54px 25px;
-  aspect-ratio: 1/1;
-  border-radius: 30px;
+  height: 100%;
+  color: #E2D2BB;
 }
 
 .card-description {

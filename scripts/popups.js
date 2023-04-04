@@ -1,9 +1,9 @@
 const dataArray = [
   {
     id: 'support',
-    theme: 'darkgreen',
-    coverUrl: '/images/covers-svg/support.svg',
-    coverText: 'Текст под саппортом',
+    theme: 'purple',
+    coverUrl: '/images/covers-svg/1.svg',
+    coverText: 'Илья, Юра и Саша о доступных способах самоподдержки в начале адаптации',
     content: [
       {
         text: 'Привет',
@@ -18,10 +18,10 @@ const dataArray = [
     ]
   },
   {
-    id: 'friends',
+    id: 'films',
     theme: 'lightpurple',
-    coverUrl: '/images/covers-svg/how-to-find-friends.svg',
-    coverText: 'История о том, как Сёма была в полиции и узнала много нового',
+    coverUrl: '/images/covers-svg/2.svg',
+    coverText: 'Данина подборка фильмов с ультра-короткими рецензиями в твиттер-формате',
     content: [
       {
         text: 'Привет',
@@ -36,10 +36,10 @@ const dataArray = [
     ]
   },
   {
-    id: 'help',
-    theme: 'yellow',
-    coverUrl: '/images/covers-svg/how-to-find-friends.svg',
-    coverText: 'История о том, как Сёма была в полиции и узнала много нового',
+    id: 'emotions',
+    theme: 'lightyellow',
+    coverUrl: '/images/covers-svg/3.svg',
+    coverText: 'Игорь и Эдуард проведут от гнева и тревоги к спокойствию и даже надежде',
     content: [
       {
         text: 'Привет',
@@ -52,7 +52,115 @@ const dataArray = [
         author: 'Вася'
       }
     ]
-  }
+  },
+  {
+    id: 'space',
+    theme: 'darkgreen',
+    coverUrl: '/images/covers-svg/4.svg',
+    coverText: 'Илья, Полина, Дария и Игорь про то, как осваиваться в новой стране',
+    content: [
+      {
+        text: 'Привет',
+        image: '',
+        author: 'Петя'
+      },
+      {
+        text: 'Shalom',
+        image: '',
+        author: 'Вася'
+      }
+    ]
+  },
+  {
+    id: 'contact',
+    theme: 'darkorange',
+    coverUrl: '/images/covers-svg/5.svg',
+    coverText: 'Саша, Игорь и Полина о том, как контактировать с людьми',
+    content: [
+      {
+        text: 'Привет',
+        image: '',
+        author: 'Петя'
+      },
+      {
+        text: 'Shalom',
+        image: '',
+        author: 'Вася'
+      }
+    ]
+  },
+   {
+    id: 'talk',
+    theme: 'purple',
+    coverUrl: '/images/covers-svg/6.svg',
+    coverText: 'Оригинальный способ найти собеседников от Шимона',
+    content: [
+      {
+        text: 'Привет',
+        image: '',
+        author: 'Петя'
+      },
+      {
+        text: 'Shalom',
+        image: '',
+        author: 'Вася'
+      }
+    ]
+  },
+  {
+    id: 'activity',
+    theme: 'lightpurple',
+    coverUrl: '/images/covers-svg/7.svg',
+    coverText: 'Как переключить себя в конструктивную деятельность',
+    content: [
+      {
+        text: 'Привет',
+        image: '',
+        author: 'Петя'
+      },
+      {
+        text: 'Shalom',
+        image: '',
+        author: 'Вася'
+      }
+    ]
+  },
+  {
+    id: 'change',
+    theme: 'yellow',
+    coverUrl: '/images/covers-svg/8.svg',
+    coverText: 'Что делать для того, чтобы ещё лучше понимать местную обстановку',
+    content: [
+      {
+        text: 'Привет',
+        image: '',
+        author: 'Петя'
+      },
+      {
+        text: 'Shalom',
+        image: '',
+        author: 'Вася'
+      }
+    ]
+  },
+  {
+    id: 'advice',
+    theme: 'darkgreen',
+    coverUrl: '/images/covers-svg/9.svg',
+    coverText: 'Мудрость Ализы и Ильи в четырёх абзацах',
+    content: [
+      {
+        text: 'Привет',
+        image: '',
+        author: 'Петя'
+      },
+      {
+        text: 'Shalom',
+        image: '',
+        author: 'Вася'
+      }
+    ]
+  },
 ]
 
 
