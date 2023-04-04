@@ -22,6 +22,10 @@
   width: 100%;
 }
 
+.timeline-card:hover {
+  opacity: .8;
+}
+
 .timeline-card-image {
   width: 50%;
   aspect-ratio: 1/1;
@@ -41,11 +45,17 @@
 .timeline-card-25 {
   grid-column: span 1;
   aspect-ratio: 1/1;
+  width: 100%;
+}
+
+.timeline-card-25 .timeline-card--description {
+  width: 100%;
 }
 
 .timeline-card-75 {
   grid-column: span 3;
   aspect-ratio: 1005/300;
+  height: 100%;
 }
 
 .timeline-card-100 .timeline-card-image {
@@ -63,6 +73,7 @@
 .timeline-card--description {
   padding: 28px;
   width: 50%;
+  position: relative;
 }
 
 .timeline-card-name {
@@ -83,5 +94,10 @@
   transform: rotate(-90deg) translate(50%, 16px);
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: -15px;
+}
+
+.anonymous-card .timeline-card--description {
+  width: 100%;
+  aspect-ratio: 673/300;
 }
