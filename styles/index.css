@@ -29,8 +29,8 @@
   font-family: 'Plaid Mono', monospace;
   margin-top: 283px;
   font-weight: 400;
-  font-size: 54px;
-  line-height: 100%;
+  font-size: 27px;
+  line-height: 140%;
   max-width: 1115px;
   position: relative;
   z-index: 2;
@@ -50,7 +50,7 @@
 
 .index-circle video {
   width: 150px;
-  filter: brightness(1.4) contrast(120%) saturate(200%);
+  filter: brightness(1.1) contrast(150%) saturate(150%);
 }
 
 .index-circle {
