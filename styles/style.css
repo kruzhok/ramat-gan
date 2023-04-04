@@ -17,7 +17,7 @@ h1, h2, h3, h4, p {
 
 .theme-lightyellow {
   background-color: #E2D2BB;
-  color: black;
+  color: #2B2129;
 }
 
 .theme-purple {
@@ -199,9 +199,10 @@ img {
 .caption  {
   font-size: 14px;
   opacity: .8;
-  min-width: 50%;
+  /* min-width: 50%; */
   font-weight: 400;
   margin-top: 14px;
+  max-width: 405px;
   font-family: 'Plaid Mono';
 }
 
