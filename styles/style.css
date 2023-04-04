@@ -254,7 +254,7 @@ img {
 
 .cards-section {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 455px);
+  grid-template-columns: repeat(3, 445px);
   gap: 16px;
   place-content: center;
 }
@@ -264,9 +264,9 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 42px;
   padding: 54px 25px;
-  width: 455px;
   aspect-ratio: 1/1;
   border-radius: 30px;
 }
