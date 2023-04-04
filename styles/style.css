@@ -17,7 +17,7 @@ h1, h2, h3, h4, p {
 
 .theme-lightyellow {
   background-color: #E2D2BB;
-  color: #DE8E59;
+  color: black;
 }
 
 .theme-purple {
@@ -27,7 +27,7 @@ h1, h2, h3, h4, p {
 
 .theme-lightpurple {
   background-color: #7D6779;
-  color: #F2F4F3;
+  color: #E5D1B8;
 }
 
 .theme-orange {
@@ -42,12 +42,18 @@ h1, h2, h3, h4, p {
 
 .theme-darkorange {
   background-color: #AF7A4C;
-  color: #F2F4F3;
+  /* color: #F2F4F3; */
+  color: #E5D1B8;
 }
 
 .theme-darkgreen {
   background-color: #3C4C48;
-  color: #F2F4F3;
+  color: #E5D1B8;
+}
+
+.theme-blue {
+  background-color: #7583A5;
+  color: #E5D1B8;
 }
 
 /* Шапка */
