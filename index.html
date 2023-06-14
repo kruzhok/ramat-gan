@@ -7,6 +7,7 @@
   <title>Shalom Olam</title>
   <link rel="stylesheet" href="./fonts/fonts.css">
   <link rel="stylesheet" href="./styles/swiper.css">
+  <link rel="stylesheet" href="./styles/sizes.css">
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/index.css">
   <link rel="stylesheet" href="./styles/popup.css">
@@ -15,30 +16,27 @@
   <div class="index-wrapper theme-purple">
     <section class="index-cover">
       <!-- Шапка сайта -->
-     <header class="header index-header mb-128">
+     <header class="header index-header">
        <a class="logo-container">
-        <!-- Убрать style -->
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" style="width: 823px;" class="index__logo" viewBox="0 0 804 306">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="index__logo" viewBox="0 0 804 306">
           <use href="./svg/logo.svg#large-logo"></use>
         </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" style="width: 56px;" class="index-star">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="index-star" viewBox="0 0 71 77">
           <use href="./svg/logo.svg#star"></use>
         </svg>
          <p class="index-logo-tooltip">В переводе с иврита:<br>«Привет, мир»</p>
        </a>
        <button class="menu-button menu-button--open">
-         <svg xmlns="http://www.w3.org/2000/svg" width="59" height="17" fill="none">
-           <path stroke="#E5D1B8" stroke-width="5" d="M0 2.5h59M0 2.5h59M0 14.5h59M0 14.5h59M0 14.5h59M0 14.5h59"/>
-         </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 59 17">
+         <use href="./svg/burger.svg#burger-closed"></use>
+        </svg>
        </button>
      </header>
      <div class="index-cover-descriptor">
       <p>Этот сайт создан преимущественно людьми, которые переехали в Израиль в течении последних тринадцати месяцев. Теми, кто был вынужден покинуть свои дома из-за начала войны.</p>
       <p>Мы создали это виртуальное пространство для тех, кто, как и мы, недавно эмигрировал и нуждается в помощи. Надеемся, что тут вы найдёте поддержку.</p>
      </div>
-     
-     <!-- Кружки -->
-     <!-- Видеокружок с автоплеем -->
+ <!--   
      <div class="video-circle index-circle">
        <video
          data-playmode="autoplay"
@@ -50,7 +48,7 @@
          pip="false"
        ></video>
      </div>
-     <!-- Видеокружок с автоплеем -->
+
      <div class="video-circle index-circle">
        <video
          data-playmode="autoplay"
@@ -62,7 +60,7 @@
          pip="false"
        ></video>
      </div>
-     <!-- Видеокружок с автоплеем -->
+
      <div class="video-circle index-circle">
        <video
          data-playmode="autoplay"
@@ -74,7 +72,7 @@
          pip="false"
        ></video>
      </div>
-     <!-- Видеокружок с автоплеем -->
+
      <div class="video-circle index-circle">
        <video
          data-playmode="autoplay"
@@ -86,7 +84,7 @@
          pip="false"
        ></video>
      </div>
-     <!-- Видеокружок с автоплеем -->
+
      <div class="video-circle index-circle">
        <video
          data-playmode="autoplay"
@@ -98,7 +96,7 @@
          pip="false"
        ></video>
      </div>
-     <!-- Видеокружок с автоплеем -->
+
      <div class="video-circle index-circle">
        <video
          data-playmode="autoplay"
@@ -110,12 +108,9 @@
        ></video>
      </div>
    </section>
- 
- 
-  
- 
+  -->
    <!-- Выплывающее меню -->
-   <nav class="header-menu theme-yellow">
+   <!-- <nav class="header-menu theme-yellow">
      <div class="header-menu-header">
        <a href="index.html" class="logo-container">
          <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="logo" viewBox="0 0 158 69">
@@ -139,44 +134,48 @@
       <li><a href="">Бюро потерь</a></li>
      </ul>
      
-   </nav>
-   <section class="stories mb-86">
-     <div class="section-title-container mb-25">
-       <h2 class="section-title">Как мы живём</h2>
-       <a href="./stories.html" class="section-title-link">Читать всё</a>
+   </nav> -->
+   <section class="stories">
+     <div class="section-title-container">
+       <h2 class="section-title">Год перемен</h2>
+       <a href="./stories.html" class="section-title-link section-title-link_on_desktop">Читать всё</a>
      </div>
-     <p class="section-description mb-50">По одной истории на месяц — о жизни в новой стране.<br>От тех, кто не собирался уезжать.</p>
+     <p class="section-description">По одной истории на месяц — о жизни в новой<br> стране и от тех, кто не собирался уезжать.</p>
      <div class="stories-grid">
        <a href="./stories/feb22-mark-28.html" class="story-card story-card--large">
          <img src="./images/large-horisontal.png" alt="" class="story-image">
          <div class="story-card-description theme-darkgreen">
-           <h3 class="story-card-title">Начало, Марк</h3>
+           <h3 class="story-card-title">Начало,<br>Марк</h3>
+           <p class="story-card-date">2/22</p>
            <p class="story-description">Марк читает стихотворение, написанное<br>за несколько дней до 24 февраля</p>
          </div>
        </a>
        <a href="./stories/mar22-asya.html" class="story-card story-card--small">
          <img src="./images/timeline-photos/asya.png" alt="" class="story-image">
          <div class="story-card-description theme-yellow">
-           <h3 class="story-card-title">История круга общения, Ася</h3>
+           <h3 class="story-card-title">Ася. Мне тоже нужны те, кто приехал</h3>
+           <p class="story-card-date">3/22</p>
            <p class="story-description">Как прошла волна репатриации для Аси, которая всю жизнь живёт в Израиле</p>
          </div>
        </a>
        <a href="./stories/apr22-kami.html" class="story-card story-card--small">
          <img src="./images/timeline-photos/kami.png" alt="" class="story-image">
          <div class="story-card-description theme-orange">
-           <h3 class="story-card-title">История о том, как Камилла нашла друга</h3>
+           <h3 class="story-card-title">Камилла. Мой первый друг</h3>
+           <p class="story-card-date">4/22</p>
            <p class="story-description">Пройти через грусть и одиночество, но обрести новых друзей</p>
          </div>
        </a>
      </div>
+     <a href="./stories.html" class="section-title-link section-title-link_on_mobile">Читать всё</a>
    </section>
  
    <section class="tips">
      <div class="section-title-container mb-25">
-       <h2 class="section-title">Инструкции</h2>
+       <h2 class="section-title">Инструкция</h2>
        <a href="./tips.html" class="section-title-link">Читать всё</a>
      </div>
-     <p class="section-description mb-50">Мы собрали наш опыт иммиграции и у нас получилась<br>целая инструкция новой жизни</p>
+     <p class="section-description mb-50">Мы собрали наш опыт эмиграции: получилась настоящая инструкция для новой жизни. Что-то<br>из этого может быть для вас неактуальным, какие-то процессы будут происходить немного<br>иначе, ведь каждый опыт индивидуален. Это не руководство к действию, а только<br>рекомендации, которые могут помочь вам почувствовать себя лучше.</p>
      <div class="covers">
        <img src="./images/covers/1.png" alt="" id="support" class="cover-image clickable-card">
        <img src="./images/covers/2.png" alt="" id="films" class="cover-image clickable-card">
@@ -204,7 +203,7 @@
     </div>
     <img src="./images/skamejka.png" alt="" class="lost-illustration mb-50">
     <p class="lost-description">
-      Здесь текст, который в нескольких словах описывает проект Здесь текст, который в нескольких словах описывает проект Здесь текст, который в нескольких словах описывает проект. Здесь текст, который в нескольких словах описывает проект Здесь текст, который в нескольких словах описывает проект Здесь текст, который в нескольких словах описывает проект
+      Если вы когда-нибудь были в Израиле, вы наверняка встречали оставленные на городских скамейках вещи. Люди выносят их, чтобы вещи нашли новых хозяев. Для нас скамейка стала метафорой места, где мы собрали всё важное, что нам пришлось оставить дома — мы не хотели прощаться с этими вещами, но у нас не было выбора. Без них наша жизнь стала другой.
     </p>
   </section>
 
