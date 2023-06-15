@@ -50,6 +50,14 @@
   margin-bottom: 1em;
 }
 
+.index-star:hover {
+  opacity: 0.6;
+}
+
+.index-star:hover ~ .index-logo-tooltip {
+  opacity: 1;
+}
+
 .index-logo-tooltip {
   font-family: 'Plaid Mono', monospace;
   font-weight: 400;
@@ -59,8 +67,14 @@
   bottom: var(--tooltip-from-bottom);
   left: var(--tooltip-from-left);
   opacity: 0;
-  transition: opacity .3s;
   white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .index-logo-tooltip {
+    opacity: 1;
+    pointer-events: none;
+  }
 }
 
 .index-circle video {
@@ -122,6 +136,7 @@
 }
 
 .section-title-link {
+  --transition-property: all;
   font-family: 'Plaid Mono', monospace;
   font-weight: 400;
   font-size: var(--read-more-font-size);
@@ -152,6 +167,11 @@
 .section-title-link:hover {
   background-color: #E5D1B8;
   color: #2B2129;
+}
+
+.lost .section-title-link:hover {
+  background-color: #E5D1B8;
+  color: #3C4C48;
 }
 
 .stories-grid {
@@ -194,7 +214,7 @@
 }
 
 .story-card:hover {
-  opacity: .8;
+  opacity: .6;
 }
 
 .story-card--large .story-card-title {

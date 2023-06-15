@@ -127,6 +127,10 @@ img {
   padding: 0;
 }
 
+.menu-button:hover {
+  opacity: .6;
+}
+
 .menu-button svg {
   width: 100%;
 }
@@ -518,6 +522,10 @@ img {
   text-decoration: underline;
  }
 
+ .footer a:hover {
+  opacity: .6;
+ }
+
  .footer-links {
   list-style: none;
   display: flex;
@@ -590,5 +598,13 @@ img {
 
  .mt-128 {
   margin-top: 128px;
+ }
+
+
+
+
+ .clickable-card:hover {
+  cursor: pointer;
+  opacity: .6;
  }
 
