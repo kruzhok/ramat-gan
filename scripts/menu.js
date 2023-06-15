@@ -2,6 +2,8 @@ const openBtn = document.querySelector('.menu-button--open');
 const closeBtn = document.querySelector('.menu-button--close');
 const menu = document.querySelector('.header-menu');
 
+menu.classList.remove('opened');
+
 openBtn.onclick = () => {
   menu.classList.add('opened');
   document.body.style.overflow = 'hidden';

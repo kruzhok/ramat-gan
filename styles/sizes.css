@@ -42,7 +42,15 @@
   --lost-image-width: clamp(17.875rem, 5.6743rem + 61.0035vw, 61.1875rem);
   --after-lost-image-margin: clamp(3.8125rem, 3.5132rem + 1.4965vw, 4.875rem);
 
-  --main-content-zone-border-radius: clamp(0rem, -0.8803rem + 4.4014vw, 3.125rem);
+  /* MENU */
+
+  --menu-logo-width: clamp(5.75rem, 4.3768rem + 6.8662vw, 10.625rem);
+  --menu-logo-text-size: clamp(0.5rem, 0.4296rem + 0.3521vw, 0.75rem);
+  --menu-logo-text-width: clamp(8.875rem, 6.4982rem + 11.8838vw, 17.3125rem);
+  --menu-logo-text-gap: clamp(0.5rem, 0.412rem + 0.4401vw, 0.8125rem);
+  --main-menu-font-size: clamp(2rem, 1.2958rem + 3.5211vw, 4.5rem);
+  --main-menu-footer-font-size: clamp(0.875rem, 0.7694rem + 0.5282vw, 1.25rem);
+
 }
 
 @media (max-width: 1024px) {
