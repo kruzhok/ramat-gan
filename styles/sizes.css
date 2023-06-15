@@ -32,5 +32,21 @@
   --story-card-small-description-padding-t: clamp(0.875rem, 0.8222rem + 0.2641vw, 1.0625rem);
   --story-card-small-description-padding-b: clamp(1.125rem, 1.0194rem + 0.5282vw, 1.5rem);
 
+
   --after-section-margin: clamp(5rem, 4.8239rem + 0.8803vw, 5.625rem);
+  --after-tips-margin: clamp(3.0625rem, 2.2702rem + 3.9613vw, 5.875rem);
+
+  --footer-font-size: clamp(0.875rem, 0.7694rem + 0.5282vw, 1.25rem);
+
+  --after-lost-image-title-margin: clamp(2.375rem, 1.3715rem + 5.0176vw, 5.9375rem);
+  --lost-image-width: clamp(17.875rem, 5.6743rem + 61.0035vw, 61.1875rem);
+  --after-lost-image-margin: clamp(3.8125rem, 3.5132rem + 1.4965vw, 4.875rem);
+
+  --main-content-zone-border-radius: clamp(0rem, -0.8803rem + 4.4014vw, 3.125rem);
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --large-card-title-font-size: clamp(1.5rem, 0.9718rem + 1.6408vw, 3.375rem);
+  }
 }

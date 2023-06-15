@@ -506,10 +506,12 @@ img {
  .footer {
   font-family: 'Plaid Mono', monospace;
   font-weight: 400;
-  font-size: 14px;
+  font-size: var(--footer-font-size);
   line-height: 1.2;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .1em .8em;
  }
 
  .footer a {
@@ -519,7 +521,8 @@ img {
  .footer-links {
   list-style: none;
   display: flex;
-  gap: .8em;
+  gap: .1em .8em;
+  flex-wrap: wrap;
  }
 
  .footer-links a {
