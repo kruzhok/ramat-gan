@@ -1,12 +1,11 @@
 .index {
   padding: 0 0;
+  position: relative;
 }
 
 .index-wrapper {
   position: relative;
   padding: var(--main-page-paddings-tb) var(--main-page-paddings-lr);
-  border-bottom-left-radius: var(--main-content-zone-border-radius);
-  border-bottom-right-radius: var(--main-content-zone-border-radius);
   z-index: 2;
 }
 
