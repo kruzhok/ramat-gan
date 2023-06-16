@@ -1,8 +1,29 @@
+.stories .header {
+  margin-bottom: var(--timeline-after-header-margin);
+}
+
+.stories .title {
+  margin-bottom: var(--timeline-after-lead-section-margin);
+}
+
+
 .lead-section {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   gap: 20px;
   color: #DE8E59;
+  margin-bottom: var(--timeline-after-lead-section-margin);
+}
+
+@media (max-width: 600px) {
+  .lead-section {
+    flex-direction: column;
+  }
+
+  .lead-time-start {
+    align-self: flex-start;
+  }
 }
 
 .lead-section p {
