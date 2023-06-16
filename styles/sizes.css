@@ -51,6 +51,15 @@
   --main-menu-font-size: clamp(2rem, 1.2958rem + 3.5211vw, 4.5rem);
   --main-menu-footer-font-size: clamp(0.875rem, 0.7694rem + 0.5282vw, 1.25rem);
 
+  /* INNER PAGE */
+
+  --inner-header-logo-width: clamp(5.75rem, 4.3768rem + 6.8662vw, 10.625rem);
+  --inner-title-font-size: clamp(2.5rem, 1.7958rem + 3.5211vw, 5rem);
+
+  /* TIMELINE */
+
+  --timeline-lead-section-font-size: clamp(1.5rem, 1.2183rem + 1.4085vw, 2.5rem);
+
 }
 
 @media (max-width: 1024px) {
