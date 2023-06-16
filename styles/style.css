@@ -4,9 +4,48 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, p {
-  margin: 0;
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
+
+body {
+  font-family: Plaid, sans-serif;
+  padding: 60px 40px;
+  font-weight: 400;
+  min-width: 320px;
+  max-width: 1456;
+  margin: 0 auto;
+}
+
+h1,
+h2, 
+h3, 
+h4,
+p,
+ul,
+li,
+ol,
+blockquote,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  color: inherit;
+}
+
 
 /* Цветовые темы */
 
@@ -67,14 +106,21 @@ h1, h2, h3, h4, p {
 .logo-container {
   display: flex;
   align-items: start;
-  gap: 20px;
+  gap: var(--menu-logo-text-gap);
+}
+
+.logo-container[href]:hover {
+  opacity: .6;
 }
 
 .logo-text {
   font-family: 'Plaid Mono', monospace;
   display: block;
-  max-width: 400px;
+  width: var(--menu-logo-text-width);
   font-weight: 400;
+  font-size: var(--menu-logo-text-size);
+  position: relative;
+  top: 0.3em;
 }
 
 .menu-button {
@@ -82,14 +128,60 @@ h1, h2, h3, h4, p {
   border: none;
   cursor: pointer;
   position: relative;
-  bottom: 23px;
-  left: 18px;
+  width: var(--burger-width);
+  min-width: 42px;
+  padding: 0;
+}
+
+@media (max-width: 600px) {
+  .menu-button {
+    top: .3em;
+  }
+
+  .header .menu-button {
+    top: 2em;
+  }
+}
+
+.menu-button:hover {
+  opacity: .6;
+}
+
+.menu-button svg {
+  width: 100%;
+  stroke-width: 5;
+}
+
+.main-menu a:hover {
+  opacity: .6;
+}
+
+@media (max-width: 600px) {
+  .menu-button svg {
+    stroke-width: 2;
+  }
+}
+
+.main-menu__footer {
+  text-align: center;
+  font-family: 'Plaid Mono', monospace;
+  line-height: 1.2;
+  font-size: var(--main-menu-footer-font-size);
+  font-weight: 400;
+}
+
+.main-menu__footer a {
+  text-decoration: underline;
+}
+
+.main-menu__footer a:hover {
+  opacity: .6;
 }
 
 .header-menu {
   position: fixed;
   inset: 0;
-  padding: 60px 40px;
+  padding: var(--main-page-paddings-tb) var(--main-page-paddings-lr);
   display: flex;
   flex-direction: column;
   z-index: 4;
@@ -99,7 +191,10 @@ h1, h2, h3, h4, p {
 
 .header-menu.opened {
   transform: translateY(0);
-  
+}
+
+.header-menu .logo {
+  width: var(--menu-logo-width);
 }
 
 .header-menu-header {
@@ -112,7 +207,7 @@ h1, h2, h3, h4, p {
   list-style: none;
   font-family: 'Plaid Mono', monospace;
   font-weight: 700;
-  font-size: 72px;
+  font-size: var(--main-menu-font-size);
   text-align: center;
   flex-grow: 1;
   display: flex;
@@ -160,39 +255,6 @@ h1, h2, h3, h4, p {
 
  /* END Меню */
 
-.page {
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-}
-
-body {
-  margin: 0;
-  font-family: Plaid, sans-serif;
-  padding: 60px 40px;
-  font-weight: 400;
-  min-width: 1456px;
-}
-
-h1,
-p,
-ul,
-li,
-ol,
-blockquote,
-figure {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-img {
-  width: 100%;
-}
 
 /* Подпись */
 
@@ -494,20 +556,27 @@ img {
  .footer {
   font-family: 'Plaid Mono', monospace;
   font-weight: 400;
-  font-size: 14px;
+  font-size: var(--footer-font-size);
   line-height: 1.2;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .1em .8em;
  }
 
  .footer a {
   text-decoration: underline;
  }
 
+ .footer a:hover {
+  opacity: .6;
+ }
+
  .footer-links {
   list-style: none;
   display: flex;
-  gap: .8em;
+  gap: .1em .8em;
+  flex-wrap: wrap;
  }
 
  .footer-links a {
@@ -575,5 +644,13 @@ img {
 
  .mt-128 {
   margin-top: 128px;
+ }
+
+
+
+
+ .clickable-card:hover {
+  cursor: pointer;
+  opacity: .6;
  }
 

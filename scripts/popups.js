@@ -263,6 +263,10 @@ function initializeSwiper() {
     pagination: {
       el: '.swiper-pagination',
     },
+
+    keyboard: {
+      enabled: true,
+    },
   
     // Navigation arrows
     navigation: {
