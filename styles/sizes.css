@@ -1,0 +1,60 @@
+:root {
+  --index-logo-width: clamp(14.875rem, 4.9806rem + 49.4718vw, 50rem);
+  --index-header-text-size: clamp(1.125rem, 0.7729rem + 1.7606vw, 2.375rem);
+  --main-page-paddings-lr: clamp(0.875rem, 0.5933rem + 1.4085vw, 1.875rem);
+  --main-page-paddings-tb: clamp(2.4375rem, 2.2262rem + 1.0563vw, 3.1875rem);
+  --from-header-to-text: clamp(8.1875rem, 7.3248rem + 4.3134vw, 11.25rem);
+  --star-logo-width: clamp(1.125rem, 0.456rem + 3.3451vw, 3.5rem);
+  --star-logo-from-left: clamp(10.625rem, 3.4595rem + 35.8275vw, 36.0625rem);
+  --star-logo-from-bottom: clamp(0.6875rem, -0.3512rem + 5.1937vw, 4.375rem);
+  --tooltip-font-size: clamp(0.5rem, 0.4296rem + 0.3521vw, 0.75rem);
+  --tooltip-from-bottom: clamp(0.75rem, -0.6761rem + 7.1303vw, 5.8125rem);
+  --tooltip-from-left: clamp(12.5rem, 4.2077rem + 41.4613vw, 41.9375rem);
+  --burger-width: clamp(2.625rem, 2.3257rem + 1.4965vw, 3.6875rem);
+  --cover-text-margin-bottom: clamp(5.8125rem, 5.1611rem + 3.257vw, 8.125rem);
+  --section-title-font-size: clamp(2.5rem, 1.7958rem + 3.5211vw, 5rem);
+  --read-more-font-size: clamp(0.75rem, 0.5387rem + 1.0563vw, 1.5rem);
+  --read-more-padding-tb: clamp(0.6875rem, 0.5819rem + 0.5282vw, 1.0625rem);
+  --read-more-padding-lr: clamp(1.3125rem, 1.0132rem + 1.4965vw, 2.375rem);
+  --section-title-container-gap: clamp(1.125rem, 0.1612rem + 2.5701vw, 2.5rem);
+  --after-section-title-margin: clamp(1.5rem, 1.0423rem + 2.2887vw, 3.125rem);
+  --after-section-description-margin: clamp(1.1875rem, 0.7474rem + 2.2007vw, 2.75rem);
+
+  --main-grid-gap: 16px;
+  --section-description-font-size: clamp(0.625rem, 0.5898rem + 0.1761vw, 0.75rem);
+  --large-card-title-font-size: clamp(1.5rem, 0.9718rem + 2.6408vw, 3.375rem);
+  --small-card-title-font-size: 24px;
+  --story-card-description-font-size: clamp(0.75rem, 0.7148rem + 0.1761vw, 0.875rem);
+  --story-card-large-description-padding-lr: clamp(0.75rem, 0.5211rem + 1.1444vw, 1.5625rem);
+  --story-card-large-description-padding-t: clamp(0.875rem, 0.7165rem + 0.7923vw, 1.4375rem);
+  --story-card-large-description-padding-b: clamp(1.125rem, 0.7729rem + 1.7606vw, 2.375rem);
+  --story-card-small-description-padding-lr: clamp(0.75rem, 0.6092rem + 0.7042vw, 1.25rem);
+  --story-card-small-description-padding-t: clamp(0.875rem, 0.8222rem + 0.2641vw, 1.0625rem);
+  --story-card-small-description-padding-b: clamp(1.125rem, 1.0194rem + 0.5282vw, 1.5rem);
+
+
+  --after-section-margin: clamp(5rem, 4.8239rem + 0.8803vw, 5.625rem);
+  --after-tips-margin: clamp(3.0625rem, 2.2702rem + 3.9613vw, 5.875rem);
+
+  --footer-font-size: clamp(0.875rem, 0.7694rem + 0.5282vw, 1.25rem);
+
+  --after-lost-image-title-margin: clamp(2.375rem, 1.3715rem + 5.0176vw, 5.9375rem);
+  --lost-image-width: clamp(17.875rem, 5.6743rem + 61.0035vw, 61.1875rem);
+  --after-lost-image-margin: clamp(3.8125rem, 3.5132rem + 1.4965vw, 4.875rem);
+
+  /* MENU */
+
+  --menu-logo-width: clamp(5.75rem, 4.3768rem + 6.8662vw, 10.625rem);
+  --menu-logo-text-size: clamp(0.5rem, 0.4296rem + 0.3521vw, 0.75rem);
+  --menu-logo-text-width: clamp(8.875rem, 6.4982rem + 11.8838vw, 17.3125rem);
+  --menu-logo-text-gap: clamp(0.5rem, 0.412rem + 0.4401vw, 0.8125rem);
+  --main-menu-font-size: clamp(2rem, 1.2958rem + 3.5211vw, 4.5rem);
+  --main-menu-footer-font-size: clamp(0.875rem, 0.7694rem + 0.5282vw, 1.25rem);
+
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --large-card-title-font-size: clamp(1.5rem, 0.9718rem + 1.6408vw, 3.375rem);
+  }
+}

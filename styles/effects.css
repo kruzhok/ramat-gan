@@ -1,0 +1,4 @@
+.common-transition {
+  --transition-property: opacity;
+  transition: var(--transition-property) 0.3s ease-in-out;
+}
