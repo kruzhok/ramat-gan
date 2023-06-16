@@ -15,7 +15,7 @@ body {
   padding: var(--main-page-paddings-tb) var(--main-page-paddings-lr);
   font-weight: 400;
   min-width: 320px;
-  max-width: 1456;
+  max-width: 1456px;
   margin: 0 auto;
 }
 
