@@ -8,6 +8,10 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-pagination',
   },
 
+  keyboard: {
+    enabled: true,
+  },
+
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
