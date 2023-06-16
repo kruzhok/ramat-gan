@@ -12,7 +12,7 @@
 
 body {
   font-family: Plaid, sans-serif;
-  padding: 60px 40px;
+  padding: var(--main-page-paddings-tb) var(--main-page-paddings-lr);
   font-weight: 400;
   min-width: 320px;
   max-width: 1456;
@@ -111,6 +111,10 @@ button {
 
 .logo-container[href]:hover {
   opacity: .6;
+}
+
+.logo {
+  width: var(--inner-header-logo-width);
 }
 
 .logo-text {
@@ -279,8 +283,8 @@ button {
 .title {
   font-family: 'Plaid Mono', monospace;
   font-weight: 700;
-  font-size: 80px;
-  line-height: 1;
+  font-size: var(--inner-title-font-size);
+  line-height: .8;
 }
 
 .tips-subtitle {
@@ -331,7 +335,7 @@ button {
 
 .cards-section {
   display: grid;
-  grid-template-columns: repeat(3, 445px);
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   place-content: center;
 }
@@ -344,8 +348,14 @@ button {
   align-items: center;
   gap: 42px;
   padding: 54px 25px;
-  height: 100%;
+  width: 100%;
+  aspect-ratio: 1/1;
   color: #E2D2BB;
+}
+
+.card svg {
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 
 .card-description {
