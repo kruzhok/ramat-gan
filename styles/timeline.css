@@ -2,12 +2,13 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  color: #DE8E59;
 }
 
 .lead-section p {
   font-family: 'Plaid Mono', monospase;
   font-weight: 700;
-  font-size: 40px;
+  font-size: var(--timeline-lead-section-font-size);
 }
 
 .timeline-cards {
