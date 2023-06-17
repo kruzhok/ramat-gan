@@ -1,4 +1,8 @@
 :root {
+  --page-min-width: 320px;
+  --page-max-width: 1456px;
+
+
   --index-logo-width: clamp(14.875rem, 4.9806rem + 49.4718vw, 50rem);
   --index-header-text-size: clamp(1.125rem, 0.7729rem + 1.7606vw, 2.375rem);
   --main-page-paddings-lr: clamp(0.875rem, 0.5933rem + 1.4085vw, 1.875rem);
@@ -59,6 +63,17 @@
   /* TIMELINE */
 
   --timeline-lead-section-font-size: clamp(1.5rem, 1.2183rem + 1.4085vw, 2.5rem);
+  --timeline-after-header-margin: clamp(1.75rem, 0.9754rem + 3.8732vw, 4.5rem);
+  --timeline-after-lead-section-margin: clamp(3.8125rem, 3.2667rem + 2.7289vw, 5.75rem);
+  --timeline-after-lead-section-margin: clamp(3.625rem, 2.5158rem + 5.5458vw, 7.5625rem);
+  --timeline-card-title-font-size: clamp(1.5rem, 1.3944rem + 0.5282vw, 1.875rem);
+  --timeline-card-date-font-size: clamp(3.125rem, 0.9346rem + 5.8411vw, 6.25rem);
+  --timeline-card-descriptopn-padding-t: clamp(0.875rem, 0.6989rem + 0.8803vw, 1.5rem);
+  --timeline-card-descriptopn-padding-r: clamp(0.75rem, 0.4331rem + 1.5845vw, 1.875rem);
+  --timeline-card-descriptopn-padding-b: clamp(1.125rem, 0.9137rem + 1.0563vw, 1.875rem);
+  --timeline-card-descriptopn-padding-l: clamp(0.75rem, 0.4331rem + 1.5845vw, 1.875rem);
+  --timeline-before-footer-margin: clamp(6.75rem, 5.3768rem + 6.8662vw, 11.625rem);
+
 
 }
 
