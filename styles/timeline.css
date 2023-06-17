@@ -1,8 +1,29 @@
+.stories .header {
+  margin-bottom: var(--timeline-after-header-margin);
+}
+
+.stories .title {
+  margin-bottom: var(--timeline-after-lead-section-margin);
+}
+
+
 .lead-section {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  align-items: flex-end;
+  gap: 14px;
   color: #DE8E59;
+  margin-bottom: var(--timeline-after-lead-section-margin);
+}
+
+@media (max-width: 600px) {
+  .lead-section {
+    flex-direction: column;
+  }
+
+  .lead-time-start {
+    align-self: flex-start;
+  }
 }
 
 .lead-section p {
@@ -14,7 +35,8 @@
 .timeline-cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  gap: var(--main-grid-gap);
+  margin-bottom: var(--timeline-before-footer-margin);
 }
 
 .timeline-card {
@@ -24,12 +46,11 @@
 }
 
 .timeline-card:hover {
-  opacity: .8;
+  opacity: .6;
 }
 
 .timeline-card-image {
-  width: 50%;
-  aspect-ratio: 1/1;
+  width: calc(50% - var(--main-grid-gap)/2);
   object-fit: cover;
   object-position: center;
 }
@@ -38,14 +59,20 @@
   grid-column: span 2;
 }
 
+.timeline-card-50_50.anonymous-card {
+  aspect-ratio: 673/300;
+}
+
+.timeline-card-100.anonymous-card {
+  aspect-ratio: 1364/300;
+}
+
 .timeline-card-100 {
   grid-column: span 4;
-  aspect-ratio: 1358/300;
 }
 
 .timeline-card-25 {
   grid-column: span 1;
-  aspect-ratio: 1/1;
   width: 100%;
 }
 
@@ -55,50 +82,125 @@
 
 .timeline-card-75 {
   grid-column: span 3;
-  aspect-ratio: 1005/300;
   height: 100%;
 }
 
 .timeline-card-100 .timeline-card-image {
-  aspect-ratio: initial;
+  width: 50%;
+  aspect-ratio: 679/300;
 }
+
+.timeline-card-50_50 .timeline-card-image {
+  aspect-ratio: 336/300;
+}
+
+.timeline-card-50_50_reversed .timeline-card-image {
+  aspect-ratio: 337/300;
+  width: calc(50% + var(--main-grid-gap)/2);
+}
+
+
+
+
 
 .timeline-card-75 .timeline-card-image {
-  width: 66%;
+  width: calc(67% - var(--main-grid-gap)/2);
+  aspect-ratio: 672/300;
 }
 
-.timeline-card-75 .timeline-card--description {
-  width: 34%;
+.timeline-card-75_reversed .timeline-card-image {
+  width: calc(67% - var(--main-grid-gap)/2); /* magic */
+  aspect-ratio: 672/300;
+}
+
+.timeline-card-75_reversed .timeline-card--description {
+  width: calc(25% + var(--main-grid-gap)/2); /* magic */
 }
 
 .timeline-card--description {
-  padding: 28px;
-  width: 50%;
-  position: relative;
+  padding: var(--timeline-card-descriptopn-padding-t) var(--timeline-card-descriptopn-padding-r) var(--timeline-card-descriptopn-padding-b) var(--timeline-card-descriptopn-padding-l);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .timeline-card-name {
   font-weight: 700;
-  font-size: 50px;
+  font-size: var(--timeline-card-title-font-size);
   line-height: 1;
-}
-
-.timeline-card-age {
-  font-weight: 700;
-  font-size: 100px;
-  line-height: 1;
+  width: 78%;
 }
 
 .timeline-card-date {
   font-weight: 700;
-  font-size: 23px;
-  transform: rotate(-90deg) translate(50%, 16px);
-  position: absolute;
-  bottom: 0;
-  right: -15px;
+  font-size: var(--timeline-card-date-font-size);
 }
 
 .anonymous-card .timeline-card--description {
   width: 100%;
-  aspect-ratio: 673/300;
+}
+
+@media (max-width: 1024px) {
+  .timeline-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-card {
+    grid-column: initial;
+    aspect-ratio: 900/300;
+  }
+
+  .timeline-card .card-image {
+    width: 50%;
+    aspect-ratio: 679/300;
+  }
+
+  .timeline-card-50_50 .timeline-card-image {
+    width: 50%;
+    aspect-ratio: 679/300;
+  }
+
+  .timeline-card-75_reversed .timeline-card-image {
+    width: 50%;
+    aspect-ratio: 679/300;
+  }
+
+  .timeline-card-50_50.anonymous-card {
+    aspect-ratio: 900/300;
+  }
+
+  .timeline-card-100.anonymous-card {
+    aspect-ratio: 900/300;
+  }
+
+  @media (max-width: 600px) {
+    .timeline-card {
+      flex-direction: column;
+    }
+
+    .timeline-card-100 .timeline-card-image {
+      width: 100%;
+      aspect-ratio: 292/190;
+    }
+
+    .timeline-card-50_50 .timeline-card-image {
+      width: 100%;
+      aspect-ratio: 292/190;
+    }
+
+    .timeline-card-75_reversed .timeline-card-image {
+      width: 100%;
+      aspect-ratio: 292/190;
+    }
+
+    .timeline-card-75_reversed .timeline-card--description {
+      width: 100%;
+      aspect-ratio: 292/190;
+    }
+
+    .timeline-card--description {
+      aspect-ratio: 292/190;
+    }
+  }
 }
