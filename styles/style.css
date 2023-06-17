@@ -14,8 +14,8 @@ body {
   font-family: Plaid, sans-serif;
   padding: var(--main-page-paddings-tb) var(--main-page-paddings-lr);
   font-weight: 400;
-  min-width: 320px;
-  max-width: 1456px;
+  min-width: var(--page-min-width);
+  max-width: var(--page-max-width);
   margin: 0 auto;
 }
 
@@ -194,6 +194,11 @@ button {
   flex-direction: column;
   z-index: 4;
   transform: translateY(-100%);
+}
+
+.header-menu {
+  max-width: var(--page-max-width);
+  margin: auto;
 }
 
 .header-menu.opened {
