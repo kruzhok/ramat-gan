@@ -295,14 +295,6 @@ button {
   line-height: .8;
 }
 
-.tips-subtitle {
-  font-family: 'Plaid Mono', monospace;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 120%;
-
-}
-
 /* END Секция заголовка */
 
 
@@ -344,8 +336,20 @@ button {
 .cards-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  gap: var(--main-grid-gap);
   place-content: center;
+}
+
+@media (max-width: 768px) {
+  .cards-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .cards-section {
+    grid-template-columns: 1fr;
+  }
 }
 
 .card {
