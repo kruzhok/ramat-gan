@@ -74,6 +74,13 @@
   --timeline-card-descriptopn-padding-l: clamp(0.75rem, 0.4331rem + 1.5845vw, 1.875rem);
   --timeline-before-footer-margin: clamp(6.75rem, 5.3768rem + 6.8662vw, 11.625rem);
 
+  /* TIPS */
+
+  --tips-subtitle-font-size: clamp(0.625rem, 0.5898rem + 0.1761vw, 0.75rem);
+  --tips-after-header-margin: clamp(2.625rem, 2.2377rem + 1.9366vw, 4rem);
+  --tips-after-title-margin: clamp(1.125rem, 0.8081rem + 1.5845vw, 2.25rem);
+  --tips-after-subtitle-margin: clamp(1.875rem, 1.3468rem + 2.6408vw, 3.75rem);
+  --tips-before-footer-margin: clamp(6.75rem, 5.3063rem + 7.2183vw, 11.875rem);
 
 }
 
