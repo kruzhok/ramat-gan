@@ -348,6 +348,7 @@ button {
   grid-template-columns: repeat(3, 1fr);
   gap: var(--main-grid-gap);
   place-content: center;
+  list-style: none;
 }
 
 @media (max-width: 768px) {
@@ -364,42 +365,19 @@ button {
 
 .card {
   text-decoration: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 42px;
-  padding: 54px 25px;
+  padding: 0;
+}
+
+.card img {
   width: 100%;
-  aspect-ratio: 1/1;
-  color: #E2D2BB;
-  position: relative;
-}
-
-.card svg {
-  width: 100%;
-  aspect-ratio: 1/1;
-}
-
-.card-description {
-  font-family: 'Plaid Mono', monospace;
-  text-align: center;
-  font-weight: 400;
-  font-size: 14px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 50px;
-  max-width: 70%;
-  width: 70%;
-}
-
-.cards-section-img {
-  max-width: 70%;
-  width: 70%;
-  height: auto;
-  max-height: 170px;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
   object-position: center;
 }
 
