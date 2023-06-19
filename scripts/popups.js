@@ -212,6 +212,7 @@ cards.forEach((item) => {
   let popup;
   item.onclick = () => {
     document.body.style.overflow = 'hidden';
+    document.body.classList.add('blured');
     const dataForClickedCard = findWithId(dataArray, item.id)
     generateSlider(popupTmp, dataForClickedCard, document.body)
     popup = document.querySelector('.cards-popup');
@@ -222,6 +223,7 @@ cards.forEach((item) => {
     popup.onclick = (e) => {
       if(e.target.contains(document.querySelector('.cards-popup-slider'))) {
         document.body.style.overflow = 'auto';
+        document.body.classList.remove('blured');
         popup.remove();
       }
     }

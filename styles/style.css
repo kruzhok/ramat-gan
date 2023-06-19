@@ -10,6 +10,10 @@
   gap: 100px;
 }
 
+.blured > *:not(.cards-popup) {
+  filter: blur(5px) brightness(70%);
+}
+
 body {
   font-family: Plaid, sans-serif;
   padding: var(--main-page-paddings-tb) var(--main-page-paddings-lr);

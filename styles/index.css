@@ -351,6 +351,7 @@
   border-radius: none;
   appearance: none;
   background-color: transparent;
+  padding: 0;
 }
 
 .cover-image img {
