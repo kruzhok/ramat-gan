@@ -10,6 +10,10 @@
   gap: 100px;
 }
 
+.blured > *:not(.cards-popup) {
+  filter: blur(5px) brightness(70%);
+}
+
 body {
   font-family: Plaid, sans-serif;
   padding: var(--main-page-paddings-tb) var(--main-page-paddings-lr);
@@ -44,6 +48,16 @@ img {
 
 button {
   color: inherit;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 
@@ -338,6 +352,7 @@ button {
   grid-template-columns: repeat(3, 1fr);
   gap: var(--main-grid-gap);
   place-content: center;
+  list-style: none;
 }
 
 @media (max-width: 768px) {
@@ -354,30 +369,44 @@ button {
 
 .card {
   text-decoration: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 42px;
-  padding: 54px 25px;
+  padding: 0;
+}
+
+.card img {
   width: 100%;
-  aspect-ratio: 1/1;
-  color: #E2D2BB;
-}
-
-.card svg {
-  width: 100%;
-  aspect-ratio: 1/1;
-}
-
-.card-description {
-  font-family: 'Plaid Mono', monospace;
-  text-align: center;
-  font-weight: 400;
-  font-size: 14px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 
+@media screen and (max-width: 1200px) {
+  .card-description {
+    position: static;
+    transform: none;
+    width: 90%;
+    max-width: 90%;
+  }
+  .cards-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    padding: 20px;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cards-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 /* Картика во всю ширину */
 .full-page-image {
