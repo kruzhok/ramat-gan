@@ -3,19 +3,38 @@
   inset: 0;
   background-color: rgb(0 0 0 / .5);
   z-index: 3;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  padding: var(--main-page-paddings-tb) var(--main-page-paddings-lr);
+}
+
+.close-and-tooltip-container {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+}
+
+.popup-tooltip {
+  grid-column: 2;
+}
+
+.popup-close-button {
+  grid-column: 3;
+}
+
+.slides-and-pagination-container {
+  display: grid;
+  place-items: center;
+  place-content: center;
+  grid-template-rows: min-content min-content;
 }
 
 .cards-popup-slider {
-  width: 711px;
+  width: var(--popup-slider-width);
   aspect-ratio: 1/1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .cards-popup-slider .swiper-slide {
-  padding: 60px;
+  padding: var(--popup-padding);
 }
 
 .cards-popup-slider .swiper-button-prev,
@@ -32,10 +51,9 @@
 }
 
 .swiper-pagination {
-  top: 50% !important;
-  left: 50% !important;
+  position: relative;
   width: fit-content !important;
-  transform: translate(-50%, 360px);
+  margin: auto;
 }
 
 .card-slide-cover {
@@ -71,6 +89,6 @@
   gap: 20px;
   font-family: 'Plaid Mono', monospace;
   font-weight: 400;
-  font-size: 30px;
+  font-size: var(--popup-text-font-size);
   line-height: 120%;
 }
