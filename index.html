@@ -329,7 +329,20 @@
       <div class="cards-popup">
         <div class="close-and-tooltip-container">
           <p class="popup-tooltip">Ссылка&nbsp;скопирована</p>
-          <button type="button" class="popup-close-button">X</button>
+          <button
+            type="button"
+            class="popup-close-button common-transition"
+            aria-label="Закрыть"
+          >
+            <svg
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 44 42"
+            >
+              <use href="./svg/close.svg#close"></use>
+            </svg>
+          </button>
         </div>
         <div class="slides-and-pagination-container">
           <div class="cards-popup-slider swiper">
@@ -383,10 +396,13 @@
           <div class="swiper-pagination"></div>
         </div>
         <div class="share-container">
-          <button>Фб</button>
-          <button>Тг</button>
-          <button>Твиттер</button>
-          <button>Ссылка</button>
+          <p class="call-to-action">Репостнуть</p>
+          <ul class="share-list">
+            <li><button class="common-transition">Фб</button>/</li>
+            <li><button class="common-transition">Тг</button>/</li>
+            <li><button class="common-transition">Твиттер</button>/</li>
+            <li><button class="common-transition">Ссылка</button></li>
+          </ul>
         </div>
       </div>
     </template>
