@@ -63,6 +63,15 @@
 .cards-popup-slider .swiper-button-prev,
 .cards-popup-slider .swiper-button-next {
   position: absolute;
+  --swiper-navigation-sides-offset: clamp(0.25rem, -1.3271rem + 3vw, 2.5rem);
+}
+
+.cards-popup-slider .swiper-button-prev svg,
+.cards-popup-slider .swiper-button-next svg {
+  width: var(--popup-arrow-width);
+  height: var(--popup-arrow-width);
+  object-fit: cover;
+  object-position: center;
 }
 
 .swiper-pagination-bullet {
@@ -87,8 +96,10 @@
 }
 
 .card-slide-illustration {
-  margin-bottom: 60px;
-  width: 80%;
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
 }
 
 .card-slide-cover-text {
