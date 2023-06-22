@@ -10,6 +10,10 @@
   gap: 100px;
 }
 
+.blured {
+  overflow: hidden;
+}
+
 .blured > *:not(.cards-popup) {
   filter: blur(5px) brightness(70%);
 }
@@ -396,10 +400,6 @@ button {
   .cards-section {
     grid-template-columns: repeat(2, 1fr);
   }
-  .card {
-    padding: 20px;
-    justify-content: space-around;
-  }
 }
 
 @media screen and (max-width: 600px) {
@@ -407,6 +407,9 @@ button {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+
+
 
 /* Картика во всю ширину */
 .full-page-image {
