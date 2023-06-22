@@ -99,6 +99,10 @@
   width: calc(50% + var(--main-grid-gap)/2);
 }
 
+.timeline-card-50_50_reversed .timeline-card--description {
+  width: calc(50% - var(--main-grid-gap)/2);
+}
+
 
 
 
@@ -185,6 +189,11 @@
     }
 
     .timeline-card-50_50 .timeline-card-image {
+      width: 100%;
+      aspect-ratio: 292/190;
+    }
+
+    .timeline-card-50_50_reversed .timeline-card--description {
       width: 100%;
       aspect-ratio: 292/190;
     }
