@@ -264,7 +264,7 @@
               aria-label="Музыкальный тур для управления сложными эмоциями"
               aria-description="Игорь и Эдуард проведут от гнева и тревоги к спокойствию и даже надежде"
               class="cover-image clickable-card common-transition"
-              id="films"
+              id="emotions"
             >
               <img src="./images/covers/music.svg" alt="" aria-hidden="true" />
             </button>
@@ -327,54 +327,81 @@
 
     <template class="slider-popup-template">
       <div class="cards-popup">
-        <div class="swiper-pagination"></div>
-        <div class="cards-popup-slider swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide card-slide-cover">
-              <img src="" alt="" class="card-slide-illustration" />
-              <p class="card-slide-cover-text"></p>
+        <div class="close-and-tooltip-container">
+          <p class="popup-tooltip">Ссылка&nbsp;скопирована</p>
+          <button
+            type="button"
+            class="popup-close-button common-transition"
+            aria-label="Закрыть"
+          >
+            <svg
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 44 42"
+            >
+              <use href="./svg/close.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="slides-and-pagination-container">
+          <div class="cards-popup-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide card-slide-cover">
+                <img src="" alt="" class="card-slide-illustration" />
+              </div>
+            </div>
+            <div class="swiper-button-prev">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.7">
+                  <circle
+                    cx="20"
+                    cy="20"
+                    r="20"
+                    transform="rotate(-180 20 20)"
+                    fill="#2B2129"
+                  />
+                  <path
+                    d="M4 20L14 25.7735L14 14.2265L4 20ZM34 19L13 19L13 21L34 21L34 19Z"
+                    fill="white"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.7">
+                  <circle cx="20" cy="20" r="20" fill="#2B2129" />
+                  <path
+                    d="M36 20L26 14.2265L26 25.7735L36 20ZM6 21L27 21L27 19L6 19L6 21Z"
+                    fill="white"
+                  />
+                </g>
+              </svg>
             </div>
           </div>
-          <div class="swiper-button-prev">
-            <svg
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g opacity="0.7">
-                <circle
-                  cx="20"
-                  cy="20"
-                  r="20"
-                  transform="rotate(-180 20 20)"
-                  fill="#2B2129"
-                />
-                <path
-                  d="M4 20L14 25.7735L14 14.2265L4 20ZM34 19L13 19L13 21L34 21L34 19Z"
-                  fill="white"
-                />
-              </g>
-            </svg>
-          </div>
-          <div class="swiper-button-next">
-            <svg
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g opacity="0.7">
-                <circle cx="20" cy="20" r="20" fill="#2B2129" />
-                <path
-                  d="M36 20L26 14.2265L26 25.7735L36 20ZM6 21L27 21L27 19L6 19L6 21Z"
-                  fill="white"
-                />
-              </g>
-            </svg>
-          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="share-container">
+          <p class="call-to-action">Репостнуть</p>
+          <ul class="share-list">
+            <li><button class="common-transition">Фб</button>/</li>
+            <li><button class="common-transition">Тг</button>/</li>
+            <li><button class="common-transition">Твиттер</button>/</li>
+            <li><button class="common-transition">Ссылка</button></li>
+          </ul>
         </div>
       </div>
     </template>
@@ -411,6 +438,7 @@
             viewBox="0 0 61 21"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            class="menu-button--icon"
           >
             <use href="./svg/burger.svg#burger-opened"></use>
           </svg>
@@ -446,7 +474,6 @@
     <script src="./scripts/menu.js"></script>
     <script src="./scripts/video-circles.js"></script>
     <script src="./scripts/swiper.js"></script>
-    <script src="./scripts/swiper-init.js"></script>
     <script src="./scripts/popups.js"></script>
   </body>
 </html>

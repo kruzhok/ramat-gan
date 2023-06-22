@@ -1,8 +1,8 @@
 const dataArray = [
   {
     id: 'support',
-    theme: 'purple',
-    coverUrl: '/images/covers-svg/1.svg',
+    theme: 'darkgreen',
+    coverUrl: '/images/covers/support.svg',
     coverText: 'Илья, Юра и Саша о доступных способах самоподдержки в начале адаптации',
     content: [
       {
@@ -30,7 +30,7 @@ const dataArray = [
   {
     id: 'films',
     theme: 'lightpurple',
-    coverUrl: '/images/covers-svg/2.svg',
+    coverUrl: '/images/covers/films.svg',
     coverText: 'Данина подборка фильмов с ультра-короткими рецензиями в твиттер-формате',
     content: [
       {
@@ -78,20 +78,20 @@ const dataArray = [
   {
     id: 'emotions',
     theme: 'lightyellow',
-    coverUrl: '/images/covers-svg/3.svg',
+    coverUrl: '/images/covers/music.svg',
     coverText: 'Игорь и Эдуард проведут от гнева и тревоги к спокойствию и даже надежде',
     content: [
       {
         text: 'Этот плейлист для тех кто после переезда и всей этой суеты хочет снять напряжение. Сначала идут более жёсткие и сильные треки, переходя в более размышляющий тип с резким переходом в безумие (Nyan Cat) и под конец — в тонизирующую и мягкую атмосферную музыку.',
         image: '',
-        author: 'Ссылка на плейлист'
+        author: '<a href="#">Ссылка на плейлист</a>'
       },
     ]
   },
   {
     id: 'space',
-    theme: 'darkgreen',
-    coverUrl: '/images/covers-svg/4.svg',
+    theme: 'purple',
+    coverUrl: '/images/covers/space.svg',
     coverText: 'Илья, Полина, Дария и Игорь про то, как осваиваться в новой стране',
     content: [
       {
@@ -108,8 +108,8 @@ const dataArray = [
   },
   {
     id: 'contact',
-    theme: 'darkorange',
-    coverUrl: '/images/covers-svg/5.svg',
+    theme: 'blue',
+    coverUrl: '/images/covers/contact.svg',
     coverText: 'Саша, Игорь и Полина о том, как контактировать с людьми',
     content: [
       {
@@ -126,8 +126,8 @@ const dataArray = [
   },
    {
     id: 'talk',
-    theme: 'purple',
-    coverUrl: '/images/covers-svg/6.svg',
+    theme: 'darkgreen',
+    coverUrl: '/images/covers/internet.svg',
     coverText: 'Оригинальный способ найти собеседников от Шимона',
     content: [
       {
@@ -145,7 +145,7 @@ const dataArray = [
   {
     id: 'activity',
     theme: 'lightpurple',
-    coverUrl: '/images/covers-svg/7.svg',
+    coverUrl: '/images/covers/whattodo.svg',
     coverText: 'Как переключить себя в конструктивную деятельность',
     content: [
       {
@@ -162,8 +162,8 @@ const dataArray = [
   },
   {
     id: 'change',
-    theme: 'yellow',
-    coverUrl: '/images/covers-svg/8.svg',
+    theme: 'lightyellow',
+    coverUrl: '/images/covers/local.svg',
     coverText: 'Что делать для того, чтобы ещё лучше понимать местную обстановку',
     content: [
       {
@@ -180,8 +180,8 @@ const dataArray = [
   },
   {
     id: 'advice',
-    theme: 'darkgreen',
-    coverUrl: '/images/covers-svg/9.svg',
+    theme: 'purple',
+    coverUrl: '/images/covers/advice.svg',
     coverText: 'Мудрость Ализы и Ильи в четырёх абзацах',
     content: [
       {
@@ -202,6 +202,9 @@ const dataArray = [
 
 
 
+
+
+
 const cards = document.querySelectorAll('.clickable-card');
 const popupTmp = document.querySelector('.slider-popup-template');
 const slideTemplate = document.querySelector('.card-slide-tmp');
@@ -211,7 +214,6 @@ let isOpened = false;
 cards.forEach((item) => {
   let popup;
   item.onclick = () => {
-    document.body.style.overflow = 'hidden';
     document.body.classList.add('blured');
     const dataForClickedCard = findWithId(dataArray, item.id)
     generateSlider(popupTmp, dataForClickedCard, document.body)
@@ -222,10 +224,14 @@ cards.forEach((item) => {
     
     popup.onclick = (e) => {
       if(e.target.contains(document.querySelector('.cards-popup-slider'))) {
-        document.body.style.overflow = 'auto';
         document.body.classList.remove('blured');
         popup.remove();
       }
+    }
+    document.querySelector('.popup-close-button').onclick = () => {
+      console.log('click')
+      document.body.classList.remove('blured');
+      popup.remove();
     }
     initializeSwiper()
   }
@@ -244,14 +250,13 @@ function generateSlider(tmp, obj, parent) {
   const node = tmp.content.cloneNode(true);
   node.querySelector('.card-slide-illustration').src = obj.coverUrl;
   node.querySelector('.cards-popup-slider').classList.add(`theme-${obj.theme}`)
-  node.querySelector('.card-slide-cover-text').textContent = obj.coverText;
   parent.append(node);
 }
 
 function generateSlide(tmp, obj, slider) {
   const node = tmp.content.cloneNode(true);
-  node.querySelector('.card-slide-content').textContent = obj.text;
-  node.querySelector('.card-slide-author').textContent = obj.author;
+  node.querySelector('.card-slide-content').innerHTML = obj.text;
+  node.querySelector('.card-slide-author').innerHTML = obj.author;
   slider.append(node);
 }
 
@@ -269,16 +274,11 @@ function initializeSwiper() {
     keyboard: {
       enabled: true,
     },
-  
+
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
     },
   });
 }
