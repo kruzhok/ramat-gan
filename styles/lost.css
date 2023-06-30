@@ -188,7 +188,7 @@
   text-align: center;
   line-height: 1;
   position: relative;
-  bottom: 25px;
+  bottom: .5em;
 }
 
 @supports((text-stroke: 1px #F04060) or (-webkit-text-stroke: 1px #F04060)) {
@@ -320,4 +320,14 @@
   width: 277px;
   text-align: center;
   margin: auto;
+}
+
+.turtleneck__description {
+  color: #0B0B0B;
+  text-align: center;
+  font-size: var(--lost-turtleneck-description-font-size);
+  font-weight: 700;
+  line-height: 100%;
+  position: relative;
+  bottom: 1em;
 }
