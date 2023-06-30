@@ -104,6 +104,7 @@
   --lost-bench-illustration-padding-top: clamp(5rem, -0.3354rem + 10.6707vw, 9.375rem);
 
   --lost-sindbad-description-font-size: clamp(1.3125rem, 0.6259rem + 3.4331vw, 3.75rem);
+  --lost-turtleneck-description-font-size: clamp(1.3125rem, 0.6259rem + 3.4331vw, 3.75rem);
 
 }
 
