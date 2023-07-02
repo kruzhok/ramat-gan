@@ -217,6 +217,7 @@ button {
   flex-direction: column;
   z-index: 4;
   transform: translateY(-100%);
+  overflow: auto;
 }
 
 .header-menu {
