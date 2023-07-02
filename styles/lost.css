@@ -333,7 +333,7 @@
 }
 
 .row.five {
-  aspect-ratio: 1275/630;
+  aspect-ratio: 1400/630;
   position: relative;
 }
 
@@ -394,4 +394,58 @@
   bottom: 25px;
   left: 15px;
   transform: rotate(5deg);
+}
+
+.row.six {
+  aspect-ratio: 1233/626;
+  display: flex;
+  align-items: flex-end;
+}
+
+
+.dasha {
+  width: 100%;
+  font-weight: 400;
+  font-family: Inkulinati, serif;
+  color: #202B28;
+  font-size: var(--lost-dasha-description-font-size);
+  text-transform: uppercase;
+  text-shadow:
+    -1px -1px 0 #D39264,
+    1px -1px 0 #D39264,
+    -1px 1px 0 #D39264,
+    1px 1px 0 #D39264;
+  text-align: center;
+  line-height: 1;
+}
+
+@supports((text-stroke: 1px #D39264) or (-webkit-text-stroke: 1px #D39264)) {
+  .dasha {
+      color: transparent;
+      -webkit-text-stroke: 1px #D39264;
+      text-stroke: 1px #D39264;
+      text-shadow: none;
+  }
+}
+
+.rf {
+  position: relative;
+  display: inline-block;
+}
+.rf::after {
+  content: 'Даша';
+  font-weight: 400;
+  font-family: Inkulinati, serif;
+  font-size: var(--lost-dasha-description-font-size);
+  color: #D39264;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(10%, 80%) rotate(-10deg);
+
+}
+
+.spacer {
+  aspect-ratio: 460/236;
 }
