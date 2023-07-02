@@ -19,7 +19,6 @@ const options = {
 const callback = (entries, observer) => {
 
   entries.forEach((entry) => {
-    console.log(entry.isIntersecting);
     if(entry.isIntersecting) {
       if(entry.target === overlay) {
         controllOpacity(picture, 'on');
@@ -34,7 +33,6 @@ const callback = (entries, observer) => {
       if(entry.target === overlay) {
         controllOpacity(picture, 'off');
       }
-
     }
   })
 }
