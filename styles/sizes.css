@@ -105,6 +105,7 @@
 
   --lost-sindbad-description-font-size: clamp(1.3125rem, 0.6259rem + 3.4331vw, 3.75rem);
   --lost-turtleneck-description-font-size: clamp(1.3125rem, 0.6259rem + 3.4331vw, 3.75rem);
+  --lost-dasha-description-font-size: clamp(1.6875rem, 1.265rem + 1.8vw, 3.1875rem);
 
 }
 
