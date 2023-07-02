@@ -95,10 +95,44 @@
   --popup-share-block-font-size: clamp(0.625rem, 0.5898rem + 0.1761vw, 0.75rem);
   --popup-arrow-width: clamp(0.9375rem, -0.1577rem + 2.9206vw, 2.5rem);
 
+  /* LOST */
+  --lost-after-header-margin: clamp(1.1875rem, 0.5537rem + 3.169vw, 3.4375rem);
+  --lost-main-title-font-size: clamp(8rem, -0.0873rem + 14vw, 12.758625rem);
+  --lost-after-title-margin: clamp(2.625rem, 1.9032rem + 3.6092vw, 5.1875rem);
+  --lost-subtitle-font-size: clamp(2.25rem, -1.2656rem + 4.6875vw, 3rem);
+  --lost-bench-iillustraton-padding-lr: clamp(0rem, -1.5669rem + 7.8345vw, 5.5625rem);
+  --lost-bench-illustration-padding-top: clamp(5rem, -0.3354rem + 10.6707vw, 9.375rem);
+
+  --lost-sindbad-description-font-size: clamp(1.3125rem, 0.6259rem + 3.4331vw, 3.75rem);
+  --lost-turtleneck-description-font-size: clamp(1.3125rem, 0.6259rem + 3.4331vw, 3.75rem);
+  --lost-dasha-description-font-size: clamp(1.6875rem, 1.265rem + 1.8vw, 3.1875rem);
+
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --lost-main-title-font-size: clamp(6.875rem, -0.375rem + 14vw, 10.5rem);
+    --lost-subtitle-font-size: clamp(1.5rem, 0rem + 3vw, 2.25rem);
+  }
 }
 
 @media (max-width: 1024px) {
   :root {
     --large-card-title-font-size: clamp(1.5rem, 0.9718rem + 1.6408vw, 3.375rem);
+  }
+}
+
+@media (max-width: 800px) {
+  :root {
+    --lost-main-title-font-size: clamp(5.125rem, -0.125rem + 14vw, 6.875rem);
+    --lost-subtitle-font-size: clamp(1.125rem, 0rem + 3vw, 1.5rem);
+
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --lost-main-title-font-size: clamp(4.5rem, 3.7857rem + 3.5714vw, 5.125rem);
+    --lost-subtitle-font-size: clamp(0.875rem, 0.5893rem + 1.4286vw, 1.125rem);
   }
 }
