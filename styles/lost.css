@@ -646,7 +646,10 @@
   }
 
   .shimon .item__description {
-    width: 243px;
+    width: 167px;
+    transform: rotate(5deg);
+    bottom: 15px;
+    left: 10px;
   }
 
   .polina {
@@ -879,7 +882,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .row:not(.row.one), .wrapper {
     grid-template-columns: 1fr !important;
     gap: 60px !important;
@@ -901,11 +904,15 @@
   }
 
   .item__description {
-    text-align: center;
+    text-align: center !important;
   }
 
   .asya .item__description {
     position: static;
     width: 245px;
+  }
+
+  .shimon .item__description {
+    left: -6px;
   }
 }
