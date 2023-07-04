@@ -79,6 +79,15 @@
   line-height: 1.4;
 }
 
+.section__link {
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.section__link:hover {
+  text-decoration: none;
+}
+
 @media (max-width: 1024px) {
   .section__caption {
     max-width: 100%;
@@ -100,5 +109,5 @@
 
   .section__title {
     padding: 2px 0px 5px;
-}
+  }
 }
