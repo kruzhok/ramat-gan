@@ -24,6 +24,10 @@
   gap: 22px;
 }
 
+.about-main > .article-about:last-of-type {
+  margin-bottom: 180px;
+}
+
 
 @media (max-width: 600px) {
   .about .index-wrapper {
@@ -41,5 +45,9 @@
 
   .about-main {
     gap: 25px;
-}
+  }
+
+  .about-main > .article-about:last-of-type {
+    margin-bottom: 120px;
+  }
 }
