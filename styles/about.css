@@ -1,0 +1,45 @@
+.about .header {
+  margin-bottom: 133px;
+}
+
+.about .index-wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.about .title {
+  margin-bottom: 28px;
+  font-family: Plaid, sans-serif;
+}
+
+.about-main {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.article-about {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+
+@media (max-width: 600px) {
+  .about .index-wrapper {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .about .header {
+    margin-bottom: 61px;
+  }
+
+  .about .title {
+    margin-bottom: 18px;
+  }
+
+  .about-main {
+    gap: 25px;
+}
+}
