@@ -81,11 +81,12 @@
 
 .section__link {
   text-decoration: underline;
-  transition: 0.3s;
+  transition: 3s;
 }
 
 .section__link:hover {
   text-decoration: none;
+  transition: 3s;
 }
 
 @media (max-width: 1024px) {

@@ -71,12 +71,15 @@
 
 .about-tabs__container {
   height: 0;
+  transform: translateY(-10%);
   overflow: hidden;
-  transition: 0.s3;
+  transition: 0.5s;
 }
 
 .about-tabs__item_opened .about-tabs__container {
   height: auto;
+  transform: translateY(0);
+  transition: 0.5s;
 }
 
 @media (max-width: 600px) {
@@ -99,5 +102,18 @@
 
   .about-main > .article-about:last-of-type {
     margin-bottom: 120px;
+  }
+
+  .about-tabs__button {
+    background-size: auto 20px;
+    background-position: right center;
+  }
+
+  .about-tabs__button {
+    padding: 14px 0 20px;
+  }
+
+  .about-tabs__text {
+    padding: 8px 2px 20px;
   }
 }
