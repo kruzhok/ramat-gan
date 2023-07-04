@@ -113,7 +113,8 @@
   --about-caption-font-size: clamp(0.75rem, 0.7143rem + 0.1786vw, 0.875rem);
   --about-main-text-font-size: clamp(0.875rem, 0.7679rem + 0.5357vw, 1.25rem);
   --about-title-font-size: clamp(1.875rem, 1.5536rem + 1.6071vw, 3rem);
-
+  --about-button-font-size: clamp(1.125rem, 0.9107rem + 1.0714vw, 1.875rem);
+  --about-text-tab-font-size: clamp(0.875rem, 0.5893rem + 1.4286vw, 1.875rem);
 }
 
 @media (max-width: 1200px) {
