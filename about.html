@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>О проекте</title>
         <link rel="stylesheet" href="./fonts/fonts.css" />
+        <link rel="stylesheet" href="./styles/swiper.css" />
         <link rel="stylesheet" href="./styles/sizes.css" />
         <link rel="stylesheet" href="./styles/effects.css" />
         <link rel="stylesheet" href="./styles/style.css" />
@@ -72,12 +73,23 @@
                             Многие из&nbsp;нас в&nbsp;Израиле впервые и&nbsp;впервые сталкиваются с&nbsp;такими изменениями в&nbsp;жизни. Но&nbsp;мы&nbsp;многому научились за&nbsp;последний год и&nbsp;постарались собрать наш опыт
                             в&nbsp;инструкции для тех, кто тоже недавно переехал или собирается переезжать. Это короткие карточки о&nbsp;том, как найти новых друзей, новые любимые места, как не&nbsp;потерять себя и&nbsp;проживать эмоции.
                         </p>
-                        <div class="gallery swiper">
+                        <div class="gallery-about swiper">
                           <div class="swiper-wrapper">
                             <figure class="swiper-slide">
                               <img class="section__pic" src="./images/about/boy.jpg" alt="бегущий человек" />
                               <figcaption class="section__caption">Здесь галерея фотографий со&nbsp;школы</figcaption>
                             </figure>
+                            <figure class="swiper-slide">
+                              <img class="section__pic" src="./images/about/boy.jpg" alt="бегущий человек" />
+                              <figcaption class="section__caption">Здесь галерея фотографий со&nbsp;школы</figcaption>
+                            </figure>
+                          </div>
+
+                          <div class="navigation-container gallery-about-navigation-container">
+                            <div class="swiper-button-prev">
+                            </div>
+                            <div class="swiper-button-next">
+                            </div>
                           </div>
                         </div>
                         <p class="section__text">
@@ -99,7 +111,7 @@
                 </section>
                 <section class="section about-tabs section_display_wide">
                   <ul class="about-tabs__list">
-                    <li class="about-tabs__item about-tabs__item_opened">
+                    <li class="about-tabs__item">
                       <button class="about-tabs__button" type="button">Студенты</button>
                       <div class="about-tabs__container">
                         <p class="about-tabs__text">
@@ -191,6 +203,7 @@
         </nav>
 
         <script src="./scripts/menu.js"></script>
+        <script src="./scripts/swiper.js"></script>
         <script src="./scripts/about-tabs.js"></script>
         <script src="./scripts/popups.js"></script>
     </body>
