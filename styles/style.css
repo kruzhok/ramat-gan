@@ -622,6 +622,7 @@ button {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: .1em .8em;
+  margin-top: auto;
  }
 
  .footer a {
