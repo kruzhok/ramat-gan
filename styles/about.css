@@ -52,6 +52,11 @@
   background-size: auto 30px;
   background-repeat: no-repeat;
   background-position: calc(100% - 20px) center;
+  transition: 0.5s;
+}
+
+.about-tabs__button:hover {
+  opacity: 0.8;
 }
 
 .about-tabs__item_opened .about-tabs__button {
@@ -80,6 +85,37 @@
   height: auto;
   transform: translateY(0);
   transition: 0.5s;
+}
+
+.gallery-about-navigation-container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: auto;
+  left: auto;
+}
+
+.gallery-about-navigation-container .swiper-button-prev,
+.gallery-about-navigation-container .swiper-button-next {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 35px;
+  height: 12px;
+}
+
+.gallery-about-navigation-container .swiper-button-prev {
+  background-image: url('../images/about/left.svg');
+}
+
+.gallery-about-navigation-container .swiper-button-next {
+  background-image: url('../images/about/right.svg');
+}
+
+@media (max-width: 1024px) {
+  .gallery-about {
+    padding-bottom: 20px;
+  }
 }
 
 @media (max-width: 600px) {
