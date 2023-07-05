@@ -20,10 +20,14 @@
   const swiper = new Swiper('.gallery-about', {
     slidesPerView: 1,
     direction: 'horizontal',
+    loop: true,
 
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    },
+    keyboard: {
+      enabled: true,
     },
   });
 })();
@@ -39,5 +43,7 @@
     }
   };
 
-  window.addEventListener('resize', changePoster);
+  window.addEventListener('resize', ()=>{
+    setTimeout(changePoster, 100);
+  });
 })();
