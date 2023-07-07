@@ -23,6 +23,7 @@
   border-radius: 20px;
   font-size: var(--popup-ttoltip-font-size);
   padding: var(--popup-tooltip-padding-t) var(--popup-tooltip-padding-lr) var(--popup-tooltip-padding-b);
+  opacity: 0;
 }
 
 .popup-close-button {
@@ -132,6 +133,7 @@
   align-items: center;
   gap: 1em;
   font-size: var(--popup-share-block-font-size);
+  color: #E5D1B8;
 }
 
 @media (max-width: 600px) {
@@ -154,7 +156,7 @@
   gap: 1em;
 }
 
-.share-list button {
+.share-list a, .share-list button {
   background-color: transparent;
   border: none;
   padding: 0;
@@ -163,6 +165,6 @@
   cursor: pointer;
 }
 
-.share-list button:hover {
+.share-list a:hover, .share-list button:hover {
   opacity: .6;
 }
