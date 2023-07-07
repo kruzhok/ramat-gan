@@ -328,7 +328,15 @@
     <template class="slider-popup-template">
       <div class="cards-popup">
         <div class="close-and-tooltip-container">
-          <p class="popup-tooltip">Ссылка&nbsp;скопирована</p>
+          <p
+            class="popup-tooltip common-transition"
+            id="slider-tooltip"
+            role="region"
+            aria-live="polite"
+            aria-hidden="true"
+          >
+            Ссылка&nbsp;скопирована
+          </p>
           <button
             type="button"
             class="popup-close-button common-transition"
@@ -397,10 +405,26 @@
         <div class="share-container">
           <p class="call-to-action">Репостнуть</p>
           <ul class="share-list">
-            <li><button class="common-transition">Фб</button>/</li>
-            <li><button class="common-transition">Тг</button>/</li>
-            <li><button class="common-transition">Твиттер</button>/</li>
-            <li><button class="common-transition">Ссылка</button></li>
+            <li>
+              <a target="_blank" class="common-transition fb-share"> Фб </a>
+              /
+            </li>
+            <li>
+              <a class="common-transition tg-share" target="_blank"> Тг </a>
+              /
+            </li>
+            <li>
+              <a class="common-transition tw-share" target="_blank">Твиттер</a>/
+            </li>
+            <li>
+              <button
+                class="common-transition link-share"
+                aria-controls="slider-tooltip"
+                data-href="https://shalom.kruzhok.io/instructions/support.html"
+              >
+                Ссылка
+              </button>
+            </li>
           </ul>
         </div>
       </div>
