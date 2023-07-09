@@ -38,6 +38,27 @@
   position: relative;
 }
 
+.section__video-play {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.section__video-wrapper__hide {
+  display: none;
+}
+
 .section__video-cover {
   position: absolute;
   block-size: 100%;
@@ -46,17 +67,16 @@
   top: 0;
   bottom: 0;
   z-index: 2;
+  object-fit: cover;
+  object-position: center;
 }
 
-.section__video-play {
+.section__video-play::before {
+  content: "Включить";
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  z-index: 3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 100px;
   border: 2px solid #E5D1B8;
   background: #2B2129;
@@ -69,11 +89,9 @@
   font-weight: 700;
   line-height: 100%;
   text-transform: uppercase;
-  cursor: pointer;
-  transition: 0.3s;
 }
 
-.section__video-play:hover {
+.section__video-play:hover::before {
   opacity: 0.8;
 }
 
@@ -148,7 +166,7 @@
     padding: 2px 0px 5px;
   }
 
-  .section__video-play {
+  .section__video-play::before {
     padding: 9px 17px;
   }
 }
