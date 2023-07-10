@@ -1,11 +1,10 @@
 import {dataArray} from './data.js';
+import { baseURL } from './config.js';
 
 const cards = document.querySelectorAll(".clickable-card");
 const popupTmp = document.querySelector(".slider-popup-template");
 const slideTemplate = document.querySelector(".card-slide-tmp");
-const baseURL = "https://shalom.kruzhok.io/";
 
-let isOpened = false;
 
 cards.forEach((item) => {
   let popup;
@@ -62,7 +61,7 @@ function generateSlider(tmp, obj, parent) {
     .querySelector(".card-slide-illustration")
     .setAttribute("alt", obj.coverText);
   node.querySelector(".cards-popup-slider").classList.add(`theme-${obj.theme}`);
-  const encodedShareURL = encodeURI(`${baseURL}${obj.slug}.html`);
+  const encodedShareURL = encodeURI(`${baseURL}/instructions/${obj.slug}.html`);
   node
     .querySelector(".fb-share")
     .setAttribute(
