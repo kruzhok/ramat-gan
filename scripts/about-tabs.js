@@ -32,18 +32,24 @@
   });
 })();
 
-
-(function() { // video poster
+(function() { // video play
+  const playButton = document.querySelector('.section__video-play');
+  const poster = document.querySelector('.section__video-cover');
   const video = document.querySelector('.section__video');
-  const changePoster = () => {
-    if (document.querySelector('body').clientWidth <= 600) {
-      video.poster = './images/about/cover-mob.jpg';
-    } else {
-      video.poster = './images/about/cover.jpg';
-    }
-  };
+  const hiddenClass = 'section__video-wrapper__hide';
 
-  window.addEventListener('resize', ()=>{
-    setTimeout(changePoster, 100);
-  });
+  const playVideo = (evt) => {
+    evt.preventDefault();
+    playButton.classList.add(hiddenClass);
+    poster.classList.add(hiddenClass);
+    video.play();
+
+    video.addEventListener('ended', () => {
+      playButton.classList.remove(hiddenClass);
+      poster.classList.remove(hiddenClass);
+    });
+
+  }
+
+  playButton.addEventListener('click', playVideo)
 })();
