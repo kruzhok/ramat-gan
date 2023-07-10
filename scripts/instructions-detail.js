@@ -1,4 +1,5 @@
 import {dataArray} from './data.js';
+import { baseURL } from './config.js';
 
 
 // Определяет по дата-атрибуту body, про что страница и устанавливает класс неактивной карточки
@@ -32,8 +33,7 @@ currentCardData.content.forEach(item => {
 initializeSwiper()
 
 // Устанавливает ссылки шеринга
-const baseURL = "https://shalom.kruzhok.io/";
-const encodedShareURL = encodeURI(`${baseURL}${currentCardData.slug}.html`);
+const encodedShareURL = encodeURI(`${baseURL}/instructions/${currentCardData.slug}.html`);
 document
     .querySelector(".fb-share")
     .setAttribute(
