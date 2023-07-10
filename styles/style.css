@@ -82,6 +82,11 @@ button {
   color: #E5D1B8;
 }
 
+.theme-semipurple {
+  background-color: #4C3C47;
+  color: #E5D1B8;
+}
+
 .theme-lightpurple {
   background-color: #7D6779;
   color: #E5D1B8;
@@ -386,6 +391,11 @@ button {
   display: flex;
   flex-direction: column;
   padding: 0;
+}
+
+.card_current {
+  opacity: .3;
+  pointer-events: none;
 }
 
 .card img {
