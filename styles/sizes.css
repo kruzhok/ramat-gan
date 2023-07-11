@@ -119,7 +119,7 @@
 
 
   /* INSTRUCTION DETAIL */
-  --instruction-detail-after-header-margin: clamp(0rem, -0.7923rem + 3.9613vw, 2.8125rem);
+  --instruction-detail-after-header-margin: clamp(2.1875rem, 2.0114rem + 0.8803vw, 2.8125rem);
   --instruction-detail-after-slider-margin: clamp(3.0625rem, 2.7104rem + 1.7606vw, 4.3125rem);
   --instructin-detail-before-footeer-margin: clamp(6.75rem, 4.9014rem + 9.243vw, 13.3125rem);
 }
