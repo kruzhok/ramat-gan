@@ -143,6 +143,8 @@
   transition: 0.3s;
 }
 
+
+
 @media (max-width: 1024px) {
   .section__caption {
     max-width: 100%;
