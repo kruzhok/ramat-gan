@@ -425,108 +425,7 @@ button {
 }
 
 
-
-
-/* Картика во всю ширину */
-.full-page-image {
-  width: 100%;
-}
-/* END Картика во всю ширину */
-
-
-
-/* Картика во всю ширину c подписью */
-
-.full-page-image-with-caption img {
-  width: 100%;
-}
-
-
-/* END Картика во всю ширину c подписью */
-
-/* Одинокая вертикальная картинка */
-
-.single-vertical-image-with-caption {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.single-vertical-image-with-caption div {
-  width: 40%;
-}
-
-.single-vertical-image-with-caption img {
-  min-width: 100%;
-  aspect-ratio: 520 / 693px;
-  object-fit: cover;
-}
-
-/*END Одинокая вертикальная картинка */
-
-/* Две горизонтальные картинки с подписями делят пространство пополам */
-
-.image-grid-50_50 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-
-.image-grid-50_50 img {
-  width: 100%;
-  aspect-ratio: 1456/835;
-  object-fit: cover;
-}
-
-/*END Две горизонтальные картинки с подписями делят пространство пополам */
-
-
-/* Две вертикальные картинки в ряд с подписями */
-.image-grid-50_50-vertical {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  padding: 0 10%;
-}
-
-.image-grid-50_50-vertical img {
-  width: 100%;
-  aspect-ratio: 520 / 693px;
-  object-fit: cover;
-}
-/*END Две вертикальные картинки в ряд с подписями */
-
-/* Если одна фотка коризонтальная, а вторая вертикальная */
-.vertical-and-horizontal-image {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 5px 16px;
-}
-
-.vertical-and-horizontal-image .vertical {
- grid-column: span 1;
-}
-
-.vertical-and-horizontal-image .vertical img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.vertical-and-horizontal-image .horizontal {
-  grid-column: span 2;
- }
-
- .vertical-and-horizontal-image .horizontal img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-
- }
-
- /* END Если одна фотка коризонтальная, а вторая вертикальная */
-
- /* Слайдер */
+ /* Слайдер общие стили на все слайдеры всех страниц */
 
  .swiper {
   width: 100%;
@@ -552,18 +451,7 @@ button {
 
  /* END Слайдер */
 
- /* Ютуб видео */
 
- .yt-container iframe {
-  width: 100%;
-  aspect-ratio: 16/9;
- }
-
- .yt-container-part {
-  padding: 0 10%;
- }
-
- /* END Ютуб с видео */
 
  /* Видео-кружок */
 
@@ -585,43 +473,7 @@ button {
  }
 
 
- /* Блок с параграфами */
- .paragraph-block {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.4;
-  width: 70%;
-  margin: auto;
- }
 
- .paragraph-block p:not(:last-of-type) {
-  margin-bottom: 1em;
- }
- /* END Блок с параграфами */
-
-/* Заголовок текста */
-
- .text-title {
-  font-family: 'Plaid Mono', monospace;
-  font-weight: 700;
-  font-size: 66px;
-  line-height: 1;
-  width: 70%;
-  margin: auto;
- }
-
- /* END Заголовок текста */
-
-/* Большая фраза */
- .large-text {
-  font-weight: 700;
-  font-family: 'Plaid Mono', monospace;
-  font-size: 66px;
-  line-height: 1;
-  width: 70%;
-  margin: auto;
- }
- /* END Большая фраза */
 
  .footer {
   font-family: 'Plaid Mono', monospace;
@@ -657,68 +509,6 @@ button {
  .footer-links a:hover {
   text-decoration: underline;
  }
-
-
- /* Отступы */
-
- .mb-25 {
-  margin-bottom: 25px;
- }
-
- .mt-25 {
-  margin-top: 25px;
- }
-
- .mb-55 {
-  margin-bottom: 55px;
- }
-
- .mt-55 {
-  margin-top: 55px;
- }
-
- .mb-50 {
-  margin-bottom: 50px;
- }
-
- .mt-50 {
-  margin-top: 50px;
- }
-
- .mb-45 {
-  margin-bottom: 45px;
- }
-
- .mt-45 {
-  margin-top: 45px;
- }
-
- .mb-86 {
-  margin-bottom: 86px;
- }
-
- .mt-86 {
-  margin-top: 86px;
- }
-
- .mb-72 {
-  margin-bottom: 72px;
- }
-
- .mt-72 {
-  margin-top: 72px;
- }
-
- .mb-128 {
-  margin-bottom: 128px;
- }
-
- .mt-128 {
-  margin-top: 128px;
- }
-
-
-
 
  .clickable-card:hover {
   cursor: pointer;
