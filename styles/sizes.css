@@ -121,7 +121,17 @@
   /* INSTRUCTION DETAIL */
   --tips-detail-after-header-margin: clamp(2.1875rem, 2.0114rem + 0.8803vw, 2.8125rem);
   --tips-detail-after-slider-margin: clamp(3.0625rem, 2.7104rem + 1.7606vw, 4.3125rem);
-  --tips-detail-before-footeer-margin: clamp(6.75rem, 4.9014rem + 9.243vw, 13.3125rem);
+  --tips-detail-before-footer-margin: clamp(6.75rem, 4.9014rem + 9.243vw, 13.3125rem);
+
+  /* STORY DETAIL */
+  --story-author-and-date-font-size: clamp(0.875rem, 0.6989rem + 0.8803vw, 1.5rem);
+  --story-title-font-size: clamp(2.5rem, 1.7958rem + 3.5211vw, 5rem);
+  --story-share-font-size: clamp(0.875rem, 0.7694rem + 0.5282vw, 1.25rem);
+  --story-after-header-margin: clamp(3.6875rem, 3.353rem + 1.6725vw, 4.875rem);
+  --story-after-author-and-date-margin: clamp(1rem, 0.8592rem + 0.7042vw, 1.5rem);
+  --story-after-title-margin: clamp(1.125rem, 0.8081rem + 1.5845vw, 2.25rem);
+  --story-after-title-section-margin: clamp(1.5rem, 1.1831rem + 1.5845vw, 2.625rem);
+  --story-before-footer-margin: clamp(6.75rem, 5.8345rem + 4.5775vw, 10rem);
 }
 
 @media (max-width: 1200px) {
