@@ -61,7 +61,7 @@ function generateSlider(tmp, obj, parent) {
     .querySelector(".card-slide-illustration")
     .setAttribute("alt", obj.coverText);
   node.querySelector(".cards-popup-slider").classList.add(`theme-${obj.theme}`);
-  const encodedShareURL = encodeURI(`${baseURL}/instructions/${obj.slug}.html`);
+  const encodedShareURL = encodeURI(`${baseURL}/tips/${obj.slug}.html`);
   node
     .querySelector(".fb-share")
     .setAttribute(
