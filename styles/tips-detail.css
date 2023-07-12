@@ -1,5 +1,5 @@
-.instruction-detail .header {
-  margin-bottom: var(--instruction-detail-after-header-margin);
+.tips-detail .header {
+  margin-bottom: var(--tips-detail-after-header-margin);
 }
 
 
@@ -7,7 +7,7 @@
   display: grid;
   place-items: center;
   gap: 8px;
-  margin-bottom: var(--instruction-detail-after-slider-margin);
+  margin-bottom: var(--tips-detail-after-slider-margin);
 }
 
 .slider-container {
@@ -150,7 +150,7 @@
 
 
 .instructions {
-  margin-bottom: var(--instructin-detail-before-footeer-margin);
+  margin-bottom: var(--tips-detail-before-footeer-margin);
 }
 
 .instructioons__title {
