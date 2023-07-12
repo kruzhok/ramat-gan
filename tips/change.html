@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test cards</title>
+    <link rel="stylesheet" href="../fonts/fonts.css" />
+    <link rel="stylesheet" href="../styles/swiper.css" />
+    <link rel="stylesheet" href="../styles/sizes.css" />
+    <link rel="stylesheet" href="../styles/effects.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/tips-detail.css">
+  </head>
+  <body class="tips-detail inner-page theme-semipurple" data-id="change">
+    <!-- Шапка сайта -->
+    <header class="header">
+      <a href="/index.html" class="logo-container common-transition">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          class="logo"
+          viewBox="0 0 158 69"
+        >
+          <use href="../svg/logo.svg#small-logo"></use>
+        </svg>
+        <span class="logo-text"
+          >Сейф-спейс для тех, кто переехал в&nbsp;Израиль за последний
+          год</span
+        >
+      </a>
+      <button
+        class="menu-button menu-button--open common-transition"
+        type="button"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 59 17">
+          <use href="../svg/burger.svg#burger-closed"></use>
+        </svg>
+      </button>
+    </header>
+
+    <main>
+      <section class="slider">
+        <div class="slider-container">
+          <div class="cards-slider swiper">
+            <div class="swiper-wrapper">
+              <!-- Сюда приходят данные из темплейта -->
+            </div>
+            <div class="swiper-button-prev">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.7">
+                  <circle
+                    cx="20"
+                    cy="20"
+                    r="20"
+                    transform="rotate(-180 20 20)"
+                    fill="#2B2129"
+                  />
+                  <path
+                    d="M4 20L14 25.7735L14 14.2265L4 20ZM34 19L13 19L13 21L34 21L34 19Z"
+                    fill="white"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.7">
+                  <circle cx="20" cy="20" r="20" fill="#2B2129" />
+                  <path
+                    d="M36 20L26 14.2265L26 25.7735L36 20ZM6 21L27 21L27 19L6 19L6 21Z"
+                    fill="white"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="share-container">
+          <p class="call-to-action">Репостнуть</p>
+          <ul class="share-list">
+            <li>
+              <a target="_blank" class="common-transition fb-share"> Фб </a>
+              /
+            </li>
+            <li>
+              <a class="common-transition tg-share" target="_blank"> Тг </a>
+              /
+            </li>
+            <li>
+              <a class="common-transition tw-share" target="_blank">Твиттер</a>/
+            </li>
+            <li>
+              <button
+                class="common-transition link-share"
+                aria-controls="slider-tooltip"
+                data-href=""
+              >
+                Ссылка
+              </button>
+            </li>
+          </ul>
+        </div>
+        <p class="link-shared-tooltip common-transition" aria-hidden="true" id="slider-tooltip" aria-live="polite">Ссылка скопирована!</p>
+      </section>
+      <section class="instructions">
+        <h2 class="instructioons__title">Больше инструкций</h2>
+        <!-- Карточки -->
+        <ol class="cards-section">
+          <li>
+            <a
+              href="./support.html"
+              aria-label="Музыкальный тур для управления сложными эмоциями"
+              aria-description="Игорь и Эдуард проведут от гнева и тревоги к спокойствию и даже надежде"
+              class="card theme-darkgreen clickable-card common-transition"
+              id="support"
+            >
+              <img src="/images/covers/support.svg" alt="" aria-hidden="true" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="./films.html"
+              aria-label="Что посмотреть, чтобы ненадолго отвлечься"
+              aria-description="Данина подборка фильмов с ультра-короткими рецензиями в твиттер-формате"
+              class="card theme-lightpurple clickable-card common-transition"
+              id="films"
+            >
+              <img src="/images/covers/films.svg" alt="" aria-hidden="true" />
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="./emotions.html"
+              aria-label="Музыкальный тур для управления сложными эмоциями"
+              aria-description="Игорь и Эдуард проведут от гнева и тревоги к спокойствию и даже надежде"
+              class="card theme-lightyellow clickable-card common-transition"
+              id="emotions"
+            >
+              <img src="/images/covers/music.svg" alt="" aria-hidden="true" />
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="./space.html"
+              aria-label="Как освоить местность"
+              aria-description="Илья, Полина, Дария и Игорь про то, как осваиваться в новой стране"
+              class="card theme-purple clickable-card common-transition"
+              id="space"
+            >
+              <img src="/images/covers/space.svg" alt="" aria-hidden="true" />
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="./contact.html"
+              aria-label="Как найти своих людей"
+              aria-description="Саша, Игорь и Полина о том, как контактировать с людьми"
+              class="card theme-blue clickable-card common-transition"
+              id="contact"
+            >
+              <img src="/images/covers/contact.svg" alt="" aria-hidden="true" />
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="./talk.html"
+              aria-label="Как найти поддержку в интернете бесплатно"
+              aria-description="Оригинальный способ найти собеседников от Шимона"
+              class="card theme-darkgreen clickable-card common-transition"
+              id="talk"
+            >
+              <img src="/images/covers/internet.svg" alt="" aria-hidden="true" />
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="./activity.html"
+              aria-label="Чем занять себя"
+              aria-description="Как переключить себя в конструктивную деятельность"
+              class="card theme-lightpurple clickable-card common-transition"
+              id="activity"
+            >
+              <img src="/images/covers/whattodo.svg" alt="" aria-hidden="true" />
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="./change.html"
+              aria-label="Как влиться в местный контекст"
+              aria-description="Что делать для того, чтобы ещё лучше понимать местную обстановку"
+              class="card theme-lightyellow clickable-card common-transition"
+              id="change"
+            >
+              <img src="/images/covers/local.svg" alt="" aria-hidden="true" />
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="./advice.html"
+              aria-label="Советы для жизни в Израиле"
+              aria-description="Мудрость Ализы и Ильи в четырёх абзацах"
+              class="card theme-brown clickable-card common-transition"
+              id="advice"
+            >
+              <img src="/images/covers/advice.svg" alt="" aria-hidden="true" />
+            </a>
+          </li>
+        </ol>
+      </section>
+    </main>
+    <!-- Подвал -->
+    <footer class="footer">
+      <p class="footer-copy">
+        При поддержке
+        <a class="common-transition" href="https://kruzhok.io" target="_blank"
+          >Кружок</a
+        >
+        и
+        <a
+          class="common-transition"
+          href="https://www.instagram.com/dikieprogulki/"
+          target="_blank"
+          >Wild Walks</a
+        >
+      </p>
+      <ul class="footer-links">
+        <li>
+          <a class="common-transition" href="/about.html">О проекте</a> /
+        </li>
+        <li>
+          <a class="common-transition" href="/stories.html">Год перемен</a> /
+        </li>
+        <li>
+          <a class="common-transition" href="/tips.html">Инструкция</a> /
+        </li>
+        <li>
+          <a class="common-transition" href="/tips.html">Как мы живём</a> /
+        </li>
+        <li><a class="common-transition" href="">Бюро потерь</a></li>
+      </ul>
+    </footer>
+    <!-- Выплывающее меню -->
+    <nav class="header-menu theme-semipurple">
+      <div class="header-menu-header">
+        <a href="/index.html" class="logo-container common-transition">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            class="logo"
+            viewBox="0 0 158 69"
+          >
+            <use href="../svg/logo.svg#small-logo"></use>
+          </svg>
+          <span class="logo-text"
+            >Сейф-спейс для тех, кто переехал в&nbsp;Израиль за последний
+            год</span
+          >
+        </a>
+        <button
+          class="menu-button menu-button--close common-transition"
+          type="button"
+        >
+          <svg
+            viewBox="0 0 61 21"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <use href="../svg/burger.svg#burger-opened"></use>
+          </svg>
+        </button>
+      </div>
+      <ul class="main-menu">
+        <li><a class="common-transition" href="/about.html">О проекте</a></li>
+        <li>
+          <a class="common-transition" href="/stories.html">Год перемен</a>
+        </li>
+        <li><a class="common-transition">Инструкция</a></li>
+        <li>
+          <a class="common-transition" href="/stories.html">Как мы живём</a>
+        </li>
+        <li><a class="common-transition" href="/lost.html">Бюро потерь</a></li>
+      </ul>
+
+      <p class="main-menu__footer">
+        При поддержке
+        <a class="common-transition" href="https://kruzhok.io" target="_blank"
+          >Кружок</a
+        >
+        и
+        <a
+          class="common-transition"
+          href="https://www.instagram.com/dikieprogulki/"
+          target="_blank"
+          >Wild Walks</a
+        >
+      </p>
+    </nav>
+
+
+    <template class="cover-template">
+      <div class="swiper-slide card-slide-cover">
+        <img src="" alt="" class="card-slide-illustration" />
+      </div>
+    </template>
+
+    <template class="slide-template">
+      <div class="swiper-slide content-slide">
+        <p class="card-slide-content"></p>
+        <p class="card-slide-author"></p>
+      </div>
+    </template>
+
+    <!-- Не уаляйте строчки ниже -->
+    <script src="../scripts/menu.js"></script>
+    <script src="../scripts/swiper.js"></script>
+    <script src="./scripts/config.js" type="module"></script>
+    <script src="../scripts/data.js" type="module"></script>
+    <script src="../scripts/tips-detail.js" type="module"></script>
+  </body>
+</html>
