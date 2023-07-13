@@ -29,7 +29,7 @@
   align-items: center;
   gap: 1em;
   font-size: var(--story-share-font-size);
-  color: #E5D1B8;
+  color: inherit;
 }
 
 .share-list {
