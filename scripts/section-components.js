@@ -32,6 +32,7 @@
     });
 
   }
-
-  playButton.addEventListener('click', playVideo)
+  if(video) {
+    playButton.addEventListener('click', playVideo)
+  }
 })();
