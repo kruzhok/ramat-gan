@@ -160,6 +160,10 @@
     aspect-ratio: 679/300;
   }
 
+  .timeline-card--description {
+    width: 50%;
+  }
+
   .timeline-card-50_50 .timeline-card-image {
     width: 50%;
     aspect-ratio: 679/300;
@@ -181,6 +185,11 @@
   @media (max-width: 600px) {
     .timeline-card {
       flex-direction: column;
+      aspect-ratio: initial;
+    }
+
+    .timeline-card--description {
+      width: 100%;
     }
 
     .timeline-card-100 .timeline-card-image {
