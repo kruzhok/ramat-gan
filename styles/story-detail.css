@@ -89,6 +89,7 @@
   margin-top: clamp(3.375rem, 3.0581rem + 1.5845vw, 4.5rem);
   border-top: 1px solid currentColor;
   padding-top: 10px;
+  margin-bottom: var(--story-after-last-share-margin);
 }
 
 .link-shared-tooltip_device_mobile {
@@ -117,7 +118,93 @@
   }
 }
 
-.story .footer {
-  margin-top: var(--story-before-footer-margin);
+.next-story {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  row-gap: clamp(1.5rem, 1.3415rem + 0.7923vw, 2.0625rem);
+  margin-bottom: var(--story-before-footer-margin);
+}
+
+.next-story__title {
+  font-size: clamp(1.5rem, 1.2183rem + 1.4085vw, 2.5rem);
+}
+
+.next-story__all-stories-link {
+  --transition-property: all;
+  font-size: 18px;
+  padding: 10px 30px 12px;
+  border: 1px solid currentColor;
+  font-family: 'Plaid Mono';
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.next-story__all-stories-link:hover {
+  background-color: #E5D1B8;
+  color: #3C4C48;
+}
+
+.next-story__card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  aspect-ratio: 1396/300;
+  grid-column: 1/-1;
+}
+
+.next-story__card:hover {
+  opacity: .6;
+}
+
+.next-story__card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: inherit;
+}
+
+.next-story__description {
+  padding: clamp(0.875rem, 0.6989rem + 0.8803vw, 1.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.next-story__card-name {
+  font-size: clamp(1.5rem, 1.3944rem + 0.5282vw, 1.875rem);
+  max-width: 45%;
+  margin-bottom: 10px;
+}
+
+
+
+.next-story__card-date {
+  font-size: clamp(3.75rem, 3.0458rem + 3.5211vw, 6.25rem);
+  font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .next-story__card-name {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 600px) {
+  .next-story__card {
+    grid-template-columns: 1fr;
+    aspect-ratio: initial;
+  }
+
+  .next-story__all-stories-link {
+    grid-row: 3;
+  }
+  .next-story__card-image  {
+    aspect-ratio: 292/190;
+  }
+  .next-story__description  {
+    aspect-ratio: 292/190;
+  }
 }
 
