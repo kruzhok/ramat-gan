@@ -125,6 +125,8 @@
   margin-bottom: var(--story-before-footer-margin);
 }
 
+
+
 .next-story__title {
   font-size: clamp(1.5rem, 1.2183rem + 1.4085vw, 2.5rem);
 }
@@ -151,6 +153,10 @@
   grid-template-columns: 1fr 1fr;
   aspect-ratio: 1396/300;
   grid-column: 1/-1;
+}
+
+.next-story__card_anonimous {
+  grid-template-columns: 1fr;
 }
 
 .next-story__card:hover {
