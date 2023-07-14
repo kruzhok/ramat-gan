@@ -131,7 +131,8 @@
   --story-after-author-and-date-margin: clamp(1rem, 0.8592rem + 0.7042vw, 1.5rem);
   --story-after-title-margin: clamp(1.125rem, 0.8081rem + 1.5845vw, 2.25rem);
   --story-after-title-section-margin: clamp(1.5rem, 1.1831rem + 1.5845vw, 2.625rem);
-  --story-before-footer-margin: clamp(6.75rem, 5.8345rem + 4.5775vw, 10rem);
+  --story-before-footer-margin: clamp(4.5rem, 4.9401rem + -2.2007vw, 2.9375rem);
+  --story-after-last-share-margin: clamp(3.375rem, 2.4243rem + 4.7535vw, 6.75rem);
 }
 
 @media (max-width: 1200px) {
