@@ -182,6 +182,10 @@
   font-size: clamp(0.75rem, 0.7148rem + 0.1761vw, 0.875rem);
 }
 
+.section__decorated-blockquote_lh_wide p:not(:last-of-type) {
+  margin-bottom: 1.5em;
+}
+
 
 
 .section__blockquote-title {
