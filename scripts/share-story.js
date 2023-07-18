@@ -24,12 +24,15 @@ setSocialShareUrl(tgPrefix, currentUrl, tgLink, tgShareText);
 setSocialShareUrl(twPrefix, currentUrl, twLink, twShareText);
 
 if(window.matchMedia('(max-width: 600px)').matches) {
+  document.querySelectorAll('.link-share').forEach(item => item.setAttribute('aria-controls', 'share-tooltip-mobile'))
   makeLinkShare(
     [...document.querySelectorAll('.link-share')],
     currentUrl,
     [...document.querySelectorAll('.link-shared-tooltip_device_mobile')]
     )
 } else {
+  document.querySelectorAll('.link-share')[0].setAttribute('aria-controls', 'share-tooltip-top');
+  document.querySelectorAll('.link-share')[1].setAttribute('aria-controls', 'share-tooltip-boottom');
   makeLinkShare(
     [...document.querySelectorAll('.link-share')],
     currentUrl,
