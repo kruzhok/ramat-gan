@@ -158,14 +158,7 @@
   background-position: center;
   width: 35px;
   height: 12px;
-}
-
-.gallery-section-navigation-container .swiper-button-prev {
-  background-image: url('/images/about/left.svg');
-}
-
-.gallery-section-navigation-container .swiper-button-next {
-  background-image: url('/images/about/right.svg');
+  color: inherit;
 }
 
 .section__blockquote-wrapper {
