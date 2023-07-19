@@ -36,6 +36,7 @@
 
 .things {
   margin-top: 200px;
+  margin-bottom: 200px;
 }
 
 .row.one {
@@ -384,10 +385,29 @@
   place-items: end;
 }
 
+
+@media (orientation: portrait) {
+  .bench {
+    min-height: 40vh;
+    transition: min-height .8s .3s linear;
+  }
+  .bench__illustration {
+    margin-bottom: 50px;
+  }
+
+  .things {
+    margin-top: 50px;
+  }
+}
+
 .bench__illustration {
   width: 100%;
   opacity: .5;
   transition: opacity .3s;
+}
+
+.on-intersection {
+  min-height: 75vh;
 }
 
 .add-opacity {
@@ -395,7 +415,7 @@
 }
 
 .spacer {
-  min-height: 75vh;
+  min-height: 85vh;
 }
 
 
@@ -404,7 +424,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 100px;
 }
 
 
@@ -451,9 +470,6 @@
 
 }
 
-/* .spacer {
-  min-height: 75vh;
-} */
 
 
 @media (max-width: 1350px) {
@@ -835,10 +851,6 @@
   .ilya-friends {
     grid-column: 1;
     grid-row: 7/8;
-  }
-
-  .spacer {
-    min-height: 55vh;
   }
 
 }
