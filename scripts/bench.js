@@ -13,7 +13,7 @@ function controllOpacity(el, state) {
 
 const overlayOptions = {
   rootMargin: '100px 0px 0px 0px',
-  threshold: [0.05, 0.7],
+  threshold: 0.1,
 }
 
 const overlayCallback = (entries, observer) => {
@@ -24,7 +24,6 @@ const overlayCallback = (entries, observer) => {
     }
     else {
       controllOpacity(picture, 'off')
-      document.querySelector('.bench').classList.remove('on-intersection');
     }
 
   })
@@ -33,13 +32,16 @@ const overlayCallback = (entries, observer) => {
 
 const spacerOptions = {
   rootMargin: '0px 0px 0px 0px',
-  threshold: 0.9,
+  threshold: 0.95,
 }
 
 const spacerCallback = (entries, observer) => {
   entries.forEach((entry) => {
     if(entry.isIntersecting) {
       document.querySelector('.bench').classList.add('on-intersection');
+    }
+    else {
+      document.querySelector('.bench').classList.remove('on-intersection');
     }
   })
 }

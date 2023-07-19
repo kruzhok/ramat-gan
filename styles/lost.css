@@ -389,7 +389,7 @@
 @media (orientation: portrait) {
   .bench {
     min-height: 40vh;
-    transition: min-height .8s .3s linear;
+    transition: min-height .5s linear;
   }
   .bench__illustration {
     margin-bottom: 50px;
