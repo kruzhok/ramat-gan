@@ -11,36 +11,42 @@ function controllOpacity(el, state) {
   }
 }
 
-const options = {
+const overlayOptions = {
   rootMargin: '100px 0px 0px 0px',
-  threshold: 0,
+  threshold: [0.05, 0.7],
 }
 
-const callback = (entries, observer) => {
+const overlayCallback = (entries, observer) => {
 
   entries.forEach((entry) => {
     if(entry.isIntersecting) {
-      if(entry.target === overlay) {
-        controllOpacity(picture, 'on');
-      }
-      if(entry.target === spacer) {
-        controllOpacity(picture, 'off');
-      }
-    } else {
-      if(entry.target === spacer) {
-        controllOpacity(picture, 'on');
-      }
-      if(entry.target === overlay) {
-        controllOpacity(picture, 'off');
-      }
+      controllOpacity(picture, 'on')
+    }
+    else {
+      controllOpacity(picture, 'off')
+      document.querySelector('.bench').classList.remove('on-intersection');
+    }
+
+  })
+}
+
+
+const spacerOptions = {
+  rootMargin: '0px 0px 0px 0px',
+  threshold: 0.9,
+}
+
+const spacerCallback = (entries, observer) => {
+  entries.forEach((entry) => {
+    if(entry.isIntersecting) {
+      document.querySelector('.bench').classList.add('on-intersection');
     }
   })
 }
 
-const overlayObserver = new IntersectionObserver(callback, options);
-
-[overlay, spacer].forEach(item => {
-  overlayObserver.observe(item);
-})
+const overlayObserver = new IntersectionObserver(overlayCallback, overlayOptions);
+const spacerObserver = new IntersectionObserver(spacerCallback, spacerOptions);
 
 
+overlayObserver.observe(overlay);
+spacerObserver.observe(spacer);
