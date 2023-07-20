@@ -87,57 +87,68 @@ button {
 .theme-yellow {
   background-color: #E5B181;
   color: #2B2129;
+  --scroll-color: #2B2129;
 }
 
 .theme-lightyellow {
   background-color: #E2D2BB;
   color: #2B2129;
+  --scroll-color: #2B2129;
 }
 
 .theme-purple {
   background-color: #2B2129;
   color: #E5D1B8;
+  --scroll-color: #E5D1B8;
 }
 
 .theme-semipurple {
   background-color: #4C3C47;
   color: #E5D1B8;
+  --scroll-color: #E5D1B8;
 }
 
 .theme-lightpurple {
   background-color: #7D6779;
   color: #E5D1B8;
+  --scroll-color: #E5D1B8;
 }
 
 .theme-orange {
   background-color: #DE8E59;
   color: #2B2129;
+  --scroll-color: #2B2129;
 }
 
 .theme-white {
   background-color: #F2F4F3;
   color: #2B2129;
+  --scroll-color: #2B2129;
 }
 
 .theme-darkorange {
   background-color: #AF7A4C;
   /* color: #F2F4F3; */
   color: #E5D1B8;
+  --scroll-color: #E5D1B8;
 }
 
 .theme-darkgreen {
   background-color: #3C4C48;
   color: #E5D1B8;
+  --scroll-color: #E5D1B8;
 }
 
 .theme-ultradarkgreen {
   background-color: #202B28;
   color: #E5D1B8;
+  --scroll-color: #E5D1B8;
 }
 
 .theme-blue {
   background-color: #7583A5;
   color: #E5D1B8;
+  --scroll-color: #E5D1B8;
 }
 
 /* Шапка */
