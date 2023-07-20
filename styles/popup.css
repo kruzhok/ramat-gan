@@ -21,7 +21,7 @@
   background-color: rgb(229 209 184 / .5);
   color: #2B2129;
   border-radius: 20px;
-  font-size: var(--popup-ttoltip-font-size);
+  font-size: var(--popup-tooltip-font-size);
   padding: var(--popup-tooltip-padding-t) var(--popup-tooltip-padding-lr) var(--popup-tooltip-padding-b);
   opacity: 0;
 }
@@ -64,13 +64,17 @@
 .cards-popup-slider .swiper-button-prev,
 .cards-popup-slider .swiper-button-next {
   position: absolute;
-  --swiper-navigation-sides-offset: clamp(0.25rem, -1.3271rem + 3vw, 2.5rem);
+  top: 50%;
+  translate: 0 50%;
+  width: var(--popup-arrow-width);
+  height: var(--popup-arrow-width);
+  --swiper-navigation-sides-offset: 1.1vmin;
 }
 
 .cards-popup-slider .swiper-button-prev svg,
 .cards-popup-slider .swiper-button-next svg {
-  width: var(--popup-arrow-width);
-  height: var(--popup-arrow-width);
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
 }

@@ -106,7 +106,7 @@
   background-color: rgb(229 209 184 / .5);
   color: #2B2129;
   border-radius: 20px;
-  font-size: var(--popup-ttoltip-font-size);
+  font-size: var(--popup-tooltip-font-size);
   padding: var(--popup-tooltip-padding-t) var(--popup-tooltip-padding-lr) var(--popup-tooltip-padding-b);
   width: fit-content;
   word-wrap: nowrap;
