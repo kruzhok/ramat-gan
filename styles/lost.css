@@ -385,11 +385,15 @@
   place-items: end;
 }
 
+.spacer .bench__illustration {
+  display: none;
+}
+
 
 @media (orientation: portrait) {
   .bench {
     min-height: 40vh;
-    transition: min-height .5s linear;
+    position: relative;
   }
   .bench__illustration {
     margin-bottom: 50px;
@@ -398,16 +402,22 @@
   .things {
     margin-top: 50px;
   }
+
+  .spacer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .spacer .bench__illustration {
+    display: block;
+  }
 }
 
 .bench__illustration {
   width: 100%;
   opacity: .5;
   transition: opacity .3s;
-}
-
-.on-intersection {
-  min-height: 75vh;
 }
 
 .add-opacity {
