@@ -81,6 +81,21 @@
   }
 }
 
+ /* Видео-кружок */
+
+ .video-circle {
+  width: fit-content;
+  border-radius: 50%;
+ }
+
+ .video-circle video {
+  width: 300px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+ }
+
 .index-circle video {
   width: clamp(7.5rem, 3.3882rem + 6.5789vw, 9.375rem);
   aspect-ratio: 1/1;
