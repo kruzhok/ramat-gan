@@ -161,6 +161,17 @@
   color: inherit;
 }
 
+@media (max-width: 600px) {
+  .gallery-section-navigation-container {
+    bottom: 5px;
+  }
+  .gallery-section-navigation-container .swiper-button-prev,
+  .gallery-section-navigation-container .swiper-button-next {
+    margin-top: 0;
+    top: 0;
+  }
+}
+
 .section__blockquote-wrapper {
   background-color: #181818;
   font-family: 'Plaid Mono';
