@@ -84,7 +84,7 @@
 
   /* POPUPS */
   --popup-close-button-width: clamp(1rem, 0.5775rem + 2.1127vw, 2.5rem);;
-  --popup-slider-width: clamp(18.25rem, 10.8732rem + 36.8838vw, 44.4375rem);
+  --popup-slider-width: 68vmin;
   --popup-text-font-size: clamp(0.75rem, 0.4331rem + 1.5845vw, 1.875rem);
   --popup-padding: clamp(0.875rem, 0.294rem + 6vw, 2.9375rem);
   --popup-ttoltip-font-size: clamp(0.625rem, 0.5546rem + 0.3521vw, 0.875rem);
