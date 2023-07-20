@@ -3,7 +3,7 @@
 *::after {
   box-sizing: border-box;
   scrollbar-width: thin;
-  scrollbar-color: var(--scroll-color,#E5D1B8) transparent;
+  scrollbar-color: var(--scroll-color, #e5d1b8) transparent;
 }
 
 *::-webkit-scrollbar {
@@ -15,24 +15,9 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--scroll-color,#E5D1B8);
+  background-color: var(--scroll-color, #e5d1b8);
   border-radius: 20px;
   border: none;
-}
-
-
-.page {
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-}
-
-.blured {
-  overflow: hidden;
-}
-
-.blured > *:not(.cards-popup) {
-  filter: blur(5px) brightness(70%);
 }
 
 body {
@@ -42,6 +27,8 @@ body {
   min-width: var(--page-min-width);
   max-width: var(--page-max-width);
   margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osxfont-smoothing: grayscale;
 }
 
 h1,
@@ -71,6 +58,12 @@ button {
   color: inherit;
 }
 
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -81,74 +74,81 @@ button {
   width: 1px;
 }
 
+.blured {
+  overflow: hidden;
+}
+
+.blured > *:not(.cards-popup) {
+  filter: blur(5px) brightness(70%);
+}
 
 /* Цветовые темы */
 
 .theme-yellow {
-  background-color: #E5B181;
-  color: #2B2129;
-  --scroll-color: #2B2129;
+  background-color: #e5b181;
+  color: #2b2129;
+  --scroll-color: #2b2129;
 }
 
 .theme-lightyellow {
-  background-color: #E2D2BB;
-  color: #2B2129;
-  --scroll-color: #2B2129;
+  background-color: #e2d2bb;
+  color: #2b2129;
+  --scroll-color: #2b2129;
 }
 
 .theme-purple {
-  background-color: #2B2129;
-  color: #E5D1B8;
-  --scroll-color: #E5D1B8;
+  background-color: #2b2129;
+  color: #e5d1b8;
+  --scroll-color: #e5d1b8;
 }
 
 .theme-semipurple {
-  background-color: #4C3C47;
-  color: #E5D1B8;
-  --scroll-color: #E5D1B8;
+  background-color: #4c3c47;
+  color: #e5d1b8;
+  --scroll-color: #e5d1b8;
 }
 
 .theme-lightpurple {
-  background-color: #7D6779;
-  color: #E5D1B8;
-  --scroll-color: #E5D1B8;
+  background-color: #7d6779;
+  color: #e5d1b8;
+  --scroll-color: #e5d1b8;
 }
 
 .theme-orange {
-  background-color: #DE8E59;
-  color: #2B2129;
-  --scroll-color: #2B2129;
+  background-color: #de8e59;
+  color: #2b2129;
+  --scroll-color: #2b2129;
 }
 
 .theme-white {
-  background-color: #F2F4F3;
-  color: #2B2129;
-  --scroll-color: #2B2129;
+  background-color: #f2f4f3;
+  color: #2b2129;
+  --scroll-color: #2b2129;
 }
 
 .theme-darkorange {
-  background-color: #AF7A4C;
+  background-color: #af7a4c;
   /* color: #F2F4F3; */
-  color: #E5D1B8;
-  --scroll-color: #E5D1B8;
+  color: #e5d1b8;
+  --scroll-color: #e5d1b8;
 }
 
 .theme-darkgreen {
-  background-color: #3C4C48;
-  color: #E5D1B8;
-  --scroll-color: #E5D1B8;
+  background-color: #3c4c48;
+  color: #e5d1b8;
+  --scroll-color: #e5d1b8;
 }
 
 .theme-ultradarkgreen {
-  background-color: #202B28;
-  color: #E5D1B8;
-  --scroll-color: #E5D1B8;
+  background-color: #202b28;
+  color: #e5d1b8;
+  --scroll-color: #e5d1b8;
 }
 
 .theme-blue {
-  background-color: #7583A5;
-  color: #E5D1B8;
-  --scroll-color: #E5D1B8;
+  background-color: #7583a5;
+  color: #e5d1b8;
+  --scroll-color: #e5d1b8;
 }
 
 /* Шапка */
@@ -166,7 +166,7 @@ button {
 }
 
 .logo-container[href]:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .logo {
@@ -174,7 +174,7 @@ button {
 }
 
 .logo-text {
-  font-family: 'Plaid Mono', monospace;
+  font-family: "Plaid Mono", monospace;
   display: block;
   width: var(--menu-logo-text-width);
   font-weight: 400;
@@ -195,7 +195,7 @@ button {
 
 @media (max-width: 600px) {
   .menu-button {
-    top: .3em;
+    top: 0.3em;
   }
 
   .header .menu-button {
@@ -208,7 +208,7 @@ button {
 }
 
 .menu-button:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .menu-button svg {
@@ -217,7 +217,7 @@ button {
 }
 
 .main-menu a:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 @media (max-width: 600px) {
@@ -228,7 +228,7 @@ button {
 
 .main-menu__footer {
   text-align: center;
-  font-family: 'Plaid Mono', monospace;
+  font-family: "Plaid Mono", monospace;
   line-height: 1.2;
   font-size: var(--main-menu-footer-font-size);
   font-weight: 400;
@@ -239,7 +239,7 @@ button {
 }
 
 .main-menu__footer a:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .header-menu {
@@ -274,7 +274,7 @@ button {
 
 .main-menu {
   list-style: none;
-  font-family: 'Plaid Mono', monospace;
+  font-family: "Plaid Mono", monospace;
   font-weight: 700;
   font-size: var(--main-menu-font-size);
   text-align: center;
@@ -285,108 +285,12 @@ button {
   align-items: center;
 }
 
-/* Автор */
-.author-card {
-  display: flex;
-  gap: 22px;
-  align-items: center;
-  font-family: 'Plaid Mono', monospace;
-  font-weight: 400;
-  font-size: 24px;
-}
-
-.author-name {
-  font-weight: 400;
-  font-size: 24px;
-}
-
-.date {
-  border: 1px solid #2B2129;
-  padding: 10px 20px;
-  border-radius: 100px;
-}
-
-/* Меню */
-
-.menu {
-  list-style: none;
-  display: flex;
-  gap: 10px;
-  margin-bottom: 40px;
- }
-
- .menu li {
-  background-color: black;
-  color: white;
-  padding: 10px;
-  border-radius: 8px;
- }
-
- /* END Меню */
-
-
-/* Подпись */
-
-.caption  {
-  font-size: 14px;
-  opacity: .8;
-  /* min-width: 50%; */
-  font-weight: 400;
-  margin-top: 14px;
-  max-width: 405px;
-  font-family: 'Plaid Mono';
-}
-
-/* Секция заголовка */
-
-.subtitle {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1;
-}
-
 .title {
-  font-family: 'Plaid Mono', monospace;
+  font-family: "Plaid Mono", monospace;
   font-weight: 700;
   font-size: var(--inner-title-font-size);
-  line-height: .8;
+  line-height: 0.8;
 }
-
-/* END Секция заголовка */
-
-
-/* Список тегов */
-
-.tags-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-}
-
-.tag {
-  border: 1px solid #000;
-  padding: 17px 12px;
-  border-radius: 100px;
-  list-style: none;
-}
-
-.tag:hover {
-  cursor: pointer;
-  color: #E5B181;
-  background-color: #000;
-}
-
-.tag a {
-  display: block;
-  min-width: 190px;
-  text-align: center;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1;
-  text-transform: uppercase;
-}
-
-/* END Список тегов */
 
 /* Карточки */
 
@@ -422,7 +326,7 @@ button {
 }
 
 .card_current {
-  opacity: .3;
+  opacity: 0.3;
   pointer-events: none;
 }
 
@@ -432,7 +336,6 @@ button {
   object-fit: cover;
   object-position: center;
 }
-
 
 @media screen and (max-width: 1200px) {
   .card-description {
@@ -452,10 +355,9 @@ button {
   }
 }
 
+/* Слайдер общие стили на все слайдеры всех страниц */
 
- /* Слайдер общие стили на все слайдеры всех страниц */
-
- .swiper {
+.swiper {
   width: 100%;
 }
 
@@ -466,80 +368,54 @@ button {
   position: relative;
   top: -10px;
   z-index: 3;
-
 }
 
-.swiper-button-prev, .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
   position: relative;
 }
 
-.swiper-button-prev::after, .swiper-button-next::after {
-  content: '';
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
 }
 
- /* END Слайдер */
-
-
-
- /* Видео-кружок */
-
- .video-circle {
-  width: fit-content;
-  border-radius: 50%;
- }
-
- .video-circle video {
-  width: 300px;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 50%;
- }
-
- .video-circle.video-circle--avatar video {
-  width: 100px;
- }
-
-
-
-
- .footer {
-  font-family: 'Plaid Mono', monospace;
+.footer {
+  font-family: "Plaid Mono", monospace;
   font-weight: 400;
   font-size: var(--footer-font-size);
   line-height: 1.2;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: .1em .8em;
+  gap: 0.1em 0.8em;
   margin-top: auto;
- }
+}
 
- .footer a {
+.footer a {
   text-decoration: underline;
- }
+}
 
- .footer a:hover {
-  opacity: .6;
- }
+.footer a:hover {
+  opacity: 0.6;
+}
 
- .footer-links {
+.footer-links {
   list-style: none;
   display: flex;
-  gap: .1em .8em;
+  gap: 0.1em 0.8em;
   flex-wrap: wrap;
- }
+}
 
- .footer-links a {
+.footer-links a {
   text-decoration: none;
- }
+}
 
- .footer-links a:hover {
+.footer-links a:hover {
   text-decoration: underline;
- }
+}
 
- .clickable-card:hover {
+.clickable-card:hover {
   cursor: pointer;
-  opacity: .6;
- }
-
+  opacity: 0.6;
+}
