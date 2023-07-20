@@ -2,7 +2,24 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: var(--scroll-color,#E5D1B8) transparent;
 }
+
+*::-webkit-scrollbar {
+  width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-color,#E5D1B8);
+  border-radius: 20px;
+  border: none;
+}
+
 
 .page {
   display: flex;
