@@ -1,0 +1,153 @@
+.life__cover {
+  padding-top: 75px;
+  padding-bottom: 108px;
+}
+
+.life__title {
+  line-height: 1;
+  margin-bottom: 42px;
+}
+
+.life__subtitle {
+  font-size: var(--life-subtitle-font-size);
+}
+
+.detail {
+  width: calc(100% + 2 * var(--main-page-paddings-lr));
+  position: relative;
+  translate: calc(-1 * var(--main-page-paddings-lr));
+  background-color: var(--detail-bg, #7D6779);
+  color: var(--detail-color, #E5D1B8);
+}
+
+.detail_type_changes {
+  --detail-bg: #7D6779;
+  --detail-color: #E5D1B8;
+}
+
+.detail_type_fears {
+  --detail-bg: #2B2129;
+  --detail-color: #E5D1B8;
+}
+
+.detail_type_wishes {
+  --detail-bg: #3C4C48;
+  --detail-color: #E5D1B8;
+}
+
+.detail summary {
+  cursor: pointer;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  padding: 42px 30px;
+  gap: 36px;
+  --transition-property: background-color, color;
+
+}
+
+.detail summary:hover {
+  background-color: var(--detail-color, #E5D1B8);
+  color: var(--detail-bg, #7D6779);
+}
+
+.detail__title {
+  font-size: 60px;
+}
+
+.detail__subtitle {
+  font-family: 'Plaid Mono';
+  font-weight: 400;
+  font-size: 12px;
+  max-width: 394px;
+}
+
+
+
+.detail__icon {
+  width: 28px;
+  grid-column: 2;
+  grid-row: 1/3;
+  align-self: center;
+  justify-self: center;
+}
+
+.detail[open] .detail__icon {
+  scale: 1 -1;
+}
+
+.life .footer {
+  margin-top: var(--main-page-paddings-tb);
+}
+
+/* Временное */
+.soon {
+  padding: 30px;
+}
+
+
+@media (max-width: 1200px) {
+  .life__cover {
+    padding-bottom: 72px;
+  }
+  .life__title {
+    margin-bottom: 36px;
+  }
+
+  .detail__title {
+    font-size: var(--life-detail-title-font-size);
+  }
+}
+
+@media (max-width: 1000px) {
+  .life__cover {
+    padding-top: 80px;
+    padding-bottom: 92px;
+  }
+  .life__title {
+    margin-bottom: 45px;
+  }
+
+  .detail summary {
+    padding: 36px 30px;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .life__cover {
+    padding-bottom: 60px;
+  }
+  .life__title {
+    margin-bottom: 30px;
+  }
+
+  .detail summary {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .life__cover {
+    padding-top: 71px;
+    padding-bottom: 42px;
+  }
+  .life__title {
+    margin-bottom: 18px;
+  }
+
+  .detail__icon {
+    width: 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  .life__cover {
+    padding-top: 45px;
+  }
+
+  .detail summary {
+    padding: 24px 14px;
+    gap: 14px;
+  }
+}
