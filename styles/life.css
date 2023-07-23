@@ -62,17 +62,26 @@
   max-width: 394px;
 }
 
-
-
-.detail__icon {
+.detail__button {
   width: 28px;
   grid-column: 2;
   grid-row: 1/3;
   align-self: center;
   justify-self: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  pointer-events: none;
+  padding: 0;
 }
 
-.detail[open] .detail__icon {
+.detail__icon {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.detail[open] .detail__button {
   scale: 1 -1;
 }
 
@@ -80,9 +89,73 @@
   margin-top: var(--main-page-paddings-tb);
 }
 
-/* Временное */
-.soon {
-  padding: 30px;
+.detail__quote-text {
+  font-size: clamp(0.65625rem, 0.2401rem + 1.1098vw, 1.25rem);
+  text-align: center;
+  font-family: 'Plaid Mono';
+  font-weight: 400;
+  margin-bottom: clamp(0.01rem, 0.01rem + 1vw, 1.25rem);
+}
+
+.detail__quote-name {
+  font-weight: 700;
+  font-size: clamp(0.90625rem, 0.3148rem + 1.5771vw, 1.75rem);
+  text-align: center;
+}
+
+.detail_quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.detail__quote_theme_inverted {
+  background-color: #E2D2BB;
+  color: #7D6779;
+}
+
+.detail__quote_name_dasha {
+  width: clamp(17.8850625rem, 6.3267rem + 30.8223vw, 34.375rem);
+  aspect-ratio: 550/374;
+  -webkit-mask-image: url(/images/masks/dasha.svg);
+  mask-image: url(/images/masks/dasha.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  padding: clamp(1.43rem, 0.5048rem + 2.4673vw, 2.75rem)
+           clamp(1.976875rem, 0.6902rem + 3.4311vw, 3.8125rem)
+           clamp(1.64875rem, 0.5702rem + 2.8762vw, 3.1875rem)
+           clamp(2.34125rem, 0.8281rem + 4.035vw, 4.5rem);
+}
+
+.detail__quote_name_igor {
+  width: clamp(13.7438125rem, 4.8618rem + 23.6854vw, 26.4155rem);
+  aspect-ratio: 422.648 / 218.225;
+  background-image: url(/images/masks/igor-back.svg);
+  background-size: 98% 98%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-mask-image: url(/images/masks/igor-mask.svg);
+  mask-image: url(/images/masks/igor.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  padding: clamp(0.938125rem, 0.3309rem + 1.6192vw, 1.804375rem)
+           0
+           clamp(3.196875rem, 1.1291rem + 5.514vw, 6.146875rem);
+}
+
+.detail__quote_name_kami {
+  width: clamp(15.2860625rem, 5.4074rem + 26.3431vw, 29.379625rem);
+  aspect-ratio: 470.074 / 314.224;
+  -webkit-mask-image: url(/images/masks/kami.svg);
+  mask-image: url(/images/masks/kami.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  padding: clamp(1.43rem, 0.5048rem + 2.4673vw, 2.75rem)
+           clamp(1rem, 0.5rem + 3vw, 3.8125rem)
+           clamp(1.64875rem, 0.5702rem + 2.8762vw, 3.1875rem)
+           clamp(2.34125rem, 0.8281rem + 4.035vw, 4.5rem);
 }
 
 
@@ -136,7 +209,7 @@
     margin-bottom: 18px;
   }
 
-  .detail__icon {
+  .detail__button {
     width: 16px;
   }
 }
