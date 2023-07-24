@@ -13,6 +13,7 @@
 }
 
 .detail {
+  --padding-inside: 42px 30px;
   width: calc(100% + 2 * var(--main-page-paddings-lr));
   position: relative;
   translate: calc(-1 * var(--main-page-paddings-lr));
@@ -40,7 +41,7 @@
   align-items: center;
   display: grid;
   grid-template-columns: 1fr min-content;
-  padding: 42px 30px;
+  padding: var(--padding-inside);
   gap: 36px;
   --transition-property: background-color, color;
 
@@ -85,8 +86,21 @@
   scale: 1 -1;
 }
 
-.life .footer {
-  margin-top: var(--main-page-paddings-tb);
+.detail__content {
+  padding: var(--padding-inside);
+  position: relative;
+}
+
+.detail_type_changes .detail__content {
+  aspect-ratio: 1456/2000;
+}
+
+.detail__quote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  transform-origin: center center;
 }
 
 .detail__quote-text {
@@ -116,7 +130,7 @@
   color: #7D6779;
 }
 
-.detail__quote_name_dasha {
+.detail_type_changes .detail__quote_name_dasha {
   width: clamp(17.8850625rem, 6.3267rem + 30.8223vw, 34.375rem);
   aspect-ratio: 550/374;
   -webkit-mask-image: url(/images/masks/dasha.svg);
@@ -127,9 +141,10 @@
            clamp(1.976875rem, 0.6902rem + 3.4311vw, 3.8125rem)
            clamp(1.64875rem, 0.5702rem + 2.8762vw, 3.1875rem)
            clamp(2.34125rem, 0.8281rem + 4.035vw, 4.5rem);
+  transform: translate(-75%, -110%);
 }
 
-.detail__quote_name_igor {
+.detail_type_changes .detail__quote_name_igor {
   width: clamp(13.7438125rem, 4.8618rem + 23.6854vw, 26.4155rem);
   aspect-ratio: 422.648 / 218.225;
   background-image: url(/images/masks/igor-back.svg);
@@ -137,15 +152,16 @@
   background-position: center;
   background-repeat: no-repeat;
   -webkit-mask-image: url(/images/masks/igor-mask.svg);
-  mask-image: url(/images/masks/igor.svg);
+  mask-image: url(/images/masks/igor-mask.svg);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  padding: clamp(0.938125rem, 0.3309rem + 1.6192vw, 1.804375rem)
-           0
-           clamp(3.196875rem, 1.1291rem + 5.514vw, 6.146875rem);
+  padding: clamp(0.938125rem, 0.3309rem + 1.6192vw, 1.8rem)
+          0
+          clamp(3.196875rem, 1.1291rem + 5.514vw, 6rem);
+  transform: translate(10%, -264%);
 }
 
-.detail__quote_name_kami {
+.detail_type_changes .detail__quote_name_kami {
   width: clamp(15.2860625rem, 5.4074rem + 26.3431vw, 29.379625rem);
   aspect-ratio: 470.074 / 314.224;
   -webkit-mask-image: url(/images/masks/kami.svg);
@@ -156,8 +172,133 @@
            clamp(1rem, 0.5rem + 3vw, 3.8125rem)
            clamp(1.64875rem, 0.5702rem + 2.8762vw, 3.1875rem)
            clamp(2.34125rem, 0.8281rem + 4.035vw, 4.5rem);
+  transform: translate(95%, -155%);
 }
 
+.detail_type_changes .detail__quote_name_nick {
+  width: clamp(15.4800625rem, 5.476rem + 26.6776vw, 29.7525625rem);
+  aspect-ratio: 476.041 / 303.177;
+  background-image: url(/images/masks/nick-back.svg);
+  background-size: 98% 98%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-mask-image: url(/images/masks/nick-mask.svg);
+  mask-image: url(/images/masks/nick-back.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  padding: clamp(1rem, 0.3rem + 1.9vw, 2.14375rem)
+          clamp(0.878125rem, 0.302rem + 1.5362vw, 1.7rem)
+          clamp(2rem, 0.5rem + 3vw, 3rem)
+          clamp(1.03rem, 0.3rem + 1.7839vw, 1.99rem);
+  transform: translate(-95%, -25%);
+}
+
+.detail_type_changes .detail__quote_name_lev {
+  width: clamp(14.57575rem, 5.1561rem + 25.1192vw, 28.0145rem);
+  aspect-ratio: 448.232 / 299.352;
+  background-image: url(/images/masks/lev-back.svg);
+  background-size: 98% 98%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-mask-image: url(/images/masks/lev-mask.svg);
+  mask-image: url(/images/masks/lev-mask.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  padding: clamp(0.5rem, 1rem + 2vw, 2rem)
+          clamp(0.53rem, 0.1791rem + 0.9357vw, 1.030625rem)
+          clamp(2rem, 0.5rem + 4vw, 4rem);
+  transform: translate(15%, -107%);
+}
+
+.detail_type_changes .detail__quote_name_aliza {
+  width: clamp(18.633rem, 6.5913rem + 32.1112vw, 35.8125rem);
+  aspect-ratio: 573 / 694;
+  background-image: url(/images/masks/aliza-back.svg);
+  background-size: 98% 98%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-mask-image: url(/images/masks/aliza-mask.svg);
+  mask-image: url(/images/masks/aliza-mask.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  padding: clamp(4rem, 1.5rem + 8.6vw, 9.5rem)
+          clamp(0.9rem, 0.3rem + 1.6vw, 1.7rem)
+          clamp(0.7rem, 0.5rem + 2.5vw, 2.9rem)
+          clamp(1rem, 0.4rem + 2vw, 2.2rem);
+  transform: translate(70%, 0%);
+}
+
+.detail_type_changes .detail__quote_name_mark {
+  width: clamp(12.0643125rem, 4.2677rem + 20.791vw, 23.1875rem);
+  aspect-ratio: 371 / 392;
+  background-image: url(/images/masks/mark-back.svg);
+  background-size: 98% 98%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-mask-image: url(/images/masks/mark-mask.svg);
+  mask-image: url(/images/masks/mark-mask.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  padding: clamp(3.835rem, 1.3537rem + 6.6168vw, 7.375rem)
+          clamp(0.3525rem, 0.1177rem + 0.6262vw, 0.6875rem)
+          clamp(1.195625rem, 0.4128rem + 2.0876vw, 2.3125rem)
+          clamp(0.748125rem, 0.2649rem + 1.2886vw, 1.4375rem);
+  transform: translate(-23%, 13%);
+}
+
+.detail_type_changes .detail__quote_name_polina {
+  width: clamp(12.4681875rem, 4.4106rem + 21.487vw, 23.96375rem);
+  aspect-ratio: 383.42 / 339.619;
+  background-image: url(/images/masks/polina-back.svg);
+  background-size: 98% 98%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-mask-image: url(/images/masks/polina-mask.svg);
+  mask-image: url(/images/masks/polina-mask.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  padding: clamp(3.6rem, 1.2707rem + 6.2114vw, 6.923125rem)
+           clamp(1.04875rem, 0.364rem + 1.8259vw, 2.025625rem)
+           clamp(1.321875rem, 0.4588rem + 2.3014vw, 2.553125rem)
+           clamp(0.455625rem, 0.1612rem + 0.785vw, 0.875625rem);
+  transform: translate(-125%, 80%);
+}
+
+.detail_type_changes .detail__quote_name_ilya {
+  width: clamp(13.2024375rem, 4.6703rem + 22.7525vw, 25.375rem);
+  aspect-ratio: 406 / 318;
+  -webkit-mask-image: url(/images/masks/ilya-mask.svg);
+  mask-image: url(/images/masks/ilya-mask.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  padding: clamp(1.8525rem, 0.6539rem + 3.1963vw, 3.5625rem)
+           clamp(1.1325rem, 0.393rem + 1.972vw, 2.1875rem)
+           clamp(0.805625rem, 0.2751rem + 1.4147vw, 1.5625rem)
+           clamp(1.105625rem, 0.3911rem + 1.9054vw, 2.125rem);
+  transform: translate(-25%, 125%);
+}
+
+.detail_type_changes .detail__quote_name_daria {
+  width: clamp(11.8691875rem, 4.1986rem + 20.4548vw, 22.8125rem);
+  aspect-ratio: 365 / 338;
+  background-image: url(/images/masks/daria-back.svg);
+  background-size: 98% 98%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-mask-image: url(/images/masks/daria-mask.svg);
+  mask-image: url(/images/masks/daria-mask.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  padding: clamp(3.283125rem, 1.1597rem + 5.6624vw, 6.3125rem)
+           clamp(1.39375rem, 0.4869rem + 2.4182vw, 2.6875rem)
+           clamp(1.58625rem, 0.5515rem + 2.7593vw, 3.0625rem)
+          clamp(1.138125rem, 0.4026rem + 1.9614vw, 2.1875rem);
+  transform: translate(80%, 130%);
+}
+
+.life .footer {
+  margin-top: var(--main-page-paddings-tb);
+}
 
 @media (max-width: 1200px) {
   .life__cover {
@@ -181,8 +322,11 @@
     margin-bottom: 45px;
   }
 
+  .detail {
+    --padding-inside: 36px 30px;
+  }
+
   .detail summary {
-    padding: 36px 30px;
     gap: 30px;
   }
 }
@@ -219,8 +363,11 @@
     padding-top: 45px;
   }
 
+  .detail {
+    --padding-inside: 24px 14px;
+  }
+
   .detail summary {
-    padding: 24px 14px;
     gap: 14px;
   }
 }
