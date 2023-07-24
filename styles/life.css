@@ -104,16 +104,16 @@
 }
 
 .detail__quote-text {
-  font-size: clamp(0.65625rem, 0.2401rem + 1.1098vw, 1.25rem);
+  font-size: clamp(0.684875rem, -0.0043rem + 1.3784vw, 1.25rem);
   text-align: center;
   font-family: 'Plaid Mono';
   font-weight: 400;
-  margin-bottom: clamp(0.01rem, 0.01rem + 1vw, 1.25rem);
+  margin-bottom: clamp(0.685rem, -0.004rem + 1.378vw, 1.25rem);
 }
 
 .detail__quote-name {
   font-weight: 700;
-  font-size: clamp(0.90625rem, 0.3148rem + 1.5771vw, 1.75rem);
+  font-size: clamp(0.9588125rem, -0.0061rem + 1.9297vw, 1.75rem);
   text-align: center;
 }
 
@@ -131,21 +131,21 @@
 }
 
 .detail_type_changes .detail__quote_name_dasha {
-  width: clamp(17.8850625rem, 6.3267rem + 30.8223vw, 34.375rem);
+  width: clamp(18.83rem, -0.1273rem + 37.9146vw, 34.375rem);;
   aspect-ratio: 550/374;
   -webkit-mask-image: url(/images/masks/dasha.svg);
   mask-image: url(/images/masks/dasha.svg);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  padding: clamp(1.43rem, 0.5048rem + 2.4673vw, 2.75rem)
-           clamp(1.976875rem, 0.6902rem + 3.4311vw, 3.8125rem)
-           clamp(1.64875rem, 0.5702rem + 2.8762vw, 3.1875rem)
-           clamp(2.34125rem, 0.8281rem + 4.035vw, 4.5rem);
+  padding: clamp(1.505625rem, -0.0119rem + 3.0351vw, 2.75rem)
+          clamp(2.085rem, -0.0217rem + 4.2134vw, 3.8125rem)
+          clamp(1.739375rem, -0.0266rem + 3.532vw, 3.1875rem)
+          clamp(2.465rem, -0.0167rem + 4.9634vw, 4.5rem);
   transform: translate(-75%, -110%);
 }
 
 .detail_type_changes .detail__quote_name_igor {
-  width: clamp(13.7438125rem, 4.8618rem + 23.6854vw, 26.4155rem);
+  width: clamp(14.4698125rem, -0.0981rem + 29.1358vw, 26.4155rem);
   aspect-ratio: 422.648 / 218.225;
   background-image: url(/images/masks/igor-back.svg);
   background-size: 98% 98%;
@@ -155,28 +155,28 @@
   mask-image: url(/images/masks/igor-mask.svg);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  padding: clamp(0.938125rem, 0.3309rem + 1.6192vw, 1.8rem)
-          0
-          clamp(3.196875rem, 1.1291rem + 5.514vw, 6rem);
+  padding: clamp(1rem, -0.1433rem + 2.2866vw, 1.9375rem)
+          clamp(0.09125rem, -0.0002rem + 0.1829vw, 0.16625rem)
+          clamp(3.36625rem, -1rem + 6.782vw, 6.146875rem);
   transform: translate(10%, -264%);
 }
 
 .detail_type_changes .detail__quote_name_kami {
-  width: clamp(15.2860625rem, 5.4074rem + 26.3431vw, 29.379625rem);
+  width: clamp(16.0935rem, -0.1091rem + 32.4052vw, 29.379625rem);
   aspect-ratio: 470.074 / 314.224;
   -webkit-mask-image: url(/images/masks/kami.svg);
   mask-image: url(/images/masks/kami.svg);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  padding: clamp(1.43rem, 0.5048rem + 2.4673vw, 2.75rem)
-           clamp(1rem, 0.5rem + 3vw, 3.8125rem)
-           clamp(1.64875rem, 0.5702rem + 2.8762vw, 3.1875rem)
-           clamp(2.34125rem, 0.8281rem + 4.035vw, 4.5rem);
-  transform: translate(95%, -155%);
+  padding: clamp(1.388125rem, -0.0105rem + 2.7973vw, 2.535rem)
+          clamp(0.13rem, -0.008rem + 0.2759vw, 0.243125rem)
+          clamp(2.105625rem, -0.0262rem + 4.2637vw, 3.85375rem)
+          clamp(1.68375rem, -0.0114rem + 3.3902vw, 3.07375rem);
+  transform: translate(95%, -163%);
 }
 
 .detail_type_changes .detail__quote_name_nick {
-  width: clamp(15.4800625rem, 5.476rem + 26.6776vw, 29.7525625rem);
+  width: clamp(16.29775rem, -0.1106rem + 32.8166vw, 29.7525625rem);
   aspect-ratio: 476.041 / 303.177;
   background-image: url(/images/masks/nick-back.svg);
   background-size: 98% 98%;
@@ -194,7 +194,7 @@
 }
 
 .detail_type_changes .detail__quote_name_lev {
-  width: clamp(14.57575rem, 5.1561rem + 25.1192vw, 28.0145rem);
+  width: clamp(15.3456875rem, -0.1041rem + 30.8995vw, 28.0145rem);
   aspect-ratio: 448.232 / 299.352;
   background-image: url(/images/masks/lev-back.svg);
   background-size: 98% 98%;
@@ -204,14 +204,14 @@
   mask-image: url(/images/masks/lev-mask.svg);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  padding: clamp(0.5rem, 1rem + 2vw, 2rem)
-          clamp(0.53rem, 0.1791rem + 0.9357vw, 1.030625rem)
+  padding: clamp(1.364375rem, -0.0106rem + 2.75vw, 2.491875rem)
+          clamp(0.56125rem, -0.0112rem + 1.1448vw, 1.030625rem)
           clamp(2rem, 0.5rem + 4vw, 4rem);
   transform: translate(15%, -107%);
 }
 
 .detail_type_changes .detail__quote_name_aliza {
-  width: clamp(18.633rem, 6.5913rem + 32.1112vw, 35.8125rem);
+  width: clamp(19.61725rem, -0.1331rem + 39.5006vw, 35.8125rem);
   aspect-ratio: 573 / 694;
   background-image: url(/images/masks/aliza-back.svg);
   background-size: 98% 98%;
@@ -229,7 +229,7 @@
 }
 
 .detail_type_changes .detail__quote_name_mark {
-  width: clamp(12.0643125rem, 4.2677rem + 20.791vw, 23.1875rem);
+  width: clamp(12.7015625rem, -0.0862rem + 25.5755vw, 23.1875rem);
   aspect-ratio: 371 / 392;
   background-image: url(/images/masks/mark-back.svg);
   background-size: 98% 98%;
@@ -247,7 +247,7 @@
 }
 
 .detail_type_changes .detail__quote_name_polina {
-  width: clamp(12.4681875rem, 4.4106rem + 21.487vw, 23.96375rem);
+  width: clamp(13.12675rem, -0.0891rem + 26.4317vw, 23.96375rem);
   aspect-ratio: 383.42 / 339.619;
   background-image: url(/images/masks/polina-back.svg);
   background-size: 98% 98%;
@@ -265,7 +265,7 @@
 }
 
 .detail_type_changes .detail__quote_name_ilya {
-  width: clamp(13.2024375rem, 4.6703rem + 22.7525vw, 25.375rem);
+  width: clamp(13.899875rem, -0.0942rem + 27.9881vw, 25.375rem);
   aspect-ratio: 406 / 318;
   -webkit-mask-image: url(/images/masks/ilya-mask.svg);
   mask-image: url(/images/masks/ilya-mask.svg);
@@ -279,7 +279,7 @@
 }
 
 .detail_type_changes .detail__quote_name_daria {
-  width: clamp(11.8691875rem, 4.1986rem + 20.4548vw, 22.8125rem);
+  width: clamp(12.4961875rem, -0.0847rem + 25.1617vw, 22.8125rem);
   aspect-ratio: 365 / 338;
   background-image: url(/images/masks/daria-back.svg);
   background-size: 98% 98%;
