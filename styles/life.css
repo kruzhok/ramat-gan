@@ -1,6 +1,23 @@
+.life {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.life__content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
 .life__cover {
   padding-top: 75px;
   padding-bottom: 108px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .life__title {
@@ -10,6 +27,11 @@
 
 .life__subtitle {
   font-size: var(--life-subtitle-font-size);
+}
+
+.life__details {
+  flex-grow: 1;
+  display: grid;
 }
 
 .detail {
@@ -34,6 +56,10 @@
 .detail_type_wishes {
   --detail-bg: #3C4C48;
   --detail-color: #E5D1B8;
+}
+
+.detail:not([open]) summary {
+  height: 100%;
 }
 
 .detail summary {
@@ -150,7 +176,9 @@
   padding: clamp(1rem, -0.1433rem + 2.2866vw, 1.9375rem)
           clamp(0.09125rem, -0.0002rem + 0.1829vw, 0.16625rem)
           clamp(3.36625rem, -1rem + 6.782vw, 6.146875rem);
-  transform: translate(10%, -264%);
+          top: 0;
+          translate: -50% 50%;
+          transform: translate(10%, -36%);
 }
 
 .detail_type_changes .detail__quote_name_kami {
@@ -303,7 +331,7 @@
 }
 
 .detail_type_fears .detail__quote_name_igor {
-  width: clamp(12.081875rem, -0.5576rem + 25.279vw, 22.44625rem);
+  width: clamp(14.47rem, -0.0978rem + 29.1357vw, 26.415625rem);
   aspect-ratio: 359.14 / 111.29;
   background-image: url(/images/masks/igor-01-back.svg);
   padding: clamp(0.7075rem, -0.0372rem + 1.4893vw, 1.318125rem)
@@ -334,6 +362,93 @@
            clamp(0.32375rem, -0.0154rem + 0.6784vw, 0.601875rem);
            transform: translate(145%, 45%);
 }
+
+
+/* WISHES */
+.detail_type_wishes .detail__content {
+  aspect-ratio: 1312 / 680;
+
+}
+
+
+.detail_type_wishes .detail__quote_name_ilya {
+  width: clamp(13.38rem, 2.2504rem + 22.2591vw, 22.50625rem);
+  aspect-ratio: 360.1 / 353.78;
+  background-image: url(/images/masks/ilya-02-back.svg);
+  padding: clamp(3.633125rem, 0.5897rem + 6.0869vw, 6.12875rem)
+           clamp(0.683125rem, 0.1161rem + 1.1341vw, 1.148125rem)
+           clamp(1.633125rem, 0.2665rem + 2.7332vw, 2.75375rem)
+           clamp(0.185rem, 0.031rem + 0.3079vw, 0.31125rem);
+           transform: translate(-130%, -20%);
+}
+
+.detail_type_wishes .detail__quote_name_polina {
+  width: clamp(14.289375rem, 2.4037rem + 23.7713vw, 24.035625rem);
+  aspect-ratio: 384.57 / 237.05;
+  background-image: url(/images/masks/polina-01-mask.svg);
+  padding: clamp(3.633125rem, 0.5897rem + 6.0869vw, 6.12875rem)
+           clamp(0.683125rem, 0.1161rem + 1.1341vw, 1.148125rem)
+           clamp(1.633125rem, 0.2665rem + 2.7332vw, 2.75375rem)
+           clamp(0.185rem, 0.031rem + 0.3079vw, 0.31125rem);
+           transform: translate(-20%, -42%);
+}
+
+.detail_type_wishes .detail__quote_name_tina {
+  width: clamp(12.074375rem, 2.0317rem + 20.0854vw, 20.309375rem);
+  aspect-ratio: 324.95 / 189.54;
+  background-image: url(/images/masks/tina-back.svg);
+  padding: clamp(1.996875rem, 0.3261rem + 3.3415vw, 3.366875rem)
+          clamp(0.5rem, 0.5rem + 0.2241vw, 0.5rem)
+           clamp(0.735625rem, 0.119rem + 1.2332vw, 1.24125rem)
+           clamp(0.5rem, 0.5rem + 0.2241vw, 0.5rem);
+           transform: translate(56%, -116%);
+}
+
+.detail_type_wishes .detail__quote_name_nastya {
+  width: clamp(10.766875rem, 1.8111rem + 17.9116vw, 18.110625rem);
+  aspect-ratio: 289.77 / 226.27;
+  background-image: url(/images/masks/nastya-mask.svg);
+  padding: clamp(2.18625rem, 0.3539rem + 3.6646vw, 3.68875rem)
+           0
+           clamp(2.794375rem, 0.4552rem + 4.6784vw, 4.7125rem)
+           0;
+           transform: translate(175%, -85%);
+}
+
+.detail_type_wishes .detail__quote_name_daria {
+  width: clamp(13.92125rem, 2.3412rem + 23.1601vw, 23.416875rem);
+  aspect-ratio: 374.67 / 131.37;
+  background-image: url(/images/masks/daria-02-back.svg);
+  padding: clamp(0.948125rem, 0.1539rem + 1.5884vw, 1.599375rem)
+           clamp(0.210625rem, 0.0353rem + 0.3506vw, 0.354375rem)
+           clamp(1.40375rem, 0.2277rem + 2.3521vw, 2.368125rem)
+           clamp(1.198125rem, 0.2012rem + 1.9939vw, 2.015625rem);
+           transform: translate(-88%, 134%);
+}
+
+.detail_type_wishes .detail__quote_name_shimon {
+  width: clamp(13.843125rem, 2.3294rem + 23.0274vw, 23.284375rem);
+  aspect-ratio: 372.55 / 193.18;
+  background-image: url(/images/masks/shimon-01-mask.svg);
+  padding: clamp(2.0375rem, 0.3309rem + 3.4131vw, 3.436875rem)
+           0
+           clamp(1.716875rem, 0.2786rem + 2.8765vw, 2.89625rem)
+           0;
+           transform: translate(5%, 51%);
+}
+
+.detail_type_wishes .detail__quote_name_igor {
+  width: clamp(14.88125rem, 2.5032rem + 24.7561vw, 25.03125rem);
+  aspect-ratio: 400.5 / 358.01;
+  background-image: url(/images/masks/igor-02-back.svg);
+  padding: clamp(2.47rem, 0.4014rem + 4.1372vw, 4.16625rem)
+           clamp(1.4025rem, 0.2363rem + 2.3323vw, 2.35875rem)
+           clamp(2.1025rem, 0.3418rem + 3.5213vw, 3.54625rem)
+           clamp(0.96625rem, 0.1629rem + 1.6067vw, 1.625rem);
+           transform: translate(105%, 14%);
+}
+
+
 
 .life .footer {
   margin-top: var(--main-page-paddings-tb);
@@ -394,6 +509,112 @@
 
   .detail summary {
     gap: 24px;
+  }
+
+  /* CHANGES */
+  .detail_type_changes .detail__content {
+    aspect-ratio: 568/860;
+  }
+
+  .detail_type_changes .detail__quote_name_dasha {
+    transform: translate(-52%, -163%);
+  }
+
+  .detail_type_changes .detail__quote_name_igor {
+    top: 50%;
+    translate: -50% -50%;
+    transform: translate(30%, -360%);
+  }
+
+  .detail_type_changes .detail__quote_name_kami {
+    transform: translate(69%, -86%);
+  }
+
+  .detail_type_changes .detail__quote_name_nick {
+    transform: translate(-55%, -79%);
+  }
+
+  .detail_type_changes .detail__quote_name_lev {
+    transform: translate(48%, -184%);
+  }
+
+  .detail_type_changes .detail__quote_name_aliza {
+    transform: translate(44%, 70%);
+  }
+
+  .detail_type_changes .detail__quote_name_mark {
+    transform: translate(12%, 1%);
+  }
+
+  .detail_type_changes .detail__quote_name_polina {
+    transform: translate(-94%, 26%);
+  }
+  .detail_type_changes .detail__quote_name_ilya {
+    transform: translate(-68%, 129%);
+  }
+  .detail_type_changes .detail__quote_name_daria {
+    transform: translate(-44%, 216%);
+  }
+
+  /* FEARS */
+
+  .detail_type_fears .detail__content {
+    aspect-ratio: 589 / 400;
+  }
+
+  .detail_type_fears .detail__quote_name_sonya {
+    transform: translate(-112%, -92%);
+  }
+
+  .detail_type_fears .detail__quote_name_mark {
+    transform: translate(0%, -124%);
+  }
+
+  .detail_type_fears .detail__quote_name_shimon {
+    transform: translate(146%, -112%);
+  }
+
+  .detail_type_fears .detail__quote_name_ilya {
+    transform: translate(-113%, 39%);
+  }
+  .detail_type_fears .detail__quote_name_sasha {
+    transform: translate(-31%, -7%);
+  }
+  .detail_type_fears .detail__quote_name_igor {
+    transform: translate(71%, -43%);
+  }
+  .detail_type_fears .detail__quote_name_daria {
+    transform: translate(-15%, 117%);
+  }
+  .detail_type_fears .detail__quote_name_anonimous {
+    transform: translate(90%, 67%);
+  }
+
+  /* WISHES */
+
+  .detail_type_wishes .detail__content {
+    aspect-ratio: 589 / 460;
+  }
+  .detail_type_wishes .detail__quote_name_ilya {
+    transform: translate(-50%, 21%);
+  }
+  .detail_type_wishes .detail__quote_name_polina {
+    transform: translate(-69%, -72%);
+  }
+  .detail_type_wishes .detail__quote_name_tina {
+    transform: translate(-2%, -161%);
+  }
+  .detail_type_wishes .detail__quote_name_nastya {
+    transform: translate(110%, -129%);
+  }
+  .detail_type_wishes .detail__quote_name_daria {
+    transform: translate(-50%, 248%);
+  }
+  .detail_type_wishes .detail__quote_name_shimon {
+    transform: translate(40%, -50%);
+  }
+  .detail_type_wishes .detail__quote_name_igor {
+    transform: translate(51%, 55%);
   }
 }
 
