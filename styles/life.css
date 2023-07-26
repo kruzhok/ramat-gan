@@ -623,6 +623,12 @@
   }
 }
 
+@media (max-width: 680px) {
+  .detail_type_changes .detail__content {
+    aspect-ratio: 568/924;
+  }
+}
+
 @media (max-width: 600px) {
   .life__cover {
     padding-top: 71px;
