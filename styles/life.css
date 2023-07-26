@@ -310,7 +310,7 @@
           0
           clamp(1.835rem, -0.0934rem + 3.8567vw, 3.41625rem)
           0;
-          transform: translate(153%, -83%);
+          transform: translate(153%, -90%);
 }
 
 .detail_type_fears .detail__quote_name_ilya {
@@ -365,7 +365,7 @@
            0
            clamp(1.335625rem, -0.0691rem + 2.8095vw, 2.4875rem)
            clamp(0.32375rem, -0.0154rem + 0.6784vw, 0.601875rem);
-           transform: translate(145%, 45%);
+           transform: translate(150%, 58%);
 }
 
 
