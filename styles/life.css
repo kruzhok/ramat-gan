@@ -62,6 +62,11 @@
   height: 100%;
 }
 
+.detail[open] summary:hover {
+  color: var(--detail-color, #E5D1B8);
+  background-color: var(--detail-bg, #7D6779);
+}
+
 .detail summary {
   cursor: pointer;
   align-items: center;
