@@ -144,7 +144,6 @@
   font-family: 'Plaid Mono';
   font-weight: 400;
   margin-bottom: clamp(0.685rem, -0.004rem + 1.378vw, 1.25rem);
-  text-wrap: balance;
 }
 
 .detail__quote-name {
