@@ -29,6 +29,7 @@ body {
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
   -moz-osxfont-smoothing: grayscale;
+  min-width: 320px;
 }
 
 h1,
