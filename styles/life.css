@@ -78,6 +78,10 @@
 
 }
 
+.detail summary::-webkit-details-marker {
+  display:none;
+}
+
 .detail summary:hover {
   background-color: var(--detail-color, #E5D1B8);
   color: var(--detail-bg, #7D6779);
@@ -120,7 +124,6 @@
 .detail__content {
   padding: var(--padding-inside);
   position: relative;
-  border: 2px solid red;
 }
 
 .detail_type_changes .detail__content {
@@ -141,6 +144,7 @@
   font-family: 'Plaid Mono';
   font-weight: 400;
   margin-bottom: clamp(0.685rem, -0.004rem + 1.378vw, 1.25rem);
+  text-wrap: balance;
 }
 
 .detail__quote-name {
@@ -629,6 +633,123 @@
   }
 }
 
+@media (max-width: 650px) {
+  .detail__quote-text {
+    font-size: 10px;
+  }
+
+  .detail__quote-name {
+    font-size: 14px;
+  }
+
+  /* CHANGES */
+
+  .detail_type_changes .detail__quote_name_dasha {
+    width: 286px;
+  }
+
+  .detail_type_changes .detail__quote_name_igor {
+    width: 219px;
+    transform: translate(30%, -350%);
+  }
+
+  .detail_type_changes .detail__quote_name_kami {
+    width: 244px;
+  }
+
+  .detail_type_changes .detail__quote_name_nick {
+    width: 247px;
+  }
+
+  .detail_type_changes .detail__quote_name_lev {
+    width: 233px;
+  }
+
+  .detail_type_changes .detail__quote_name_aliza {
+    width: 298px;
+  }
+
+  .detail_type_changes .detail__quote_name_mark {
+    width: 193px;
+  }
+
+  .detail_type_changes .detail__quote_name_polina {
+    width: 199px;
+  }
+  .detail_type_changes .detail__quote_name_ilya {
+    width: 211px;
+  }
+  .detail_type_changes .detail__quote_name_daria {
+    width: 189px;
+    transform: translate(-44%, 220%);
+  }
+
+  /* FEARS */
+
+
+  .detail_type_fears .detail__quote_name_sonya {
+    width: 154px;
+    transform: translate(-130%, -92%);
+  }
+
+  .detail_type_fears .detail__quote_name_mark {
+    width: 242px;
+    padding: 18px 14px 22px 46px;
+  }
+
+  .detail_type_fears .detail__quote_name_shimon {
+    width: 136px;
+  }
+
+  .detail_type_fears .detail__quote_name_ilya {
+    width: 171px;
+  }
+  .detail_type_fears .detail__quote_name_sasha {
+    width: 194px;
+    padding: 19px 6px 48px 6px;
+  }
+  .detail_type_fears .detail__quote_name_igor {
+    width: 193px;
+    transform: translate(71%, -53%);
+  }
+  .detail_type_fears .detail__quote_name_daria {
+    width: 185px;
+  }
+  .detail_type_fears .detail__quote_name_anonimous {
+    width: 186px;
+    transform: translate(88%, 59%);
+
+  }
+
+  /* WISHES */
+
+  .detail_type_wishes .detail__content {
+    aspect-ratio: 589 / 495;
+  }
+
+  .detail_type_wishes .detail__quote_name_ilya {
+    width: 214px;
+  }
+  .detail_type_wishes .detail__quote_name_polina {
+    width: 228px;
+  }
+  .detail_type_wishes .detail__quote_name_tina {
+    width: 193px;
+  }
+  .detail_type_wishes .detail__quote_name_nastya {
+    width: 172px;
+  }
+  .detail_type_wishes .detail__quote_name_daria {
+    width: 222px;
+  }
+  .detail_type_wishes .detail__quote_name_shimon {
+    width: 221px;
+  }
+  .detail_type_wishes .detail__quote_name_igor {
+    width: 238px;
+  }
+}
+
 @media (max-width: 600px) {
   .life__cover {
     padding-top: 71px;
@@ -641,7 +762,253 @@
   .detail__button {
     width: 16px;
   }
+
+    /* CHANGES */
+    .detail_type_changes .detail__content {
+      aspect-ratio: 568/1061;
+    }
+
+    .detail_type_changes .detail__quote_name_dasha {
+      transform: translate(-38%, -206%);
+    }
+
+    .detail_type_changes .detail__quote_name_igor {
+      transform: translate(64%, -294%);
+    }
+
+    .detail_type_changes .detail__quote_name_kami {
+      transform: translate(44%, -122%);
+    }
+
+    .detail_type_changes .detail__quote_name_nick {
+      transform: translate(-31%, -43%);
+    }
+
+    .detail_type_changes .detail__quote_name_lev {
+      transform: translate(-58%, -143%);
+    }
+
+    .detail_type_changes .detail__quote_name_aliza {
+      transform: translate(36%, 32%);
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    .detail_type_changes .detail__quote_name_mark {
+      transform: translate(-81%, 37%);
+    }
+
+    .detail_type_changes .detail__quote_name_polina {
+      transform: translate(-76%, 135%);
+    }
+    .detail_type_changes .detail__quote_name_ilya {
+      transform: translate(-69%, 248%);
+    }
+    .detail_type_changes .detail__quote_name_daria {
+      transform: translate(36%, 205%);
+    }
+
+    /* FEARS */
+
+    .detail_type_fears .detail__content {
+      aspect-ratio: 589 / 450;
+    }
+
+    .detail_type_fears .detail__quote_name_sonya {
+      transform: translate(-115%, -98%);
+    }
+
+    .detail_type_fears .detail__quote_name_mark {
+      transform: translate(11%, -142%);
+    }
+
+    .detail_type_fears .detail__quote_name_shimon {
+      transform: translate(137%, -84%);
+    }
+
+    .detail_type_fears .detail__quote_name_ilya {
+      transform: translate(-101%, 26%);
+    }
+    .detail_type_fears .detail__quote_name_sasha {
+      transform: translate(-17%, -15%);
+    }
+    .detail_type_fears .detail__quote_name_igor {
+      transform: translate(86%, -4%);
+    }
+    .detail_type_fears .detail__quote_name_daria {
+      transform: translate(-15%, 109%);
+    }
+    .detail_type_fears .detail__quote_name_anonimous {
+      transform: translate(86%, 85%);
+    }
+
+    /* WISHES */
+
+    .detail_type_wishes .detail__content {
+      aspect-ratio: 589 / 586;
+    }
+    .detail_type_wishes .detail__quote_name_ilya {
+      transform: translate(-50%, 21%);
+    }
+    .detail_type_wishes .detail__quote_name_polina {
+      transform: translate(-60%, -81%);
+    }
+    .detail_type_wishes .detail__quote_name_tina {
+      transform: translate(-2%, -183%);
+    }
+    .detail_type_wishes .detail__quote_name_nastya {
+      transform: translate(104%, -120%);
+    }
+    .detail_type_wishes .detail__quote_name_daria {
+      transform: translate(-50%, 261%);
+    }
+    .detail_type_wishes .detail__quote_name_shimon {
+      transform: translate(40%, -41%);
+    }
+    .detail_type_wishes .detail__quote_name_igor {
+      transform: translate(50%, 62%);
+    }
 }
+
+@media (max-width: 500px) {
+  .detail__content {
+    display: grid;
+    gap: 20px;
+  }
+  .detail__quote {
+    position: static;
+    top: initial;
+    left: initial;
+    translate: 0 0 !important;
+    transform-origin: center center;
+    transform: initial !important;
+  }
+  .detail__quote:nth-of-type(2n) {
+    justify-self: end;
+  }
+
+  .detail__quote-text {
+    font-size: 14px;
+  }
+
+  .detail__quote-name {
+    font-size: 20px;
+  }
+
+    /* CHANGES */
+
+  .detail_type_changes .detail__quote_name_dasha {
+    width: 95%;
+    padding: 55px;
+  }
+
+  .detail_type_changes .detail__quote_name_igor {
+    width: 85%;
+    padding: 20px 30px 50px;
+  }
+
+  .detail_type_changes .detail__quote_name_kami {
+    width: 80%;
+    padding: 20px 20px 20px 35px;
+  }
+
+  .detail_type_changes .detail__quote_name_nick {
+    width: 85%;
+    padding: 20px 20px 35px;
+  }
+
+  .detail_type_changes .detail__quote_name_lev {
+    width: 85%;
+  }
+
+  .detail_type_changes .detail__quote_name_aliza {
+    width: 106%;
+    position: relative;
+    left: -3%;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .detail_type_changes .detail__quote_name_mark {
+    width: 85%;
+  }
+
+  .detail_type_changes .detail__quote_name_polina {
+    width: 94%;
+  }
+  .detail_type_changes .detail__quote_name_ilya {
+    width: 85%;
+  }
+  .detail_type_changes .detail__quote_name_daria {
+    width: 85%;
+  }
+
+  /* FEARS */
+
+
+  .detail_type_fears .detail__quote_name_sonya {
+    width: 85%;
+  }
+
+  .detail_type_fears .detail__quote_name_mark {
+    width: 85%;
+    padding: 18px 14px 22px 46px;
+  }
+
+  .detail_type_fears .detail__quote_name_shimon {
+    width: 65%;
+    padding-top: 72px;
+  }
+
+  .detail_type_fears .detail__quote_name_ilya {
+    width: 70%;
+    padding-top: 74px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .detail_type_fears .detail__quote_name_sasha {
+    width: 80%;
+    padding: 19px 20px 48px 20px;
+  }
+  .detail_type_fears .detail__quote_name_igor {
+    width: 100%;
+    transform: translate(71%, -53%);
+  }
+  .detail_type_fears .detail__quote_name_daria {
+    width: 85%;
+  }
+  .detail_type_fears .detail__quote_name_anonimous {
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+
+  /* WISHES */
+
+  .detail_type_wishes .detail__quote_name_ilya {
+    width: 65%;
+  }
+  .detail_type_wishes .detail__quote_name_polina {
+    width: 80%;
+  }
+  .detail_type_wishes .detail__quote_name_tina {
+    width: 90%;
+  }
+  .detail_type_wishes .detail__quote_name_nastya {
+    width: 60%;
+  }
+  .detail_type_wishes .detail__quote_name_daria {
+    width: 100%;
+  }
+  .detail_type_wishes .detail__quote_name_shimon {
+    width: 60%;
+  }
+  .detail_type_wishes .detail__quote_name_igor {
+    width: 80%;
+  }
+}
+
 
 @media (max-width: 450px) {
   .life__cover {
@@ -654,5 +1021,162 @@
 
   .detail summary {
     gap: 14px;
+  }
+  /* CHANGES */
+
+  .detail_type_changes .detail__quote_name_dasha {
+    width: 100%;
+    background-image: url(/images/masks/mobile/dasha.svg);
+    aspect-ratio: 299/324;
+  }
+
+  .detail_type_changes .detail__quote_name_igor {
+    width: 100%;
+    background-image: url(/images/masks/mobile/igor.svg);
+    aspect-ratio: 290/158;
+  }
+
+  .detail_type_changes .detail__quote_name_kami {
+    width: 100%;
+    background-image: url(/images/masks/mobile/kami.svg);
+    aspect-ratio: 300/221;
+  }
+
+  .detail_type_changes .detail__quote_name_nick {
+    width: 100%;
+    background-image: url(/images/masks/mobile/nick.svg);
+    aspect-ratio: 283/275;
+    padding-top: 28%;
+  }
+
+  .detail_type_changes .detail__quote_name_lev {
+    width: 100%;
+    background-image: url(/images/masks/mobile/lev.svg);
+    aspect-ratio: 299/254;
+    padding-bottom: 80px;
+  }
+
+  .detail_type_changes .detail__quote_name_aliza {
+    width: 104%;
+    background-image: url(/images/masks/mobile/aliza.svg);
+    aspect-ratio: 305/555;
+    left: -2%;
+    padding-bottom: 100px;
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+
+  .detail_type_changes .detail__quote_name_mark {
+    width: 100%;
+    background-image: url(/images/masks/mobile/mark.svg);
+    aspect-ratio: 287/262;
+    padding-bottom: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .detail_type_changes .detail__quote_name_polina {
+    width: 100%;
+    background-image: url(/images/masks/mobile/polina.svg);
+    aspect-ratio: 300/258;
+    padding-top: 70px;
+  }
+  .detail_type_changes .detail__quote_name_ilya {
+    width: 100%;
+    background-image: url(/images/masks/mobile/ilya.svg);
+    aspect-ratio: 293/238;
+  }
+  .detail_type_changes .detail__quote_name_daria {
+    width: 100%;
+    background-image: url(/images/masks/mobile/daria.svg);
+    aspect-ratio: 300/236;
+  }
+
+  /* FEARS */
+
+
+  .detail_type_fears .detail__quote_name_sonya {
+    width: 100%;
+    background-image: url(/images/masks/mobile/sonya.svg);
+    aspect-ratio: 260/202;
+    padding-top: 50px;
+  }
+
+  .detail_type_fears .detail__quote_name_mark {
+    width: 100%;
+    background-image: url(/images/masks/mobile/mark-01.svg);
+    aspect-ratio: 300/128;
+    padding-left: 80px;
+  }
+
+  .detail_type_fears .detail__quote_name_shimon {
+    width: 100%;
+    background-image: url(/images/masks/mobile/shimon.svg);
+    aspect-ratio: 264/179;
+  }
+
+  .detail_type_fears .detail__quote_name_ilya {
+    width: 100%;
+    background-image: url(/images/masks/mobile/ilya-01.svg);
+    aspect-ratio: 291/197;
+  }
+  .detail_type_fears .detail__quote_name_sasha {
+    width: 100%;
+    background-image: url(/images/masks/mobile/sasha.svg);
+    aspect-ratio: 300/212;
+  }
+  .detail_type_fears .detail__quote_name_igor {
+    width: 100%;
+    background-image: url(/images/masks/mobile/igor-01.svg);
+    aspect-ratio: 296/111;
+  }
+  .detail_type_fears .detail__quote_name_daria {
+    width: 100%;
+    background-image: url(/images/masks/mobile/daria-01.svg);
+    aspect-ratio: 294/144;
+  }
+  .detail_type_fears .detail__quote_name_anonimous {
+    width: 100%;
+    background-image: url(/images/masks/mobile/anonimous.svg);
+    aspect-ratio: 294/166;
+
+  }
+
+  /* WISHES */
+
+  .detail_type_wishes .detail__quote_name_ilya {
+    width: 100%;
+    background-image: url(/images/masks/mobile/ilya-02.svg);
+    aspect-ratio: 300/256;
+  }
+  .detail_type_wishes .detail__quote_name_polina {
+    width: 100%;
+    background-image: url(/images/masks/mobile/polina-02.svg);
+    aspect-ratio: 300/187;
+  }
+  .detail_type_wishes .detail__quote_name_tina {
+    width: 100%;
+    background-image: url(/images/masks/mobile/tina.svg);
+    aspect-ratio: 300/175;
+  }
+  .detail_type_wishes .detail__quote_name_nastya {
+    width: 100%;
+    background-image: url(/images/masks/mobile/nastya.svg);
+    aspect-ratio: 300/161;
+  }
+  .detail_type_wishes .detail__quote_name_daria {
+    width: 100%;
+    background-image: url(/images/masks/mobile/daria-02.svg);
+    aspect-ratio: 300/132;
+  }
+  .detail_type_wishes .detail__quote_name_shimon {
+    width: 100%;
+    background-image: url(/images/masks/mobile/shimon-01.svg);
+    aspect-ratio: 300/156;
+  }
+  .detail_type_wishes .detail__quote_name_igor {
+    width: 100%;
+    background-image: url(/images/masks/mobile/igor-02.svg);
+    aspect-ratio: 310/272;
   }
 }
