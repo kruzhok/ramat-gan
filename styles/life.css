@@ -175,7 +175,10 @@
           clamp(2.085rem, -0.0217rem + 4.2134vw, 3.8125rem)
           clamp(1.739375rem, -0.0266rem + 3.532vw, 3.1875rem)
           clamp(2.465rem, -0.0167rem + 4.9634vw, 4.5rem);
-  transform: translate(-75%, -110%);
+  transform: translate(5%, 22%);
+  translate: 0 0;
+  top: 0;
+  left: 0;
 }
 
 .detail_type_changes .detail__quote_name_igor {
@@ -198,7 +201,11 @@
           clamp(0.13rem, -0.008rem + 0.2759vw, 0.243125rem)
           clamp(2.105625rem, -0.0262rem + 4.2637vw, 3.85375rem)
           clamp(1.68375rem, -0.0114rem + 3.3902vw, 3.07375rem);
-  transform: translate(95%, -163%);
+  transform: translate(-5%, 6%);
+  translate: 0 0;
+  top: 0;
+  left: auto;
+  right: 0;
 }
 
 .detail_type_changes .detail__quote_name_nick {
@@ -439,11 +446,8 @@
   width: clamp(13.843125rem, 2.3294rem + 23.0274vw, 23.284375rem);
   aspect-ratio: 372.55 / 193.18;
   background-image: url(/images/masks/shimon-01-mask.svg);
-  padding: clamp(2.0375rem, 0.3309rem + 3.4131vw, 3.436875rem)
-           0
-           clamp(1.716875rem, 0.2786rem + 2.8765vw, 2.89625rem)
-           0;
-           transform: translate(5%, 51%);
+  padding: clamp(2.0375rem, 0.3309rem + 3.4131vw, 3.436875rem) 20px clamp(1.716875rem, 0.2786rem + 2.8765vw, 2.89625rem) 20px;
+  transform: translate(5%, 56%);
 }
 
 .detail_type_wishes .detail__quote_name_igor {
@@ -527,16 +531,23 @@
 
   .detail_type_changes .detail__quote_name_dasha {
     transform: translate(-52%, -163%);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
   }
 
   .detail_type_changes .detail__quote_name_igor {
     top: 50%;
     translate: -50% -50%;
-    transform: translate(30%, -360%);
+    transform: translate(45%, -360%)
+
   }
 
   .detail_type_changes .detail__quote_name_kami {
     transform: translate(69%, -86%);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
   }
 
   .detail_type_changes .detail__quote_name_nick {
