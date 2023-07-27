@@ -469,14 +469,13 @@
 }
 
 .covers {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: var(--main-grid-gap);
 }
 
 @media (max-width: 600px) {
   .covers {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 }
 
