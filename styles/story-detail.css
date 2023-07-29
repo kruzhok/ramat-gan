@@ -22,6 +22,7 @@
 .story__title {
   font-size: var(--story-title-font-size);
   margin-bottom: var(--story-after-title-margin);
+  line-height: 1;
 }
 
 .story__share {
@@ -82,7 +83,7 @@
 .story__section {
   display: flex;
   flex-direction: column;
-  gap: clamp(1.875rem, 1.4525rem + 2.1127vw, 3.375rem);
+  gap: clamp(1.875rem, 1.4525rem + 1.1127vw, 3.375rem);
 }
 
 .story__share_place_in-bottom {
@@ -180,15 +181,15 @@
 
 .next-story__card-name {
   font-size: clamp(1.5rem, 1.3944rem + 0.5282vw, 1.875rem);
-  max-width: 45%;
+  max-width: 55%;
   margin-bottom: 10px;
+  line-height: 1;
 }
-
-
 
 .next-story__card-date {
   font-size: clamp(3.75rem, 3.0458rem + 3.5211vw, 6.25rem);
   font-weight: 700;
+  line-height: 1;
 }
 
 @media (max-width: 1024px) {
