@@ -10,6 +10,7 @@ cards.forEach((item) => {
   let popup;
   item.onclick = () => {
     document.body.classList.add("blured");
+    document.body.style.overflow = 'hidden';
     const dataForClickedCard = findWithId(dataArray, item.id);
     generateSlider(popupTmp, dataForClickedCard, document.body);
     popup = document.querySelector(".cards-popup");
@@ -24,11 +25,13 @@ cards.forEach((item) => {
     popup.onclick = (e) => {
       if (e.target.contains(document.querySelector(".cards-popup-slider"))) {
         document.body.classList.remove("blured");
+        document.body.style.overflow = 'auto';
         popup.remove();
       }
     };
     document.querySelector(".popup-close-button").onclick = () => {
       document.body.classList.remove("blured");
+      document.body.style.overflow = 'auto';
       popup.remove();
     };
     initializeSwiper();

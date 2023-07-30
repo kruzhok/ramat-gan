@@ -75,10 +75,6 @@ button {
   width: 1px;
 }
 
-.blured {
-  overflow: hidden;
-}
-
 .blured > *:not(.cards-popup) {
   filter: blur(5px) brightness(70%);
 }
