@@ -101,7 +101,7 @@
   aspect-ratio: 1/1;
   object-fit: cover;
   object-position: center;
-  filter: contrast(190%) saturate(130%);
+  filter: contrast(150%) saturate(150%);
 }
 
 .index-circle {
