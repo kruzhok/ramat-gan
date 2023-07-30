@@ -75,7 +75,7 @@ function initializeSwiper() {
   const swiper = new Swiper(".swiper", {
     // Optional parameters
     direction: "horizontal",
-    loop: true,
+    // loop: true,
 
     // If we need pagination
     pagination: {
