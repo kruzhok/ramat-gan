@@ -503,6 +503,44 @@
   object-fit: cover;
 }
 
+.life {
+  margin-bottom: 94px;
+}
+
+@media (max-width: 450px) {
+  .life {
+    margin-bottom: 90px;
+  }
+}
+
+.life-button {
+  background-color: #7583A5;
+  border: 1px solid #7583A5;
+  width: 100%;
+  color: #E5D1B8;
+  border-radius: 50%;
+  font-family: Inkulinati;
+  font-size: clamp(1.375rem, -1.0293rem + 8.5487vw, 6.75rem);
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  gap: .2em;
+  padding: .5em 1em;
+  --transition-property: color, background-color;
+}
+
+.life-button:hover {
+  background-color: rgba(117, 131, 165, 0);
+  color: #7583A5;
+}
+
+
+.life-button svg {
+  width: clamp(0.6875rem, -0.5706rem + 4.4732vw, 3.5rem);
+}
+
 .lost {
   color: #E5D1B8;
   padding: var(--main-page-paddings-tb) var(--main-page-paddings-lr);
