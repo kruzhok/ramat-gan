@@ -274,7 +274,7 @@
 }
 
 .section-title-link {
-  --transition-property: all;
+  --transition-property: background-color, color;
   font-family: 'Plaid Mono', monospace;
   font-weight: 400;
   font-size: var(--read-more-font-size);

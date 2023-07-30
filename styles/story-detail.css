@@ -133,7 +133,7 @@
 }
 
 .next-story__all-stories-link {
-  --transition-property: all;
+  --transition-property: background-color, color;
   font-size: 18px;
   padding: 10px 30px 12px;
   border: 1px solid currentColor;
