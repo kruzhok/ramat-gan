@@ -21,7 +21,7 @@
 .article-about {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: clamp(1.875rem, 1.4525rem + 1.1127vw, 3.375rem);
 }
 
 .about-main > .article-about:last-of-type {
