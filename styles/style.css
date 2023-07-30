@@ -275,7 +275,7 @@ button {
 
 .main-menu {
   list-style: none;
-  font-family: "Plaid Mono", monospace;
+  font-family: "Plaid";
   font-weight: 700;
   font-size: var(--main-menu-font-size);
   text-align: center;
@@ -287,10 +287,10 @@ button {
 }
 
 .title {
-  font-family: "Plaid Mono", monospace;
+  font-family: "Plaid";
   font-weight: 700;
   font-size: var(--inner-title-font-size);
-  line-height: 0.8;
+  line-height: 1;
 }
 
 /* Карточки */
