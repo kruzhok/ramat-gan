@@ -1,7 +1,25 @@
-.life {
+body.life {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  max-width: initial;
+  padding-left: initial;
+  padding-right: initial;
+}
+
+.life .header-menu {
+  max-width: initial;
+  padding-left: initial;
+  padding-right: initial;
+}
+
+.max-width-mix {
+  max-width: var(--page-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-left: var(--main-page-paddings-lr);
+  padding-right: var(--main-page-paddings-lr);
 }
 
 .life__content {
@@ -37,12 +55,13 @@
 
 .detail {
   --padding-inside: 42px 30px;
-  width: calc(100% + 2 * var(--main-page-paddings-lr));
+  /* width: calc(100% + 2 * var(--main-page-paddings-lr)); */
   position: relative;
-  translate: calc(-1 * var(--main-page-paddings-lr));
+  /* translate: calc(-1 * var(--main-page-paddings-lr)); */
   background-color: var(--detail-bg, #7D6779);
   color: var(--detail-color, #E5D1B8);
 }
+
 
 .detail_type_changes {
   --detail-bg: #7D6779;
@@ -76,7 +95,6 @@
   padding: var(--padding-inside);
   gap: 36px;
   --transition-property: background-color, color;
-
 }
 
 .detail summary::-webkit-details-marker {
@@ -1189,5 +1207,53 @@
     width: 100%;
     background-image: url(/images/masks/mobile/igor-02.svg);
     aspect-ratio: 310/272;
+  }
+}
+
+@media (min-width: 1456px) {
+  .detail summary {
+    padding-left: calc((100% - var(--page-max-width))/2 + 30px);
+    padding-right: calc((100% - var(--page-max-width))/2 + 30px);
+  }
+
+  .detail__content {
+    padding-left: calc((100% - var(--page-max-width))/2 + 30px);
+    padding-right: calc((100% - var(--page-max-width))/2 + 30px);
+  }
+
+  .detail_type_changes .detail__content {
+    aspect-ratio: initial;
+    height: 1500px;
+  }
+
+  .detail_type_changes .detail__quote_name_kami {
+    transform: translate(100%, -165%);
+    translate: -50% -50%;
+    top: 50%;
+    left: 50%;
+  }
+
+  .detail_type_changes .detail__quote_name_igor {
+    transform: translate(10%, -265%);
+    translate: -50% -50%;
+    top: 50%;
+    left: 50%;
+  }
+
+  .detail_type_changes .detail__quote_name_dasha {
+    transform: translate(-75%, -113%);
+    translate: -50% -50%;
+    top: 50%;
+    left: 50%;
+  }
+
+  .detail_type_fears .detail__content {
+    aspect-ratio: initial;
+    height: 770px;
+  }
+
+  .detail_type_wishes .detail__content {
+    aspect-ratio: initial;
+    height: 770px;
   }
 }
