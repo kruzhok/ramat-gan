@@ -81,7 +81,7 @@
   }
 }
 
- /* Видео-кружок */
+ /* Видео-проекта «Кружок» */
 
  .video-circle {
   width: fit-content;
@@ -101,7 +101,7 @@
   aspect-ratio: 1/1;
   object-fit: cover;
   object-position: center;
-  filter: contrast(200%) saturate(200%);
+  filter: contrast(190%) saturate(130%);
 }
 
 .index-circle {
@@ -328,8 +328,9 @@
   font-family: 'Plaid Mono', monospace;
   font-weight: 400;
   font-size: var(--section-description-font-size);
-  line-height: 120%;
+  line-height: 140%;
   margin-bottom: var(--after-section-description-margin);
+  max-width: 531px;
 }
 
 .story-card {
@@ -394,19 +395,18 @@
 @media (max-width: 600px) {
   .story-card-description {
     width: 100%;
-    aspect-ratio: 292/190;
+    aspect-ratio: 292/140;
   }
 }
 
 .story-card--large .story-card-description {
-  padding: var(--story-card-large-description-padding-t) var(--story-card-large-description-padding-lr) var(--story-card-large-description-padding-b);
-  gap: var(--story-card-large-description-padding-t) var(--story-card-large-description-padding-lr);
-
+  padding: var(--story-card-large-description-padding-lr) var(--story-card-large-description-padding-lr) var(--story-card-large-description-padding-t);
+  gap: var(--story-card-large-description-padding-t) var(--story-card-large-description-padding-t);
 }
 
 .story-card--small .story-card-description {
   padding: var(--story-card-small-description-padding-t) var(--story-card-small-description-padding-lr) var(--story-card-small-description-padding-b);
-  gap: var(--story-card-small-description-padding-t) var(--story-card-small-description-padding-lr);
+  /* gap: var(--story-card-small-description-padding-t) var(--story-card-small-description-padding-lr); */
 }
 
 @media (max-width: 1024px) {
@@ -442,6 +442,7 @@
   font-size: var(--story-card-description-font-size);
   line-height: 120%;
   align-self: end;
+  max-width: 400px;
 }
 
 .story-image {
@@ -460,7 +461,11 @@
 @media (max-width: 600px) {
   .story-image {
     width: 100%;
-    aspect-ratio: 292/190;
+    aspect-ratio: 292/140;
+  }
+
+  .story-description {
+    max-width: 300px;
   }
 }
 
@@ -469,13 +474,14 @@
 }
 
 .covers {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--main-grid-gap);
 }
 
 @media (max-width: 600px) {
   .covers {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -521,6 +527,6 @@
   font-family: 'Plaid Mono', monospace;
   font-weight: 400;
   font-size: var(--section-description-font-size);
-  line-height: 1.2;
+  line-height: 1.4;
   max-width: 531px;
 }
