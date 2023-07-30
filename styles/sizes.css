@@ -64,8 +64,7 @@
 
   --timeline-lead-section-font-size: clamp(1.5rem, 1.2183rem + 1.4085vw, 2.5rem);
   --timeline-after-header-margin: clamp(1.75rem, 0.9754rem + 3.8732vw, 4.5rem);
-  --timeline-after-lead-section-margin: clamp(3.8125rem, 3.2667rem + 2.7289vw, 5.75rem);
-  --timeline-after-lead-section-margin: clamp(3.625rem, 2.5158rem + 5.5458vw, 7.5625rem);
+  --timeline-after-lead-section-margin: clamp(3.625rem, 2.5158rem + 5.5458vw, 4.5625rem);
   --timeline-card-title-font-size: clamp(1.5rem, 1.3944rem + 0.5282vw, 1.875rem);
   --timeline-card-date-font-size: clamp(3.125rem, 0.9346rem + 5.8411vw, 6.25rem);
   --timeline-card-descriptopn-padding-t: clamp(0.875rem, 0.6989rem + 0.8803vw, 1.5rem);
