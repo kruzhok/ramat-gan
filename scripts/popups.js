@@ -9,7 +9,12 @@ const slideTemplate = document.querySelector(".card-slide-tmp");
 cards.forEach((item) => {
   let popup;
   item.onclick = () => {
-    document.body.classList.add("blured");
+
+    setTimeout(() => {
+      document.querySelector('.cards-popup').style.opacity = '1';
+      document.body.classList.add("blured");
+    }, 0)
+
     document.body.style.overflow = 'hidden';
     const dataForClickedCard = findWithId(dataArray, item.id);
     generateSlider(popupTmp, dataForClickedCard, document.body);
@@ -25,14 +30,16 @@ cards.forEach((item) => {
     popup.onclick = (e) => {
       if (e.target.contains(document.querySelector(".cards-popup-slider"))) {
         document.body.classList.remove("blured");
+        document.querySelector('.cards-popup').style.opacity = '0';
         document.body.style.overflow = 'auto';
-        popup.remove();
+        setTimeout(() => popup.remove(), 500);
       }
     };
     document.querySelector(".popup-close-button").onclick = () => {
       document.body.classList.remove("blured");
+      document.querySelector('.cards-popup').style.opacity = '0';
       document.body.style.overflow = 'auto';
-      popup.remove();
+      setTimeout(() => popup.remove(), 500);
     };
     initializeSwiper();
     // Управляем копированием адреса по ссылке на кнопку шера

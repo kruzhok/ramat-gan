@@ -8,6 +8,8 @@
   padding: var(--main-page-paddings-tb) 30px;
   gap: var(--popup-column-gap);
   overflow: auto;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
 }
 
 .close-and-tooltip-container {
