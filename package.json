@@ -12,7 +12,9 @@
     "fixAll": "npm run format && npm run lintfix",
     "build": "gulp build",
     "dev": "gulp",
-    "fixAndBuild": "npm run fixAll && npm run build"
+    "fixAndBuild": "npm run fixAll && npm run build",
+    "deploy": "npm run build && cd dist && rsync --archive --compress --delete . kruzhok@185.41.161.230:/home/kruzhok/releases/shalom"
+
   },
   "author": "",
   "license": "ISC",
@@ -28,9 +30,14 @@
     "postcss": "^8.4.23",
     "postcss-combine-media-query": "^1.0.1",
     "prettier": "^2.8.7",
-    "stylelint": "^15.4.0"
+    "stylelint": "^15.4.0",
+    "husky": "^4.3.8"
   },
-
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run fixAll && git add ."
+    }
+  },
   "browserslist": [
     "last 3 versions"
   ]
