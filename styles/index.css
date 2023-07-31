@@ -1,3 +1,13 @@
+@keyframes move-letters {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(100% + 2px));
+  }
+}
+
+
 .index {
   padding: 0 0;
   position: relative;
@@ -29,6 +39,46 @@
 
 .index__logo {
   width: 100%;
+}
+
+.animated-logo {
+  font-size: clamp(3.625rem, 1.125rem + 12.5vw, 12.5rem);
+  font-weight: 700;
+  line-height: .8;
+  display: block;
+  cursor: default;
+}
+
+.animated-letters {
+ overflow: hidden;
+ display: inline-block;
+ height: .7em;
+ aspect-ratio: 1/1;
+ position: relative;
+ text-align: center;
+}
+
+.animated__letters-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  translate: -50%;
+}
+
+.animated-logo_is-animated .a {
+  animation: move-letters .6s .5s ease-in 1 forwards, move-letters .6s 2s ease-in 1 reverse forwards;
+}
+
+.animated-logo_is-animated .i {
+  animation: move-letters .6s .51s ease-in 1 forwards, move-letters .6s 2.01s ease-in 1 reverse forwards;
+}
+
+.i {
+  font-family: 'Plaid Mono', monospace;
+  font-weight: bold;
 }
 
 .index-star {
