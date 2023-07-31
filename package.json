@@ -1,0 +1,42 @@
+{
+  "name": "shalomolam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "check": "prettier --check './src/**/*.{html,css,js}'",
+    "format": "prettier --write './src/**/*.{html,css,js}'",
+    "lint": "stylelint './src/**/*.css'",
+    "lintfix": "stylelint './src/**/*.css' --fix",
+    "checkAll": "npm run check && npm run lint",
+    "fixAll": "npm run format && npm run lintfix",
+    "build": "gulp build",
+    "dev": "gulp",
+    "fixAndBuild": "npm run fixAll && npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "browser-sync": "^2.29.1",
+    "cssnano": "^6.0.1",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "html-minifier": "^4.0.0",
+    "postcss": "^8.4.23",
+    "postcss-combine-media-query": "^1.0.1",
+    "prettier": "^2.8.7",
+    "stylelint": "^15.4.0",
+    "husky": "^4.3.8"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run fixAll && git add ."
+    }
+  },
+  "browserslist": [
+    "last 3 versions"
+  ]
+}
