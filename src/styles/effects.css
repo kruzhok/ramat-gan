@@ -1,0 +1,7 @@
+.common-transition {
+  --transition-property: opacity;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transition-property: var(--transition-property);
+  transition-property: var(--transition-property);
+}

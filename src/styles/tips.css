@@ -1,0 +1,20 @@
+.tips .header {
+  margin-bottom: var(--tips-after-header-margin);
+}
+
+.tips .title {
+  margin-bottom: var(--tips-after-title-margin);
+}
+
+.tips-subtitle {
+  font-family: 'Plaid Mono', monospace;
+  font-size: var(--tips-subtitle-font-size);
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: var(--tips-after-subtitle-margin);
+  max-width: 620px;
+}
+
+.tips .cards-section {
+  margin-bottom: var(--tips-before-footer-margin);
+}

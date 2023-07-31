@@ -1,0 +1,188 @@
+.tips-detail .header {
+  margin-bottom: var(--tips-detail-after-header-margin);
+}
+
+.slider {
+  display: grid;
+  gap: 8px;
+  margin-bottom: var(--tips-detail-after-slider-margin);
+  place-items: center;
+}
+
+.slider-container {
+  display: grid;
+  gap: var(--main-grid-gap);
+  grid-template-rows: min-content min-content;
+  place-content: center;
+  place-items: center;
+  position: relative;
+}
+
+.cards-slider {
+  aspect-ratio: 1/1;
+  width: var(--popup-slider-width);
+}
+
+.cards-slider .swiper-slide {
+  padding: var(--popup-padding);
+}
+
+.cards-slider .swiper-button-next,
+.cards-slider .swiper-button-prev {
+  --swiper-navigation-sides-offset: clamp(0.25rem, -1.3271rem + 3vw, 2.5rem);
+  position: absolute;
+}
+
+.cards-slider .swiper-button-next svg,
+.cards-slider .swiper-button-prev svg {
+  height: var(--popup-arrow-width);
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  width: var(--popup-arrow-width);
+}
+
+.swiper-pagination-bullet {
+  background: hsl(0 0% 100% / 0.8);
+}
+
+.swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.swiper-pagination {
+  margin: auto;
+  position: relative;
+  width: fit-content !important;
+}
+
+.card-slide-cover {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  align-items: center;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-slide-illustration {
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  width: 100%;
+}
+
+.card-slide-cover-text {
+  bottom: 60px;
+  font-size: 14px;
+  left: 50%;
+  max-width: 351px;
+  position: absolute;
+  text-align: center;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.card-slide-cover-text,
+.content-slide {
+  font-family: 'Plaid Mono', monospace;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.content-slide {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: var(--popup-text-font-size);
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.link-shared-tooltip {
+  word-wrap: nowrap;
+  background-color: hsl(33 46% 81% / 0.5);
+  border-radius: 20px;
+  color: #2b2129;
+  font-size: var(--popup-tooltip-font-size);
+  justify-self: center;
+  opacity: 0;
+  padding: var(--popup-tooltip-padding-t) var(--popup-tooltip-padding-lr)
+    var(--popup-tooltip-padding-b);
+  width: fit-content;
+}
+
+.share-container {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  align-items: center;
+  color: #e5d1b8;
+  font-size: var(--popup-share-block-font-size);
+  justify-content: center;
+}
+
+.share-container,
+.share-list {
+  display: flex;
+  gap: 1em;
+}
+
+.share-list {
+  list-style: none;
+}
+
+.share-list li {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: flex;
+  gap: 1em;
+}
+
+.share-list a,
+.share-list button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+  padding: 0;
+}
+
+.share-list a:hover,
+.share-list button:hover {
+  opacity: 0.6;
+}
+
+.instructions {
+  margin-bottom: var(--tips-detail-before-footer-margin);
+}
+
+.instructioons__title {
+  font-size: 40px;
+  margin-bottom: 35px;
+}
+
+@media (max-width: 600px) {
+
+  .cards-slider {
+    width: 100%;
+  }
+}

@@ -1,0 +1,40 @@
+@font-face {
+  font-family: Plaid;
+  font-weight: 400;
+  src: url(Plaid-S.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Plaid Mono';
+  font-weight: 400;
+  src: url(Plaid-S-Mono.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Plaid Mono';
+  font-weight: 500;
+  src: url(Plaid-M-Mono.woff) format('woff');
+}
+
+@font-face {
+  font-family: Plaid;
+  font-weight: 700;
+  src: url(Plaid-L.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Plaid Mono';
+  font-weight: 700;
+  src: url(Plaid-L-Mono.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Plaid Mono';
+  font-weight: 800;
+  src: url(Plaid-XL-Mono.woff) format('woff');
+}
+
+@font-face {
+  font-family: Inkulinati;
+  src: url(Inkulinati-Regular.woff) format('woff');
+}

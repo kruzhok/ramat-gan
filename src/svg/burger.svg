@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none">
+  <symbol id="burger-closed" viewBox="0 0 59 17">
+    <path stroke="currentColor" d="M0 2.5h59M0 2.5h59M0 14.5h59M0 14.5h59M0 14.5h59M0 14.5h59"/>
+  </symbol>
+  <symbol id="burger-opened" viewBox="0 0 61 21">
+    <g>
+      <line x1="1.32436" y1="18.593" x2="58.3244" y2="2.59303" stroke="currentColor" />
+      <line x1="1.64705" y1="2.58519" x2="59.683" y2="18.1359" stroke="currentColor" />
+    </g>
+  </symbol>
+</svg>
