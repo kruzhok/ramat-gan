@@ -150,7 +150,7 @@ export const dataArray = [
       {
         text: "Этот плейлист для тех, кто после переезда и&nbsp;всей этой суеты хочет снять напряжение. Сначала идут более жёсткие и&nbsp;сильные треки, дальше&nbsp;&mdash; &laquo;размышляющий тип&raquo; с&nbsp;резким переходом в&nbsp;безумие (Nyan Cat) и&nbsp;под конец&nbsp;&mdash; тонизирующая и&nbsp;мягкая атмосферная музыка.",
         image: "",
-        author: '<a href="#">Ссылка на плейлист</a>',
+        author: '<a href="https://youtube.com/playlist?list=PLfklzkefxRVCHo2Yu2lV_VgN9ixTOsmX9" target="_blank">Ссылка на плейлист</a>',
       },
     ],
   },
