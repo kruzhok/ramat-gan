@@ -503,12 +503,12 @@
   object-fit: cover;
 }
 
-.life {
+.life-block {
   margin-bottom: 94px;
 }
 
 @media (max-width: 450px) {
-  .life {
+  .life-block {
     margin-bottom: 90px;
   }
 }
