@@ -18,7 +18,7 @@ jobs:
               with:
                 node-version: ${{ matrix.node-version }}
             - run: set -eu
-            - run: mkdir "$HOME/.ssh"
+            - run: mkdir -p "$HOME/.ssh"
             - run: echo "${{ secrets.key }}" > "$HOME/.ssh/key"
             - run: chmod 600 "$HOME/.ssh/key"
             - run: npm ci
