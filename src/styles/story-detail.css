@@ -141,6 +141,11 @@
   color: #3c4c48;
 }
 
+.theme-lightyellow .next-story__all-stories-link:hover {
+  background-color: #2b2129;
+  color: #e5d1b8;
+}
+
 .next-story__card {
   aspect-ratio: 1396/300;
   display: grid;

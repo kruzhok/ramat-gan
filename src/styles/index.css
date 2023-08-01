@@ -56,6 +56,10 @@
 
 @media (min-width: 1456px) {
 
+  .index {
+    overflow-x: hidden;
+  }
+
   .index-wrapper {
     overflow-x: initial !important;
   }
@@ -214,7 +218,9 @@
   .circles-swiper {
     width: 100dvi;
     overflow: hidden;
-    translate: calc(-1 * (100dvi - var(--page-max-width)) / 2);
+    translate: calc(
+      -1 * (100dvi - var(--page-max-width)) / 2 - var(--main-page-paddings-lr)
+    );
   }
 }
 
