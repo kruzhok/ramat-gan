@@ -235,6 +235,22 @@
   .next-story__description {
     aspect-ratio: 292/190;
   }
+
+  .next-story__card-image {
+    object-position: 50% -40px;
+  }
+
+  .next-story__card-image_name_sema {
+    object-position: 70% -125px;
+  }
+
+  .next-story__card-image_dasha {
+    object-position: 50% 0;
+  }
+
+  .next-story__card-image_name_asya {
+    object-position: -20px -40px;
+  }
 }
 
 @media (max-width: 1024px) {
