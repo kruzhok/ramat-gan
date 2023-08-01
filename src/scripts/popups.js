@@ -78,19 +78,12 @@ function generateSlider(tmp, obj, parent) {
     );
   node
     .querySelector('.tg-share')
-    .setAttribute(
-      'href',
-      `https://t.me/share/url?url=${encodedShareURL}&text=${encodeURI(
-        `Shalom Olam. ${obj.coverText}`
-      )}`
-    );
+    .setAttribute('href', `https://t.me/share/url?url=${encodedShareURL}`);
   node
     .querySelector('.tw-share')
     .setAttribute(
       'href',
-      `https://twitter.com/intent/tweet?url=${encodedShareURL}&text=${encodeURI(
-        `Shalom Olam. ${obj.coverText}`
-      )}`
+      `https://twitter.com/intent/tweet?url=${encodedShareURL}`
     );
   node.querySelector('.link-share').setAttribute('data-href', encodedShareURL);
   parent.append(node);
