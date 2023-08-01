@@ -40,19 +40,12 @@ document
   );
 document
   .querySelector('.tg-share')
-  .setAttribute(
-    'href',
-    `https://t.me/share/url?url=${encodedShareURL}&text=${encodeURI(
-      `Shalom Olam. ${currentCardData.coverText}`
-    )}`
-  );
+  .setAttribute('href', `https://t.me/share/url?url=${encodedShareURL}`);
 document
   .querySelector('.tw-share')
   .setAttribute(
     'href',
-    `https://twitter.com/intent/tweet?url=${encodedShareURL}&text=${encodeURI(
-      `Shalom Olam. ${currentCardData.coverText}`
-    )}`
+    `https://twitter.com/intent/tweet?url=${encodedShareURL}`
   );
 document
   .querySelector('.link-share')
