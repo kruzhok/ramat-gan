@@ -117,6 +117,7 @@
   -ms-flex-direction: column;
   flex-direction: column;
   justify-content: center;
+  background-color: inherit;
 }
 
 .card-slide-illustration {
