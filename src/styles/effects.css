@@ -10,3 +10,65 @@ a[disabled] {
   opacity: 0.6;
   pointer-events: none;
 }
+
+/* маленький анимированный логотип */
+
+.small-animated-logo {
+  display: block;
+  font-size: clamp(1.25rem, 0.9155rem + 1.6725vw, 2.4375rem);
+  font-weight: 700;
+  line-height: 0.8;
+  cursor: pointer;
+}
+
+.small-animated-letters {
+  display: inline-block;
+  vertical-align: baseline;
+  height: 0.8em;
+  width: 0.7em;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.small-animated__letters-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  left: 50%;
+  position: absolute;
+  translate: -50%;
+}
+
+.small-animated-logo_is-animated .a {
+  transform: translateY(0);
+  transition: transform 0.6s ease-in;
+}
+
+.small-animated-logo_is-animated .i {
+  transform: translateY(0);
+  transition: transform 0.6s ease-in;
+}
+
+.small-animated-logo_is-animated:hover .a {
+  transition: transform 0.6s ease-in 1;
+  transform: translateY(calc(100% + 1px));
+}
+
+.small-animated-logo_is-animated:hover .i {
+  transition: transform 0.6s ease-in 0.01s;
+  transform: translateY(100%);
+}
+
+.i {
+  font-family: 'Plaid Mono', monospace;
+  font-weight: 700;
+}
+
+/* Конец */
