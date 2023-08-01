@@ -161,20 +161,26 @@
   opacity: 0.6;
 }
 
-.index-star:hover ~ .index-logo-tooltip {
+.index-star:hover ~ .index-logo-tooltip-container {
   opacity: 1;
 }
 
-.index-logo-tooltip {
+.index-logo-tooltip-container {
   bottom: var(--tooltip-from-bottom);
+  left: var(--tooltip-from-left);
+  position: absolute;
+  top: 60%;
+  opacity: 0;
+  max-width: 500px;
+}
+
+.index-logo-tooltip {
   font-family: 'Plaid Mono', monospace;
   font-size: var(--tooltip-font-size);
   font-weight: 400;
-  left: var(--tooltip-from-left);
   line-height: 120%;
-  opacity: 0;
-  position: absolute;
-  white-space: nowrap;
+  position: relative;
+  width: 300px;
 }
 
 /* CIRCLES */
@@ -492,6 +498,7 @@
 
   .index-logo-tooltip {
     opacity: 1;
+    width: 100px;
     pointer-events: none;
   }
 
