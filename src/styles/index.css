@@ -6,8 +6,8 @@
   }
 
   to {
-    -webkit-transform: translateY(calc(100% + 2px));
-    transform: translateY(calc(100% + 2px));
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
   }
 }
 
@@ -19,8 +19,8 @@
   }
 
   to {
-    -webkit-transform: translateY(calc(100% + 2px));
-    transform: translateY(calc(100% + 2px));
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
   }
 }
 
@@ -59,9 +59,6 @@
 }
 
 @media (min-width: 1456px) {
-  /* .index {
-    overflow-x: hidden;
-  } */
 
   .index-wrapper {
     overflow-x: initial !important;
