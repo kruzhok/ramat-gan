@@ -5,3 +5,8 @@
   -webkit-transition-property: var(--transition-property);
   transition-property: var(--transition-property);
 }
+
+a[disabled] {
+  opacity: 0.6;
+  pointer-events: none;
+}
