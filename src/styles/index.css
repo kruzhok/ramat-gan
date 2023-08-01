@@ -496,8 +496,11 @@
 
 @media (max-width: 600px) {
 
-  .index-logo-tooltip {
+  .index-logo-tooltip-container {
     opacity: 1;
+  }
+
+  .index-logo-tooltip {
     width: 100px;
     pointer-events: none;
   }
