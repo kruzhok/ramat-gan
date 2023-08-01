@@ -29,6 +29,10 @@
   position: relative;
 }
 
+.index .small-animated-logo {
+  cursor: default;
+}
+
 .index .header-menu {
   max-width: 100%;
 }
