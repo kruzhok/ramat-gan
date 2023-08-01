@@ -98,6 +98,7 @@
 .animated-letters {
   aspect-ratio: 1/1;
   display: inline-block;
+  vertical-align: bottom;
   height: 0.7em;
   overflow: hidden;
   position: relative;
