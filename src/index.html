@@ -84,9 +84,14 @@
           >
             <use href="./svg/logo.svg#star"></use>
           </svg>
-          <p class="common-transition index-logo-tooltip">
-            В переводе с иврита:<br />«Привет, мир»
-          </p></a
+          <div class="common-transition index-logo-tooltip-container">
+            <p class="index-logo-tooltip">
+              В&nbsp;переводе с&nbsp;иврита: “shalom olam”&nbsp;&mdash;
+              &laquo;привет, мир&raquo;, “shalom olim”&nbsp;&mdash;
+              &laquo;привет, новенький&raquo;.
+            </p>
+            <!-- В переводе с иврита:<br />«Привет, мир» -->
+          </div></a
         ><button
           class="common-transition menu-button menu-button--open"
           type="button"
@@ -99,120 +104,81 @@
             <use href="./svg/burger.svg#burger-closed"></use>
           </svg>
         </button>
-        <div class="index-circle video-circle">
-          <video
-            data-playmode="autoplay"
-            src="./circle-video/6.mov"
-            poster="./circle-video/6.png"
-            loop
-            muted
-            playsinline
-            autoplay
-            pip="false"
-            width="150"
-            style="
-              aspect-ratio: 1/1;
-              object-fit: cover;
-              object-position: center;
-            "
-          ></video>
-        </div>
-        <div class="index-circle video-circle">
-          <video
-            data-playmode="autoplay"
-            src="./circle-video/2.mov"
-            poster="./circle-video/2.png"
-            loop
-            muted
-            playsinline
-            autoplay
-            pip="false"
-            width="150"
-            style="
-              aspect-ratio: 1/1;
-              object-fit: cover;
-              object-position: center;
-            "
-          ></video>
-        </div>
-        <div class="index-circle video-circle">
-          <video
-            data-playmode="autoplay"
-            src="./circle-video/3.mov"
-            poster="./circle-video/3.png"
-            loop
-            muted
-            playsinline
-            autoplay
-            pip="false"
-            width="150"
-            style="
-              aspect-ratio: 1/1;
-              object-fit: cover;
-              object-position: center;
-            "
-          ></video>
-        </div>
-        <div class="index-circle video-circle">
-          <video
-            data-playmode="autoplay"
-            src="./circle-video/4.mov"
-            poster="./circle-video/4.png"
-            loop
-            muted
-            playsinline
-            autoplay
-            pip="false"
-            width="150"
-            style="
-              aspect-ratio: 1/1;
-              object-fit: cover;
-              object-position: center;
-            "
-          ></video>
-        </div>
-        <div class="index-circle video-circle">
-          <video
-            data-playmode="autoplay"
-            src="./circle-video/5.mov"
-            poster="./circle-video/5.png"
-            loop
-            muted
-            playsinline
-            autoplay
-            pip="false"
-            width="150"
-            style="
-              aspect-ratio: 1/1;
-              object-fit: cover;
-              object-position: center;
-            "
-          ></video>
-        </div>
-        <div class="index-circle video-circle">
-          <video
-            data-playmode="autoplay"
-            src="./circle-video/1.mov"
-            poster="./circle-video/1.png"
-            muted
-            playsinline
-            autoplay
-            pip="false"
-            width="150"
-            style="
-              aspect-ratio: 1/1;
-              object-fit: cover;
-              object-position: center;
-            "
-          ></video>
-        </div>
       </header>
       <main>
+        <section class="video-circles">
+          <div class="video-mask video-heart-mask">
+            <video
+              class="masked-video masked-video-visible heart-video"
+              data-playmode="autoplay"
+              src="./circle-video/1.mov"
+              poster="./circle-video/1.png"
+              loop
+              muted
+              playsinline
+              autoplay
+              pip="false"
+            ></video>
+          </div>
+          <div class="video-mask video-circle-mask">
+            <video
+              class="masked-video masked-video-visible circle-video"
+              data-playmode="autoplay"
+              src="./circle-video/2.mov"
+              poster="./circle-video/2.png"
+              loop
+              muted
+              playsinline
+              autoplay
+              pip="false"
+            ></video>
+          </div>
+          <div class="video-mask video-oval-mask">
+            <video
+              class="masked-video oval-video-1"
+              data-playmode="autoplay"
+              src="./circle-video/3.mov"
+              poster="./circle-video/3.png"
+              loop
+              muted
+              playsinline
+              autoplay
+              pip="false"
+            ></video>
+          </div>
+          <div class="video-mask video-clover-mask">
+            <video
+              class="masked-video clover-video"
+              data-playmode="autoplay"
+              src="./circle-video/4.mov"
+              poster="./circle-video/4.png"
+              loop
+              muted
+              playsinline
+              autoplay
+              pip="false"
+            ></video>
+          </div>
+          <div class="video-mask video-oval-mask">
+            <video
+              class="masked-video masked-video-visible oval-video-2"
+              data-playmode="autoplay"
+              src="./circle-video/6.mov"
+              poster="./circle-video/6.png"
+              loop
+              muted
+              playsinline
+              autoplay
+              pip="false"
+            ></video>
+          </div>
+        </section>
+
         <section class="index-cover-descriptor">
           <h1 class="visually-hidden">Shalom Olam</h1>
           <p>
             Этот сайт создан преимущественно людьми, которые переехали в Израиль
-            в течении последних тринадцати месяцев. Теми, кто был вынужден
+            в течение последних тринадцати месяцев. Теми, кто был вынужден
             покинуть свои дома из-за начала войны.
           </p>
           <p>
@@ -595,5 +561,6 @@
     <script src="./scripts/config.js" type="module"></script>
     <script src="./scripts/data.js" type="module"></script>
     <script src="./scripts/popups.js" type="module"></script>
+    <script src="./scripts/circles.js"></script>
   </body>
 </html>

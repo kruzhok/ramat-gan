@@ -5,7 +5,7 @@
   --index-header-text-size: clamp(1.125rem, 0.7729rem + 1.7606vw, 2.375rem);
   --main-page-paddings-lr: clamp(0.875rem, 0.5933rem + 1.4085vw, 1.875rem);
   --main-page-paddings-tb: clamp(2.4375rem, 2.2262rem + 1.0563vw, 3.1875rem);
-  --from-header-to-text: clamp(8.1875rem, 7.3248rem + 4.3134vw, 11.25rem);
+  --from-header-to-text: clamp(1rem, 2rem + 2vw, 4rem);
   --star-logo-width: clamp(1.125rem, 0.456rem + 3.3451vw, 3.5rem);
   --star-logo-from-left: clamp(10.625rem, 3.4595rem + 35.8275vw, 36.0625rem);
   --star-logo-from-bottom: clamp(0.6875rem, -0.3512rem + 5.1937vw, 4.375rem);
@@ -13,7 +13,11 @@
   --tooltip-from-bottom: clamp(0.75rem, -0.6761rem + 7.1303vw, 5.8125rem);
   --tooltip-from-left: clamp(12.5rem, 4.2077rem + 41.4613vw, 41.9375rem);
   --burger-width: clamp(2.625rem, 2.3257rem + 1.4965vw, 3.6875rem);
+
   --cover-text-margin-bottom: clamp(5.8125rem, 5.1611rem + 3.257vw, 8.125rem);
+  --cover-text-margin-bottom: clamp(2.8125rem, 3.1611rem + 3.257vw, 6.125rem);
+
+  --cover-text-margin-top: clamp(1rem, 1rem + 2vw, 3rem);
   --section-title-font-size: clamp(2.5rem, 1.7958rem + 3.5211vw, 5rem);
   --read-more-font-size: clamp(0.75rem, 0.5387rem + 1.0563vw, 1.5rem);
   --read-more-padding-tb: clamp(0.6875rem, 0.5819rem + 0.5282vw, 1.0625rem);
