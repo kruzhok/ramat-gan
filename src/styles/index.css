@@ -236,8 +236,8 @@
   width: 100%;
   object-fit: cover;
   object-position: center;
-  -webkit-filter: contrast(150%) saturate(130%);
-  filter: contrast(150%) saturate(130%);
+  -webkit-filter: contrast(170%) saturate(140%);
+  filter: contrast(170%) saturate(140%);
   transition: opacity 0.3s ease-in-out 0s;
   opacity: 0;
   cursor: pointer;
