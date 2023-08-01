@@ -23,7 +23,7 @@ a[disabled] {
 
 .small-animated-letters {
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: bottom;
   height: 0.8em;
   width: 0.7em;
   overflow: hidden;
