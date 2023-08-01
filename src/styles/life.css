@@ -103,6 +103,44 @@ body.life {
   padding: var(--padding-inside);
 }
 
+@keyframes little-move {
+
+  from {
+    translate: 0 0;
+  }
+
+  to {
+    translate: 0 -8px;
+  }
+}
+
+@keyframes little-move-down {
+
+  from {
+    translate: 0 0;
+  }
+
+  to {
+    translate: 0 8px;
+  }
+}
+
+.detail summary:hover .detail__button {
+  animation: little-move-down 0.3s ease-in 4 alternate;
+}
+
+.detail summary:focus .detail__button {
+  animation: little-move-down 0.3s ease-in 4 alternate;
+}
+
+.detail[open] summary:hover .detail__button {
+  animation: little-move 0.3s ease-in 4 alternate;
+}
+
+.detail[open] summary:focus .detail__button {
+  animation: little-move 0.3s ease-in 4 alternate;
+}
+
 .detail summary::-webkit-details-marker {
   display: none;
 }
