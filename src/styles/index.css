@@ -27,6 +27,7 @@
 .index {
   padding: 0;
   position: relative;
+  overflow-x: hidden;
 }
 
 .index-wrapper {
@@ -36,7 +37,6 @@
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 100vh;
-  overflow-x: hidden;
   padding: var(--main-page-paddings-tb) var(--main-page-paddings-lr);
   z-index: 2;
 }

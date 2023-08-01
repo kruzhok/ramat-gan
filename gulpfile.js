@@ -12,7 +12,7 @@ function serve() {
   browserSync.init({
     server: {
       baseDir: './dist'
-    },
+    }
 
   });
 }
