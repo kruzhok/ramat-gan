@@ -14,11 +14,13 @@ const toggleOpacity = (video) => {
       toggleOpacity(video);
     });
 
-    video.addEventListener('click', () => {
+    video.addEventListener('click', (e) => {
+      e.preventDefault();
       toggleOpacity(video);
     });
 
-    video.addEventListener('touchstart', () => {
+    video.addEventListener('touchstart', (e) => {
+      e.preventDefault();
       toggleOpacity(video);
     });
   });
