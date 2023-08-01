@@ -14,7 +14,9 @@ cards.forEach((item) => {
     }, 0);
 
     document.body.style.overflow = 'hidden';
+    document.body.style.touchAction = 'none';
     document.querySelector('html').style.overflow = 'hidden';
+    document.querySelector('html').style.touchAction = 'none';
     const dataForClickedCard = findWithId(dataArray, item.id);
     generateSlider(popupTmp, dataForClickedCard, document.body);
     popup = document.querySelector('.cards-popup');
@@ -31,7 +33,9 @@ cards.forEach((item) => {
         document.body.classList.remove('blured');
         document.querySelector('.cards-popup').style.opacity = '0';
         document.body.style.overflow = 'auto';
+        document.body.style.touchAction = 'initial';
         document.querySelector('html').style.overflow = 'auto';
+        document.querySelector('html').style.touchAction = 'auto';
         setTimeout(() => popup.remove(), 500);
       }
     };
@@ -39,7 +43,9 @@ cards.forEach((item) => {
       document.body.classList.remove('blured');
       document.querySelector('.cards-popup').style.opacity = '0';
       document.body.style.overflow = 'auto';
+      document.body.style.touchAction = 'initial';
       document.querySelector('html').style.overflow = 'auto';
+      document.querySelector('html').style.touchAction = 'auto';
       setTimeout(() => popup.remove(), 500);
     };
     initializeSwiper();
