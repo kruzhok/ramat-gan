@@ -226,16 +226,12 @@
   aspect-ratio: 100/102;
 }
 
-.oval-video-1 {
+.oval-video {
   aspect-ratio: 287/268;
 }
 
 .clover-video {
   aspect-ratio: 100/102;
-}
-
-.oval-video-2 {
-  aspect-ratio: 287/268;
 }
 
 .video-mask {
@@ -247,32 +243,60 @@
   mask-size: 100%;
 }
 
-.video-heart-mask {
-  -webkit-mask-image: url(../images/video-masks/heart-mask.svg);
-  mask-image: url(../images/video-masks/heart-mask.svg);
+.video-heart-green-mask {
+  -webkit-mask-image: url(../images/video-masks/heart-green.svg);
+  mask-image: url(../images/video-masks/heart-green.svg);
   width: 21.2%;
   background-color: #3c4c48;
 }
 
-.video-circle-mask {
-  -webkit-mask-image: url(../images/video-masks/circle-mask.svg);
-  mask-image: url(../images/video-masks/circle-mask.svg);
+.video-circle-beige-mask {
+  -webkit-mask-image: url(../images/video-masks/circle-beige.svg);
+  mask-image: url(../images/video-masks/circle-beige.svg);
   width: 18.8%;
   background-color: #e5d1b8;
 }
 
-.video-oval-mask {
-  -webkit-mask-image: url(../images/video-masks/oval-mask.svg);
-  mask-image: url(../images/video-masks/oval-mask.svg);
+.video-oval-orange-mask {
+  -webkit-mask-image: url(../images/video-masks/oval-orange.svg);
+  mask-image: url(../images/video-masks/oval-orange.svg);
   width: 20.5%;
   background-color: #de8e59;
 }
 
-.video-clover-mask {
-  -webkit-mask-image: url(../images/video-masks/clover-mask.svg);
-  mask-image: url(../images/video-masks/clover-mask.svg);
+.video-clover-purple-mask {
+  -webkit-mask-image: url(../images/video-masks/clover-purple.svg);
+  mask-image: url(../images/video-masks/clover-purple.svg);
   width: 18.8%;
   background-color: #7d6779;
+}
+
+.video-circle-blue-mask {
+  -webkit-mask-image: url(../images/video-masks/circle-blue.svg);
+  mask-image: url(../images/video-masks/circle-blue.svg);
+  width: 18.8%;
+  background-color: #7583a5;
+}
+
+.video-oval-flipped-orange-mask {
+  -webkit-mask-image: url(../images/video-masks/oval-flipped-orange.svg);
+  mask-image: url(../images/video-masks/oval-flipped-orange.svg);
+  width: 20.5%;
+  background-color: #de8e59;
+}
+
+.video-clover-blue-mask {
+  -webkit-mask-image: url(../images/video-masks/clover-blue.svg);
+  mask-image: url(../images/video-masks/clover-blue.svg);
+  width: 18.8%;
+  background-color: #7583a5;
+}
+
+.video-circle-green-mask {
+  -webkit-mask-image: url(../images/video-masks/circle-green.svg);
+  mask-image: url(../images/video-masks/circle-green.svg);
+  width: 18.8%;
+  background-color: #3c4c48;
 }
 
 /* END OF CIRCLES */
