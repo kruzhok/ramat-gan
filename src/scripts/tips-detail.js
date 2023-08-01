@@ -31,9 +31,7 @@ currentCardData.content.forEach((item) => {
 initializeSwiper();
 
 // Устанавливает ссылки шеринга
-const encodedShareURL = encodeURI(
-  `${baseURL}/tips/${currentCardData.slug}.html`
-);
+const encodedShareURL = encodeURI(`${baseURL}/tips/${currentCardData.slug}`);
 document
   .querySelector('.fb-share')
   .setAttribute(
