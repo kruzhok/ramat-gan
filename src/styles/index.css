@@ -189,7 +189,7 @@
   display: flex;
 }
 
-.swiper-circles-wrapper {
+.swiper-wrapper {
   -webkit-transition-timing-function: linear !important;
   transition-timing-function: linear !important;
 }
