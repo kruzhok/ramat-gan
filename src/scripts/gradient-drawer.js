@@ -10,7 +10,7 @@ function drawBack(el, source) {
 
 setTimeout(() => {
   drawBack(body, fixedSection);
-}, 100);
+}, 1000);
 
 window.onresize = () => {
   setTimeout(() => {
