@@ -554,20 +554,6 @@
   }
 }
 
-@media (max-height: 1000px) and (orientation: landscape) {
-
-  .lost {
-    display: grid;
-    grid-template-columns: min-content 1fr;
-    align-items: baseline;
-    gap: 20px;
-  }
-
-  .section-title-container {
-    grid-column: 1/-1;
-  }
-}
-
 .lost .section-title-container {
   margin-bottom: var(--after-lost-image-title-margin);
 }
@@ -588,6 +574,25 @@
     aspect-ratio: initial;
     max-height: initial;
     width: var(--lost-image-width);
+  }
+}
+
+@media (max-height: 1000px) and (orientation: landscape) {
+
+  .lost {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: baseline;
+    gap: 20px;
+  }
+
+  .lost-illustration {
+    width: auto;
+    height: 30vh;
+  }
+
+  .section-title-container {
+    grid-column: 1/-1;
   }
 }
 
