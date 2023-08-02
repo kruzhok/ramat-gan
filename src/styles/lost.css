@@ -757,6 +757,12 @@
     padding-bottom: 0;
   }
 
+  .asya .item__description {
+    width: 46%;
+    bottom: 0;
+    right: 52px;
+  }
+
   .danya {
     -webkit-transform: translate(35%, -90%);
     -ms-transform: translate(35%, -90%);
