@@ -170,7 +170,8 @@
   -ms-flex-align: center;
   align-items: center;
   color: #e5d1b8;
-  font-size: var(--popup-share-block-font-size);
+  margin: auto;
+  font-size: 18px;
 }
 
 .share-container,
