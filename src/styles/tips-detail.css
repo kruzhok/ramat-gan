@@ -132,8 +132,10 @@
   -ms-flex-pack: center;
   align-items: center;
   color: #e5d1b8;
-  font-size: var(--popup-share-block-font-size);
   justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 18px;
 }
 
 .share-container,
